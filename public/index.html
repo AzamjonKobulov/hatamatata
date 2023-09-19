@@ -470,10 +470,12 @@
       </nav>
       <!-- Mobile Menu -->
       <div
-        class="mobile-menu mobile-menu-shadow hidden w-full z-50 bg-white lg:hidden mt-16 lg:mt-28 text-center font-medium space-y-8 px-5 py-8"
+        class="mobile-menu fixed mobile-menu-shadow hidden w-full h-screen top-0 z-40 bg-white mt-10 text-center font-medium space-y-8 px-5 py-8"
       >
         <!-- Location -->
-        <div class="flex items-center justify-center gap-2.5">
+        <div
+          class="flex items-center justify-center text-brand-gray-1 font-normal gap-2.5 pt-5"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -556,7 +558,7 @@
         </ul>
         <!-- Buttons -->
         <div
-          class="max-w-3xl mx-auto grid sm:grid-cols-2 text-sm gap-1.5 sm:px-5"
+          class="max-w-3xl mx-auto grid sm:grid-cols-2 text-sm gap-4 sm:px-5"
         >
           <!-- Blue -->
           <button class="primary-btn px-4 py-[0.6875rem]">
@@ -626,7 +628,7 @@
       </div>
       <!-- Mobile Bottom Menu -->
       <div
-        class="mobile-bottom-menu-shadow md:hidden fixed bottom-0 left-0 z-40 w-full bg-white flex items-center justify-between gap-30 text-xs sm:text-sm font-medium px-4 sm:px-9 py-2.5"
+        class="mobile-bottom-menu-shadow md:hidden fixed bottom-0 left-0 z-30 w-full bg-white flex items-center justify-between gap-30 text-xs sm:text-sm font-medium px-4 sm:px-9 py-2.5"
       >
         <button class="flex flex-col items-center space-y-1.5 text-brand-blue">
           <span>
@@ -858,7 +860,7 @@
       <div
         class="max-w-base mx-auto relative bg-banner-1 bg-no-repeat bg-cover flex flex-col lg:flex-row overflow-hidden gap-5 rounded-10 before:absolute before:inset-0 before:bg-[#1D232F]/60 px-4 p-30 lg:pl-30 lg:pr-0"
       >
-        <div class="flex-1 relative z-30 md:pl-2.5 pb-1 space-y-5">
+        <div class="flex-1 relative z-20 md:pl-2.5 pb-1 space-y-5">
           <div class="flex justify-between">
             <!-- Hero Title -->
             <div class="max-w-2xl md:pr-6 relative space-y-2.5 pt-2.5">
@@ -929,7 +931,7 @@
             </div>
             <!-- Options Items -->
             <div
-              class="mobile-menu-shadow lg:max-w-4xl relative z-10 lg:pr-10 xl:pr-[6.625rem]"
+              class="mobile-menu-shadow lg:max-w-4xl relative z-20 lg:pr-10 xl:pr-[6.625rem]"
             >
               <div
                 class="grid grid-cols-2 md:grid-cols-4 gap-2.5 bg-white text-brand-gray-3 rounded-b-10 sm:rounded-tr-10 px-4 py-5 md:p-5"
@@ -1196,7 +1198,7 @@
         </div>
         <!-- Hero Form -->
         <div
-          class="hidden lg:block max-h-[24.75rem] w-80 p-5 space-y-3.5 relative z-30 bg-white rounded-10"
+          class="hidden lg:block max-h-[24.75rem] w-80 p-5 space-y-3.5 relative z-20 bg-white rounded-10"
         >
           <h3 class="text-lg font-bold text-center leading-7">
             Наши менеджеры помогут с выбором объекта
@@ -1248,7 +1250,7 @@
         <!-- Hero Need -->
         <div class="md:pl-2">
           <div
-            class="lg:hidden sm:flex items-center justify-between space-y-4 sm:space-y-0 text-center sm:text-start p-5 relative z-30 bg-white rounded-10"
+            class="lg:hidden sm:flex items-center justify-between space-y-4 sm:space-y-0 text-center sm:text-start p-5 relative z-20 bg-white rounded-10"
           >
             <div class="text-sm space-y-1">
               <h4 class="font-bold">Нужна помощь в выборе объекта?</h4>
