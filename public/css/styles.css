@@ -830,6 +830,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-banner-1 {
+  background-image: url('/public/assets/images/banners/banner-image-1.png');
+}
 .bg-cover {
   background-size: cover;
 }
@@ -899,8 +902,8 @@ video {
 .pb-1 {
   padding-bottom: 0.25rem;
 }
-.pb-96 {
-  padding-bottom: 24rem;
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .pl-2 {
   padding-left: 0.5rem;
@@ -910,15 +913,6 @@ video {
 }
 .pt-2\.5 {
   padding-top: 0.625rem;
-}
-.pb-20 {
-  padding-bottom: 5rem;
-}
-.pb-24 {
-  padding-bottom: 6rem;
-}
-.pb-80 {
-  padding-bottom: 20rem;
 }
 .text-center {
   text-align: center;

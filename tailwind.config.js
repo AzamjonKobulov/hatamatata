@@ -46,6 +46,9 @@ module.exports = {
       borderRadius: {
         10: '0.625rem',
       },
+      backgroundImage: {
+        'banner-1': "url('/public/assets/images/banners/banner-image-1.png')",
+      },
     },
   },
 };
