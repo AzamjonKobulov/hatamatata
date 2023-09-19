@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Onest';
+  src: url('../assets/fonts/Onest/../assets/fonts/Onest/Onest-Bold.eot');
+  src: url('../assets/fonts/Onest/Onest-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/Onest/Onest-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Onest/Onest-Bold.woff') format('woff'),
+    url('../assets/fonts/Onest/Onest-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url('../assets/fonts/Onest/Onest-Medium.eot');
+  src: url('../assets/fonts/Onest/Onest-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/Onest/Onest-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Onest/Onest-Medium.woff') format('woff'),
+    url('../assets/fonts/Onest/Onest-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url('../assets/fonts/Onest/Onest-Regular.eot');
+  src: url('../assets/fonts/Onest/Onest-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/Onest/Onest-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Onest/Onest-Regular.woff') format('woff'),
+    url('../assets/fonts/Onest/Onest-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-onest text-brand-black;
+  }
+
+  h1 {
+    @apply font-bold text-xl md:text-28 lg:text-32;
+  }
+
+  h2 {
+    @apply font-bold text-2xl md:text-28 lg:text-32;
+  }
+}
+
+.primary-btn {
+  @apply flex items-center justify-center gap-2.5 font-medium bg-brand-blue lg:hover:bg-brand-primary-hover transition-all duration-200 text-sm text-white rounded-lg py-3;
+}
+
+.secondary-btn {
+  @apply flex items-center justify-center gap-2.5 bg-brand-orange font-medium lg:hover:bg-brand-orange/90 transition-all duration-200 text-sm text-white rounded-lg py-3;
+}
+
+.nav-shadow {
+  box-shadow: 0px 10px 40px 0px rgba(24, 26, 32, 0.12);
+}
+
+.links-dropdown-shadow {
+  box-shadow: 0px 15px 40px 0px rgba(44, 57, 78, 0.2);
+}
+
+.mobile-menu-shadow {
+  box-shadow: 0px 20px 40px 0px rgba(44, 57, 78, 0.2);
+}
+
+.mobile-bottom-menu-shadow {
+  box-shadow: 0px 10px 30px 0px rgba(57, 64, 83, 0.1),
+    0px 0px 20px 0px rgba(24, 26, 32, 0.1);
+}
+
+.btn-shadow {
+  box-shadow: 0px 0px 15px 0px rgba(44, 57, 78, 0.2);
+}
