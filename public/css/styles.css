@@ -831,7 +831,7 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-banner-1 {
-  background-image: url('/public/assets/images/banners/banner-image-1.png');
+  background-image: url('/assets/images/banners/banner-image-1.png');
 }
 .bg-cover {
   background-size: cover;
