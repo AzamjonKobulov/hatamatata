@@ -101,3 +101,7 @@
 .items::-webkit-scrollbar {
   height: 0;
 }
+
+.contact-us-linear {
+  background: linear-gradient(265deg, #0ba8b5 0%, #b9ecef 100%);
+}
