@@ -102,6 +102,6 @@
   height: 0;
 }
 
-.contact-us-linear {
-  background: linear-gradient(265deg, #0ba8b5 0%, #b9ecef 100%);
+.design-linear-bg {
+  background: linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%);
 }

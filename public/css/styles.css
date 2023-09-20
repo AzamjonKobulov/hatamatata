@@ -577,6 +577,39 @@ video {
 .top-4 {
   top: 1rem;
 }
+.right-0 {
+  right: 0px;
+}
+.-right-5 {
+  right: -1.25rem;
+}
+.-right-1 {
+  right: -0.25rem;
+}
+.top-1\/2 {
+  top: 50%;
+}
+.right-1 {
+  right: 0.25rem;
+}
+.-top-2 {
+  top: -0.5rem;
+}
+.-top-0 {
+  top: -0px;
+}
+.-top-1 {
+  top: -0.25rem;
+}
+.-top-0\.5 {
+  top: -0.125rem;
+}
+.top-1 {
+  top: 0.25rem;
+}
+.top-0\.5 {
+  top: 0.125rem;
+}
 .z-10 {
   z-index: 10;
 }
@@ -588,6 +621,12 @@ video {
 }
 .z-50 {
   z-index: 50;
+}
+.z-0 {
+  z-index: 0;
+}
+.z-\[1\] {
+  z-index: 1;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
@@ -955,6 +994,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(244 245 249 / var(--tw-border-opacity));
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-b-brand-gray-7 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(234 235 239 / var(--tw-border-opacity));
@@ -983,17 +1026,6 @@ video {
 }
 .bg-banner-1 {
   background-image: url('/assets/images/banners/banner-image-1.png');
-}
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-.from-\[\#0BA8B5\] {
-  --tw-gradient-from: #0BA8B5 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(11 168 181 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.to-\[\#B9ECEF\] {
-  --tw-gradient-to: #B9ECEF var(--tw-gradient-to-position);
 }
 .bg-cover {
   background-size: cover;
@@ -1322,8 +1354,8 @@ video {
   height: 0;
 }
 
-.contact-us-linear {
-  background: linear-gradient(265deg, #0ba8b5 0%, #b9ecef 100%);
+.design-linear-bg {
+  background: linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%);
 }
 
 .before\:absolute::before {
@@ -1339,6 +1371,21 @@ video {
 .before\:bg-\[\#1D232F\]\/60::before {
   content: var(--tw-content);
   background-color: rgb(29 35 47 / 0.6);
+}
+
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:inset-0::after {
+  content: var(--tw-content);
+  inset: 0px;
+}
+
+.after\:bg-design-linear-bg::after {
+  content: var(--tw-content);
+  background-color: linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%);
 }
 
 .hover\:bg-brand-gray-8:hover {
@@ -1511,6 +1558,10 @@ video {
     margin-top: 1.875rem;
   }
 
+  .md\:mt-60 {
+    margin-top: 3.75rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1582,6 +1633,10 @@ video {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:gap-30 {
+    gap: 1.875rem;
   }
 
   .md\:gap-4 {
@@ -1873,6 +1928,10 @@ video {
   .lg\:leading-10 {
     line-height: 2.5rem;
   }
+
+  .lg\:leading-7 {
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1883,6 +1942,14 @@ video {
 
   .xl\:right-20 {
     right: 5rem;
+  }
+
+  .xl\:-right-10 {
+    right: -2.5rem;
+  }
+
+  .xl\:-right-0 {
+    right: -0px;
   }
 
   .xl\:grid-cols-4 {
