@@ -46,9 +46,6 @@ module.exports = {
       borderRadius: {
         10: '0.625rem',
       },
-      backgroundImage: {
-        'banner-1': "url('/assets/images/banners/banner-image-1.png')",
-      },
       backgroundColor: {
         'design-linear-bg':
           'linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%)',
