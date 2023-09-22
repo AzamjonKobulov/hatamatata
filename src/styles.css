@@ -60,11 +60,15 @@
 }
 
 .primary-btn {
-  @apply flex items-center justify-center gap-2.5 font-medium bg-brand-blue hover:bg-brand-primary-hover transition-all duration-200 text-sm text-white rounded-lg py-3;
+  @apply flex items-center justify-center gap-2.5 font-medium bg-brand-blue hover:bg-brand-primary-hover hover:rounded-xl transition-all duration-200 text-sm text-white rounded-lg py-3;
 }
 
 .secondary-btn {
   @apply flex items-center justify-center gap-2.5 bg-brand-orange font-medium hover:bg-brand-orange/90 transition-all duration-200 text-sm text-white rounded-lg py-3;
+}
+
+.input-effect {
+  @apply hover:border-brand-gray-6 hover:text-brand-gray-3 hover:shadow focus:rounded-full focus:border-brand-primary-normal focus:font-medium focus:placeholder:font-normal focus:border-[0.0938rem] focus:text-brand-black focus:transition-all focus:duration-300;
 }
 
 .nav-shadow {
