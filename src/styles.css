@@ -67,10 +67,24 @@
   @apply flex items-center justify-center gap-2.5 bg-brand-orange font-medium hover:bg-brand-orange/90 transition-all duration-200 text-sm text-white rounded-lg py-3;
 }
 
-.input-effect {
-  @apply hover:border-brand-gray-6 hover:text-brand-gray-3 hover:shadow focus:rounded-full focus:border-brand-primary-normal focus:font-medium focus:placeholder:font-normal focus:border-[0.0938rem] focus:text-brand-black focus:transition-all focus:duration-300;
+/* Input Affects */
+
+/* Input Hover */
+.input-hover {
+  @apply hover:border-brand-gray-6 hover:text-brand-gray-3 hover:shadow hover:transition-all hover:duration-300;
 }
 
+/* Input Focus */
+.input-focus {
+  @apply focus:rounded-full focus:border-brand-primary-normal focus:font-medium focus:placeholder:font-normal focus:border-[0.0938rem] focus:transition-all focus:duration-300;
+}
+
+/* Input Error */
+.input-error {
+  @apply border-[0.0938rem] border-brand-red rounded-full font-medium text-brand-black;
+}
+
+/* Navbar Shadow */
 .nav-shadow {
   box-shadow: 0px 10px 40px 0px rgba(24, 26, 32, 0.12);
 }
@@ -86,6 +100,10 @@
 .mobile-bottom-menu-shadow {
   box-shadow: 0px 10px 30px 0px rgba(57, 64, 83, 0.1),
     0px 0px 20px 0px rgba(24, 26, 32, 0.1);
+}
+
+.dropdown-list-shadow {
+  box-shadow: 0px 10px 30px 0px rgba(57, 64, 83, 0.1);
 }
 
 .btn-shadow {
