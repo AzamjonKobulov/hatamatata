@@ -46,6 +46,7 @@ module.exports = {
       borderRadius: {
         10: '0.625rem',
       },
+
       backgroundColor: {
         'design-linear-bg':
           'linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%)',

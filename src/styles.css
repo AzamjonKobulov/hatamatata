@@ -41,6 +41,7 @@
   font-display: swap;
 }
 
+/* Base Styles */
 @layer base {
   body {
     @apply font-onest text-brand-black;
@@ -59,15 +60,20 @@
   }
 }
 
-.primary-btn {
+/* Buttons Styles */
+.btn-primary {
   @apply flex items-center justify-center gap-2.5 font-medium bg-brand-blue hover:bg-brand-primary-hover hover:rounded-xl transition-all duration-200 text-sm text-white rounded-lg py-3;
 }
 
-.secondary-btn {
+.btn-secondary {
+  @apply flex items-center justify-center text-brand-black bg-brand-gray-8 rounded-lg hover:rounded-full hover:bg-brand-gray-7 hover:transition-all hover:duration-300;
+}
+
+.btn-orange {
   @apply flex items-center justify-center gap-2.5 bg-brand-orange font-medium hover:bg-brand-orange/90 transition-all duration-200 text-sm text-white rounded-lg py-3;
 }
 
-/* Input Affects */
+/* Input Styles */
 
 /* Input Hover */
 .input-hover {
@@ -106,6 +112,10 @@
   box-shadow: 0px 10px 30px 0px rgba(57, 64, 83, 0.1);
 }
 
+.cost-dropdown-shadow {
+  box-shadow: 0px 0px 40px 0px rgba(24, 26, 32, 0.08);
+}
+
 .btn-shadow {
   box-shadow: 0px 0px 15px 0px rgba(44, 57, 78, 0.2);
 }
@@ -126,4 +136,10 @@
 
 .design-linear-bg {
   background: linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%);
+}
+
+/* Filter Poppup Styles */
+
+.input-filter {
+  @apply py-2 px-5 rounded-lg outline-none border border-brand-gray-6 text-brand-black;
 }

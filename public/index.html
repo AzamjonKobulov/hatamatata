@@ -372,7 +372,7 @@
                 </span>
                 <span class="hidden lg:block"> +90(506)595-48-50 </span>
               </a>
-              <button class="primary-btn px-4 py-[0.6875rem]">
+              <button class="btn-primary px-4 py-[0.6875rem]">
                 <span>
                   <svg
                     width="20"
@@ -563,7 +563,7 @@
             class="max-w-3xl mx-auto grid sm:grid-cols-2 text-sm gap-4 sm:px-5"
           >
             <!-- Blue -->
-            <button class="primary-btn px-4 py-[0.6875rem]">
+            <button class="btn-primary px-4 py-[0.6875rem]">
               <span>
                 <svg
                   width="20"
@@ -967,7 +967,7 @@
                     </span>
                     <!-- Dropdown -->
                     <div
-                      class="dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
+                      class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
                     >
                       <!-- Options -->
                       <ul class="text-brand-black text-start">
@@ -1115,7 +1115,7 @@
                   <button
                     class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
                   >
-                    <span>Страна</span>
+                    <span>Тип</span>
                     <span>
                       <svg
                         width="20"
@@ -1191,103 +1191,986 @@
                     </span>
                     <!-- Dropdown -->
                     <div
-                      class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
+                      class="hidden cost-dropdown-shadow max-w-[23.75rem] space-y-5 absolute z-10 left-0 top-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-5"
                     >
-                      <!-- Options -->
-                      <ul class="text-brand-black text-start">
-                        <li
-                          class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                      <div
+                        class="flex flex-wrap sm:flex-nowrap items-center gap-2.5"
+                      >
+                        <input
+                          type="text"
+                          id="name"
+                          class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                          placeholder="От"
+                        />
+                        <input
+                          type="text"
+                          id="name"
+                          class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                          placeholder="До"
+                        />
+                        <div
+                          class="w-full sm:w-20 relative flex items-center justify-center gap-3 sm:gap-1.5 border border-brand-gray-6 rounded-lg py-3 pl-2"
                         >
-                          Турция
-                        </li>
-                        <li
-                          class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                          <span class="text-sm text-brand-black">EUR</span>
+                          <span>
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                                stroke="#747887"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <!-- Dropdown -->
+                          <div
+                            class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
+                          >
+                            <!-- Options -->
+                            <ul class="text-brand-black text-start">
+                              <li
+                                class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                              >
+                                EUR
+                              </li>
+                              <li
+                                class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                              >
+                                USD
+                              </li>
+                              <li
+                                class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                              >
+                                RUB
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-[15.625rem]">
+                        <div
+                          class="flex items-center justify-center h-1 w-full bg-brand-gray-7"
                         >
-                          Франция
-                        </li>
-                        <li
-                          class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                        >
-                          США
-                        </li>
-                        <li
-                          class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                        >
-                          Дубай
-                        </li>
-                        <li
-                          class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                        >
-                          Кипр
-                        </li>
-                      </ul>
+                          <div
+                            class="h-full relative flex items-center justify-between bg-brand-blue w-4/5"
+                          >
+                            <div
+                              class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
+                            ></div>
+                            <div
+                              class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </button>
+                  <!-- Filters & Search -->
                   <div
                     class="col-span-2 md:col-span-3 sm:flex items-center justify-between space-y-2.5 sm:space-y-0"
                   >
-                    <button
-                      class="w-full sm:w-auto flex justify-center items-center gap-4 border border-brand-gray-6 text-brand-black rounded-lg py-3 px-5"
-                    >
-                      <span>
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                    <div class="relative">
+                      <!-- Filter Button -->
+                      <button
+                        class="relative w-full sm:w-auto flex justify-center items-center gap-4 border border-brand-gray-6 text-brand-black rounded-lg py-3 px-5"
+                      >
+                        <span>
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.5 5H21"
+                              stroke="#343843"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M3 12H13.5"
+                              stroke="#343843"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.5 19H21"
+                              stroke="#343843"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M6.41422 3.58579C7.19527 4.36684 7.19527 5.63317 6.41422 6.41422C5.63317 7.19527 4.36684 7.19527 3.58579 6.41422C2.80474 5.63317 2.80474 4.36684 3.58579 3.58579C4.36684 2.80474 5.63317 2.80474 6.41422 3.58579"
+                              stroke="#343843"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M20.4142 10.5858C21.1953 11.3668 21.1953 12.6332 20.4142 13.4142C19.6332 14.1953 18.3668 14.1953 17.5858 13.4142C16.8047 12.6332 16.8047 11.3668 17.5858 10.5858C18.3668 9.80474 19.6332 9.80474 20.4142 10.5858"
+                              stroke="#343843"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M6.41422 17.5858C7.19527 18.3668 7.19527 19.6332 6.41422 20.4142C5.63317 21.1953 4.36684 21.1953 3.58579 20.4142C2.80474 19.6332 2.80474 18.3668 3.58579 17.5858C4.36684 16.8047 5.63317 16.8047 6.41422 17.5858Z"
+                              stroke="#343843"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                        <span>Фильтры</span>
+                      </button>
+                      <!-- Filter Poppup of Sale -->
+                      <div
+                        class="hidden nav-shadow md:w-[43.75rem] absolute left-0 top-full rounded-xl bg-white"
+                      >
+                        <!-- Filter Header -->
+                        <div
+                          class="flex items-center justify-between border-b border-brand-gray-7 py-4 px-7"
                         >
-                          <path
-                            d="M10.5 5H21"
-                            stroke="#343843"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M3 12H13.5"
-                            stroke="#343843"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M10.5 19H21"
-                            stroke="#343843"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M6.41422 3.58579C7.19527 4.36684 7.19527 5.63317 6.41422 6.41422C5.63317 7.19527 4.36684 7.19527 3.58579 6.41422C2.80474 5.63317 2.80474 4.36684 3.58579 3.58579C4.36684 2.80474 5.63317 2.80474 6.41422 3.58579"
-                            stroke="#343843"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M20.4142 10.5858C21.1953 11.3668 21.1953 12.6332 20.4142 13.4142C19.6332 14.1953 18.3668 14.1953 17.5858 13.4142C16.8047 12.6332 16.8047 11.3668 17.5858 10.5858C18.3668 9.80474 19.6332 9.80474 20.4142 10.5858"
-                            stroke="#343843"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M6.41422 17.5858C7.19527 18.3668 7.19527 19.6332 6.41422 20.4142C5.63317 21.1953 4.36684 21.1953 3.58579 20.4142C2.80474 19.6332 2.80474 18.3668 3.58579 17.5858C4.36684 16.8047 5.63317 16.8047 6.41422 17.5858Z"
-                            stroke="#343843"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Фильтры</span>
-                    </button>
+                          <p class="text-xl font-bold text-brand-black">
+                            Фильтры
+                          </p>
+                          <button>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M17 7L7 17M7 7L17 17"
+                                stroke="#505462"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <!-- Filter Body -->
+                        <div class="space-y-30 p-30">
+                          <!-- Cost -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Цена:
+                            </p>
+                            <!-- Dropdown -->
+                            <div class="max-w-lg space-y-5 pr pr-12">
+                              <div class="grid grid-cols-5 gap-2.5">
+                                <input
+                                  type="text"
+                                  id="name"
+                                  class="input-filter col-span-2"
+                                  placeholder="От"
+                                />
+                                <input
+                                  type="text"
+                                  id="name"
+                                  class="input-filter col-span-2"
+                                  placeholder="До"
+                                />
+                                <!-- Currency -->
+                                <div
+                                  class="sm:w-20 relative flex items-center justify-center gap-3 sm:gap-1.5 border border-brand-gray-6 rounded-lg p-2.5 pl-2"
+                                >
+                                  <span class="text-sm text-brand-black"
+                                    >EUR</span
+                                  >
+                                  <span>
+                                    <svg
+                                      width="20"
+                                      height="20"
+                                      viewBox="0 0 20 20"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                                        stroke="#747887"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </span>
+                                  <!-- Dropdown -->
+                                  <div
+                                    class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
+                                  >
+                                    <!-- Options -->
+                                    <ul class="text-brand-black text-start">
+                                      <li
+                                        class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                                      >
+                                        EUR
+                                      </li>
+                                      <li
+                                        class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                                      >
+                                        USD
+                                      </li>
+                                      <li
+                                        class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                                      >
+                                        RUB
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Range -->
+                              <div class="w-4/5">
+                                <div
+                                  class="flex items-center h-1 w-full bg-brand-gray-7"
+                                >
+                                  <div
+                                    class="h-full relative flex items-center justify-between bg-brand-blue w-10/12"
+                                  >
+                                    <div
+                                      class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
+                                    ></div>
+                                    <div
+                                      class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Buttons -->
+                              <div class="flex items-center gap-2.5">
+                                <button class="btn-secondary px-4 py-2">
+                                  Кредит
+                                </button>
+                                <button
+                                  class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                                >
+                                  Рассрочка
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Category -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Категория:
+                            </p>
+                            <div class="flex items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                Новостройка
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                Строящееся
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Вторичная недвижимость
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Seller -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Продавец:
+                            </p>
+                            <div class="flex items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                Собственник
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                Застройщик
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Агент
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Inputs -->
+                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
+                            <!-- Total Area -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Общая площадь, кв.м.:
+                              </p>
+                              <div class="grid grid-cols-2 gap-2.5">
+                                <input placeholder="От" class="input-filter" />
+                                <input placeholder="До" class="input-filter" />
+                              </div>
+                            </div>
+                            <!-- Number of Floors -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Число этажей:
+                              </p>
+                              <div class="grid grid-cols-2 gap-2.5">
+                                <input placeholder="От" class="input-filter" />
+                                <input placeholder="До" class="input-filter" />
+                              </div>
+                            </div>
+                            <!-- Number of Floors -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Площадь участка, кв.м:
+                              </p>
+                              <div class="grid grid-cols-2 gap-2.5">
+                                <input placeholder="От" class="input-filter" />
+                                <input placeholder="До" class="input-filter" />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Numbers Of Features -->
+                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
+                            <!-- Rooms -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Комнаты:
+                              </p>
+                              <div class="flex items-center gap-2.5">
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  1
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
+                                >
+                                  2
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  3
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  4
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  5+
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Number of bedrooms -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Количество спален:
+                              </p>
+                              <div class="flex items-center gap-2.5">
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  1
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
+                                >
+                                  2
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  3
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  4
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  5+
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Number of Bathrooms -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Ванные комнаты:
+                              </p>
+                              <div class="flex items-center gap-2.5">
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  1
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
+                                >
+                                  2
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  3
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  4
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  5+
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Year of delivery: -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Год сдачи:
+                              </p>
+                              <div class="grid grid-cols-2 gap-2.5">
+                                <input placeholder="От" class="input-filter" />
+                                <input placeholder="До" class="input-filter" />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Repair -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Ремонт:
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                Не требует ремонта
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                Нормальный
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Требуется косметический ремонт
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Плохое состояние
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Без отделки
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Вид: -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Вид:
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                море
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                пляж
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                озеро
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                горы
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                лес или парк
+                              </button>
+                            </div>
+                          </div>
+                          <!-- To the sea -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              До моря:
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                первая линия
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                до 500 м
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                до 1 км
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                до 2 км
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                до 3 км
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Facilities -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Особенности:
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                ТВ
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                парковка
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                мебель
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                терраса
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Интернет
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                сад
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                бассейн
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                собственный пляж
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Filter Footer -->
+                        <div
+                          class="flex items-center justify-between border-t border-brand-gray-7 py-4 px-7"
+                        >
+                          <button
+                            class="btn-secondary py-3 px-6 !bg-brand-blue !text-white"
+                          >
+                            Показать 367
+                          </button>
+                          <button class="btn-secondary py-3 px-6">
+                            Сбросить
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Filter Poppup of Rent -->
+                      <div
+                        class="hidden nav-shadow md:w-[43.75rem] absolute left-0 top-full rounded-xl bg-white"
+                      >
+                        <!-- Filter Header -->
+                        <div
+                          class="flex items-center justify-between border-b border-brand-gray-7 py-4 px-7"
+                        >
+                          <p class="text-xl font-bold text-brand-black">
+                            Фильтры
+                          </p>
+                          <button>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M17 7L7 17M7 7L17 17"
+                                stroke="#505462"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <!-- Filter Body -->
+                        <div class="space-y-30 p-30">
+                          <!-- Cost -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Цена:
+                            </p>
+                            <!-- Dropdown -->
+                            <div class="max-w-lg space-y-5 pr pr-12">
+                              <div class="grid grid-cols-5 gap-2.5">
+                                <input
+                                  type="text"
+                                  id="name"
+                                  class="input-filter col-span-2"
+                                  placeholder="От"
+                                />
+                                <input
+                                  type="text"
+                                  id="name"
+                                  class="input-filter col-span-2"
+                                  placeholder="До"
+                                />
+                                <!-- Currency -->
+                                <div
+                                  class="sm:w-20 relative flex items-center justify-center gap-3 sm:gap-1.5 border border-brand-gray-6 rounded-lg p-2.5 pl-2"
+                                >
+                                  <span class="text-sm text-brand-black"
+                                    >EUR</span
+                                  >
+                                  <span>
+                                    <svg
+                                      width="20"
+                                      height="20"
+                                      viewBox="0 0 20 20"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                                        stroke="#747887"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </span>
+                                  <!-- Dropdown -->
+                                  <div
+                                    class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
+                                  >
+                                    <!-- Options -->
+                                    <ul class="text-brand-black text-start">
+                                      <li
+                                        class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                                      >
+                                        EUR
+                                      </li>
+                                      <li
+                                        class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                                      >
+                                        USD
+                                      </li>
+                                      <li
+                                        class="px-4 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                                      >
+                                        RUB
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Range -->
+                              <div class="w-4/5">
+                                <div
+                                  class="flex items-center h-1 w-full bg-brand-gray-7"
+                                >
+                                  <div
+                                    class="h-full relative flex items-center justify-between bg-brand-blue w-10/12"
+                                  >
+                                    <div
+                                      class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
+                                    ></div>
+                                    <div
+                                      class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Buttons -->
+                              <div class="flex items-center gap-2.5">
+                                <button class="btn-secondary px-4 py-2">
+                                  За сутки
+                                </button>
+                                <button
+                                  class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                                >
+                                  За неделю
+                                </button>
+                                <button class="btn-secondary px-4 py-2">
+                                  За месяц
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Rent terms -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Условия аренды:
+                            </p>
+                            <div class="flex items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                Можно с детьми
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                Можно с животными
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Без залога
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Lessor -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Арендодатель:
+                            </p>
+                            <div class="flex items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                Собственник
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                Компания
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Inputs -->
+                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
+                            <!-- Total Area -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Общая площадь, кв.м.:
+                              </p>
+                              <div class="grid grid-cols-2 gap-2.5">
+                                <input placeholder="От" class="input-filter" />
+                                <input placeholder="До" class="input-filter" />
+                              </div>
+                            </div>
+                            <!-- Number of Floors -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Число этажей:
+                              </p>
+                              <div class="grid grid-cols-2 gap-2.5">
+                                <input placeholder="От" class="input-filter" />
+                                <input placeholder="До" class="input-filter" />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Numbers Of Features -->
+                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
+                            <!-- Rooms -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Комнаты:
+                              </p>
+                              <div class="flex items-center gap-2.5">
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  1
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
+                                >
+                                  2
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  3
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  4
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  5+
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Number of bedrooms -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Количество спален:
+                              </p>
+                              <div class="flex items-center gap-2.5">
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  1
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
+                                >
+                                  2
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  3
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  4
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  5+
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Number of Bathrooms -->
+                            <div>
+                              <p class="font-medium text-brand-black mb-2.5">
+                                Ванные комнаты:
+                              </p>
+                              <div class="flex items-center gap-2.5">
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  1
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
+                                >
+                                  2
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  3
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  4
+                                </button>
+                                <button
+                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
+                                >
+                                  5+
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Вид: -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Вид:
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                море
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                пляж
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                озеро
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                горы
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                лес или парк
+                              </button>
+                            </div>
+                          </div>
+                          <!-- To the sea -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              До моря:
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                первая линия
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                до 500 м
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                до 1 км
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                до 2 км
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                до 3 км
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Facilities -->
+                          <div>
+                            <p class="font-medium text-brand-black mb-2.5">
+                              Особенности:
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                              <button class="btn-secondary px-4 py-2">
+                                ТВ
+                              </button>
+                              <button
+                                class="btn-secondary !bg-brand-blue !text-white px-4 py-2"
+                              >
+                                парковка
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                мебель
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                терраса
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                Интернет
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                сад
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                бассейн
+                              </button>
+                              <button class="btn-secondary px-4 py-2">
+                                собственный пляж
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Filter Footer -->
+                        <div
+                          class="flex items-center justify-between border-t border-brand-gray-7 py-4 px-7"
+                        >
+                          <button
+                            class="btn-secondary py-3 px-6 !bg-brand-blue !text-white"
+                          >
+                            Показать 367
+                          </button>
+                          <button class="btn-secondary py-3 px-6">
+                            Сбросить
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                     <div class="flex items-center gap-2.5">
                       <button
-                        class="w-1/2 sm:w-auto flex items-center justify-center gap-2.5 border bg-brand-gray-8 border-brand-gray-8 text-brand-black rounded-lg hover:rounded-full hover:bg-brand-gray-7 hover:transition-all hover:duration-300 py-3 px-3"
+                        class="btn-secondary w-1/2 sm:w-auto gap-2.5 border bg-brand-gray-8 border-brand-gray-8 py-3 px-3"
                       >
                         <span>
                           <svg
@@ -1337,7 +2220,7 @@
                         <span>На карте</span>
                       </button>
                       <button
-                        class="primary-btn w-1/2 sm:w-auto flex sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-3 px-7"
+                        class="btn-primary w-1/2 sm:w-auto flex sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-3 px-7"
                       >
                         <span>
                           <svg
@@ -1416,7 +2299,7 @@
                 class="input-hover input-focus w-full py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
                 placeholder="E-mail"
               />
-              <button class="secondary-btn w-full">Оставить заявку</button>
+              <button class="btn-orange w-full">Оставить заявку</button>
               <!-- <textarea
               id="interest"
               class="w-full h-36 py-3 px-5 text-brand-gray-4 rounded-lg outline-none border border-brand-gray-6"
@@ -1427,7 +2310,7 @@
           <!-- Hero Need -->
           <div class="md:pl-2">
             <div
-              class="lg:hidden sm:flex items-center justify-between space-y-4 sm:space-y-0 text-center sm:text-start p-5 relative z-20 bg-white rounded-10"
+              class="lg:hidden sm:flex items-center justify-between space-y-4 sm:space-y-0 text-center sm:text-start p-5 relative z-10 bg-white rounded-10"
             >
               <div class="text-sm space-y-1">
                 <h4 class="font-bold">Нужна помощь в выборе объекта?</h4>
@@ -1435,7 +2318,7 @@
                   Оставьте заявку и наш менеджер свяжется с вами.
                 </p>
               </div>
-              <button class="secondary-btn w-full sm:w-auto px-6">
+              <button class="btn-orange w-full sm:w-auto px-6">
                 Оставить заявку
               </button>
             </div>
@@ -1730,7 +2613,7 @@
                   </p>
                 </div>
               </div>
-              <button class="primary-btn font-medium w-56 mt-5">
+              <button class="btn-primary font-medium w-56 mt-5">
                 Выбрать недвижимость
               </button>
             </div>
@@ -4260,7 +5143,7 @@
                   </p>
                 </div>
               </div>
-              <button class="primary-btn font-medium w-56 mt-5">
+              <button class="btn-primary font-medium w-56 mt-5">
                 Выбрать недвижимость
               </button>
             </div>
@@ -4521,7 +5404,7 @@
                     class="input-hover input-focus w-full md:flex-1 py-3 px-5 lg:px-5 lg:py-4 border border-brand-gray-6 rounded-lg outline-none text-lg"
                   />
                   <button
-                    class="primary-btn w-full md:w-auto bg-brand-blue hover:bg-brand-primary-hover text-white font-medium py-3 md:py-3.5 lg:py-[1.0625rem] px-7 lg:px-10 rounded-lg"
+                    class="btn-primary w-full md:w-auto bg-brand-blue hover:bg-brand-primary-hover text-white font-medium py-3 md:py-3.5 lg:py-[1.0625rem] px-7 lg:px-10 rounded-lg"
                   >
                     Оставить заявку
                   </button>
@@ -4742,7 +5625,7 @@
                       >Introduzca su nombre</span
                     >
                   </label>
-                  <button class="block primary-btn h-auto px-5">
+                  <button class="block btn-primary h-auto px-5">
                     Подписаться
                   </button>
                 </form>
@@ -5567,7 +6450,7 @@
                   class="input-error w-full py-3 px-4 rounded-lg border border-brand-gray-6 outline-none text-sm"
                   placeholder="E-mail"
                 />
-                <button class="primary-btn w-full px-5">Подписаться</button>
+                <button class="btn-primary w-full px-5">Подписаться</button>
               </form>
             </div>
           </div>
