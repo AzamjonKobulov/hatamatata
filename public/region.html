@@ -864,12 +864,54 @@
     <!-- Main -->
     <main class="mt-20 lg:mt-[8.75rem]">
       <!-- Hero Section -->
-      <div class="px-4">
+      <div class="px-4 pb-5">
+        <!-- Path -->
+        <div
+          class="max-w-base mx-auto flex items-center gap-1.5 text-sm text-brand-gray-3"
+        >
+          <p>Главная</p>
+          <span
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.66602 3.33398L10.3327 8.00065L5.66602 12.6673"
+                stroke="#9EA5B3"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <p>Недвижимость в Турции</p>
+          <span
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.66602 3.33398L10.3327 8.00065L5.66602 12.6673"
+                stroke="#9EA5B3"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <p>Стамбул</p>
+        </div>
         <div
           style="
             background-image: url('./assets/images/banners/main-banner-3.png');
           "
-          class="max-w-base mx-auto relative bg-no-repeat bg-cover flex flex-col lg:flex-row gap-5 rounded-10 before:absolute before:inset-0 before:bg-[#1D232F]/60 before:rounded-10 px-4 p-10 lg:pl-30"
+          class="max-w-base mx-auto relative bg-no-repeat bg-cover flex flex-col lg:flex-row gap-5 rounded-10 before:absolute before:inset-0 before:bg-[#1D232F]/60 before:rounded-10 px-4 p-10 lg:pl-30 mt-5"
         >
           <div
             class="flex-1 flex flex-col justify-between relative z-20 md:pl-2.5 pb-1 space-y-5"
@@ -2756,28 +2798,1018 @@
                 </p>
               </div>
               <!-- Forms -->
-              <div class="lg:hidden lg:w-80 space-y-2.5">
+              <div class="w-full lg:hidden space-y-5">
+                <!-- Need Consultant Form  -->
                 <div
-                  class="border border-brand-gray-7 bg-brand-gray-9 rounded-10 p-5 space-y-5"
+                  class="p-5 space-y-3.5 relative z-20 bg-brand-gray-9 border border-brand-gray-7 rounded-10"
                 >
-                  <h4 class="text-lg font-medium text-center">
-                    Подписка на уведомления
-                  </h4>
-                  <form action="#" class="space-y-4">
+                  <h3 class="text-lg font-bold text-center leading-7">
+                    Наши менеджеры помогут с выбором объекта
+                  </h3>
+                  <div class="flex items-center gap-2.5">
+                    <div
+                      class="w-[3.75rem] h-[3.75rem] shrink-0 rounded-full overflow-hidden"
+                    >
+                      <img
+                        src="./assets/images/avatar.png"
+                        alt="Avatar"
+                        class="w-full h-full"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Полина Ряшницева</h4>
+                      <p class="text-xs text-brand-gray-3">
+                        Менеджер по продаже недвижимости в Аликанте
+                      </p>
+                    </div>
+                  </div>
+                  <form
+                    action="#"
+                    class="grid sm:grid-cols-2 lg:grid-cols-1 gap-2.5"
+                  >
+                    <input
+                      type="text"
+                      id="name"
+                      class="input-hover input-focus w-full py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                      placeholder="Имя"
+                    />
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      class="input-hover input-focus w-full py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                      placeholder="+7"
+                    />
                     <input
                       type="email"
-                      class="w-full border border-brand-6 rounded-lg outline-none py-3 px-4"
+                      id="email"
+                      class="input-hover sm:col-span-2 lg:col-span-1 input-focus w-full py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
                       placeholder="E-mail"
                     />
-                    <button class="btn-primary w-full py-3">Подписаться</button>
-                    <p
-                      class="md:text-center text-xs lg:text-[0.625rem] leading-4 text-brand-gray-3"
+                    <textarea
+                      id="interest"
+                      class="sm:col-span-2 lg:col-span-1 w-full h-32 py-3 px-5 text-brand-gray-4 resize-none rounded-lg outline-none border border-brand-gray-6"
+                      placeholder="Что вас интересует"
+                    ></textarea>
+                    <button
+                      class="sm:col-span-2 lg:col-span-1 btn-orange w-full"
                     >
-                      Я согласен с правилами обработки персональных данных и
-                      политикой конфиденциальности
-                    </p>
+                      Оставить заявку
+                    </button>
                   </form>
                 </div>
+                <!-- Advertisements -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-1 gap-30">
+                  <div class="space-y-2.5">
+                    <div class="relative">
+                      <img
+                        src="./assets/images/afi-park.png"
+                        alt="Afi Park"
+                        class="w-full aspect-square object-cover"
+                      />
+                      <span
+                        class="w-[1.125rem] h-[1.125rem] absolute top-0 right-1 text-center text-white bg-black"
+                      >
+                        !
+                      </span>
+                    </div>
+                    <div>
+                      <h5 class="font-medium">Готовый ЖК «Сердце Одинцово»</h5>
+                      <p class="text-brand-gray-3 text-sm mt-1">
+                        Квартиры с ключами в самом центре Одинцово. Доступна вся
+                        инфраструктура города. 8 минут пешком до МЦД.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="space-y-2.5">
+                    <div class="relative">
+                      <img
+                        src="./assets/images/buildings.png"
+                        alt="Building"
+                        class="w-full aspect-square object-cover"
+                      />
+                      <span
+                        class="w-[1.125rem] h-[1.125rem] absolute top-0 right-1 text-center text-white bg-black"
+                      >
+                        !
+                      </span>
+                    </div>
+                    <div>
+                      <h5 class="font-medium">Готовый ЖК «Сердце Одинцово»</h5>
+                      <p class="text-brand-gray-3 text-sm mt-1">
+                        Квартиры с ключами в самом центре Одинцово. Доступна вся
+                        инфраструктура города. 8 минут пешком до МЦД.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- News -->
+          <div class="lg:hidden bg-brand-gray-9 py-50 mt-50 md:mt-60">
+            <div
+              class="max-w-base mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-30 px-4"
+            >
+              <div class="md:col-span-2 lg:col-span-1 space-y-4">
+                <h4 class="font-bold text-xl md:text-2xl">Популярное</h4>
+                <div
+                  class="space-y-4 mt-5 relative after:absolute after:inset-0 after:bg-design-linear-bg"
+                >
+                  <div class="rounded-lg overflow-hidden">
+                    <img
+                      src="./assets/images/linear-bg-design.png"
+                      alt=""
+                      class="absolute w-full bottom-0"
+                    />
+                    <img
+                      src="./assets/images/vnj-in-turkey.png"
+                      alt="VNJ in Turkey"
+                      class="w-full h-full"
+                    />
+                  </div>
+                  <div class="absolute bottom-0 p-5 text-white">
+                    <h4 class="font-medium text-xl lg:leading-7">
+                      БВНЖ в Турции
+                    </h4>
+                    <div class="flex items-center gap-4 text-sm mt-1.5">
+                      <span>26 июля</span>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#DADBDF"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#DADBDF"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Email Form -->
+                <div
+                  class="hidden lg:block p-5 border border-brand-gray-7 bg-white space-y-4 rounded-10"
+                >
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 shrink-0 rounded-full bg-brand-orange/5 grid place-content-center"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9.99826H15.0013"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 9.99826H15.0013"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 6.9963H15.0013"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 6.9963H15.0013"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <rect
+                          x="6"
+                          y="6.99609"
+                          width="3.00125"
+                          height="3.00125"
+                          rx="0.5"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <rect
+                          x="6"
+                          y="6.99609"
+                          width="3.00125"
+                          height="3.00125"
+                          rx="0.5"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M6 13.5002H15.0037"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M6 13.5002H15.0037"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15.0037 17.0022H6"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15.0037 17.0022H6"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="font-medium">
+                      Подпишитесь на новостную рассылку от Hatamatata.ru!
+                    </h4>
+                  </div>
+                  <form action="#" class="flex items-start gap-4">
+                    <label for="">
+                      <input
+                        type="email"
+                        class="w-full py-3 px-4 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                        placeholder="E-mail"
+                      />
+                    </label>
+                    <button class="block btn-primary h-auto px-5">
+                      Подписаться
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div>
+                <!-- Button & Link -->
+                <div class="flex items-center justify-between gap-5">
+                  <!-- Button -->
+                  <div class="flex items-center gap-5">
+                    <button class="font-bold text-xl md:text-2xl">
+                      Статьи
+                    </button>
+                  </div>
+                  <!-- Link -->
+                  <a
+                    href="#"
+                    class="text-brand-blue font-medium flex items-center gap-1.5 hover:underline"
+                  >
+                    <span>Все статьи</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#10C4D2"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#196CCD"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#1059E7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="divide-y">
+                  <!-- News Articles -->
+                  <div class="relative rounded-lg overflow-hidden">
+                    <div
+                      class="space-y-4 mt-5 relative after:absolute after:inset-0 after:bg-design-linear-bg"
+                    >
+                      <div class="rounded-lg overflow-hidden h-64">
+                        <img
+                          src="./assets/images/linear-bg-design.png"
+                          alt=""
+                          class="absolute w-full bottom-0"
+                        />
+                        <img
+                          src="./assets/images/immigration.png"
+                          alt="VNJ in Turkey"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="absolute bottom-0 p-5 text-white">
+                        <h4 class="font-medium text-xl lg:leading-7">
+                          Иммиграция в Турции
+                        </h4>
+                        <div class="flex items-center gap-4 text-sm mt-1.5">
+                          <span>26 июля</span>
+                          <div class="flex items-center gap-1.5">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span>2537</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Банк хотел забрать квартиру у жены умершего заемщика,
+                      несмотря на наличие страховки
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>26 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Назван самый популярный тип индивидуального дома
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Топ квартир, поступивших в продажу только вчера
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <!-- Button & Link -->
+                <div class="flex items-center justify-between gap-5">
+                  <!-- Button -->
+                  <div class="flex items-center gap-5">
+                    <button class="font-bold text-xl md:text-2xl">
+                      Статьи
+                    </button>
+                  </div>
+                  <!-- Link -->
+                  <a
+                    href="#"
+                    class="text-brand-blue font-medium flex items-center gap-1.5 hover:underline"
+                  >
+                    <span>Все статьи</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#10C4D2"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#196CCD"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#1059E7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="divide-y">
+                  <!-- News Articles -->
+                  <div class="relative rounded-lg overflow-hidden">
+                    <div
+                      class="space-y-4 mt-5 relative after:absolute after:inset-0 after:bg-design-linear-bg"
+                    >
+                      <div class="rounded-lg overflow-hidden h-64">
+                        <img
+                          src="./assets/images/linear-bg-design.png"
+                          alt=""
+                          class="absolute w-full bottom-0"
+                        />
+                        <img
+                          src="./assets/images/immigration-2.png"
+                          alt="VNJ in Turkey"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="absolute bottom-0 p-5 text-white">
+                        <h4 class="font-medium text-xl lg:leading-7">
+                          Иммиграция в Турции
+                        </h4>
+                        <div class="flex items-center gap-4 text-sm mt-1.5">
+                          <span>26 июля</span>
+                          <div class="flex items-center gap-1.5">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span>2537</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Банк хотел забрать квартиру у жены умершего заемщика,
+                      несмотря на наличие страховки
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>26 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Назван самый популярный тип индивидуального дома
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Топ квартир, поступивших в продажу только вчера
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email Form -->
+              <div
+                class="md:col-span-2 lg:hidden p-5 border border-brand-gray-7 bg-white space-y-4 rounded-10"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-orange/5 grid place-content-center"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 9.99826H15.0013"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 9.99826H15.0013"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 6.9963H15.0013"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 6.9963H15.0013"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="6"
+                        y="6.99609"
+                        width="3.00125"
+                        height="3.00125"
+                        rx="0.5"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="6"
+                        y="6.99609"
+                        width="3.00125"
+                        height="3.00125"
+                        rx="0.5"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6 13.5002H15.0037"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6 13.5002H15.0037"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.0037 17.0022H6"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.0037 17.0022H6"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h4 class="font-medium">
+                    Подпишитесь на новостную рассылку от Hatamatata.ru!
+                  </h4>
+                </div>
+                <form action="#" class="flex flex-col items-center gap-4">
+                  <input
+                    type="text"
+                    class="input-error w-full py-3 px-4 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                    placeholder="E-mail"
+                  />
+                  <button class="btn-primary w-full px-5">Подписаться</button>
+                </form>
               </div>
             </div>
           </div>
@@ -3966,7 +4998,7 @@
                 </div>
               </div>
               <!-- Forms -->
-              <div class="lg:w-80 space-y-5">
+              <div class="hidden lg:block w-80 space-y-5">
                 <!-- Need Consultant Form  -->
                 <div
                   class="p-5 space-y-3.5 relative z-20 bg-brand-gray-9 border border-brand-gray-7 rounded-10"
@@ -4073,11 +5105,919 @@
               </div>
             </div>
           </div>
+          <!-- News -->
+          <div class="hidden lg:block bg-brand-gray-9 py-50 mt-50 md:mt-60">
+            <div
+              class="max-w-base mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-30 px-4"
+            >
+              <div class="md:col-span-2 lg:col-span-1 space-y-4">
+                <h4 class="font-bold text-xl md:text-2xl">Популярное</h4>
+                <div
+                  class="space-y-4 mt-5 relative after:absolute after:inset-0 after:bg-design-linear-bg"
+                >
+                  <div class="rounded-lg overflow-hidden">
+                    <img
+                      src="./assets/images/linear-bg-design.png"
+                      alt=""
+                      class="absolute w-full bottom-0"
+                    />
+                    <img
+                      src="./assets/images/vnj-in-turkey.png"
+                      alt="VNJ in Turkey"
+                      class="w-full h-full"
+                    />
+                  </div>
+                  <div class="absolute bottom-0 p-5 text-white">
+                    <h4 class="font-medium text-xl lg:leading-7">
+                      БВНЖ в Турции
+                    </h4>
+                    <div class="flex items-center gap-4 text-sm mt-1.5">
+                      <span>26 июля</span>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#DADBDF"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#DADBDF"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Email Form -->
+                <div
+                  class="hidden lg:block p-5 border border-brand-gray-7 bg-white space-y-4 rounded-10"
+                >
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 shrink-0 rounded-full bg-brand-orange/5 grid place-content-center"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9.99826H15.0013"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 9.99826H15.0013"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 6.9963H15.0013"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 6.9963H15.0013"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <rect
+                          x="6"
+                          y="6.99609"
+                          width="3.00125"
+                          height="3.00125"
+                          rx="0.5"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <rect
+                          x="6"
+                          y="6.99609"
+                          width="3.00125"
+                          height="3.00125"
+                          rx="0.5"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M6 13.5002H15.0037"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M6 13.5002H15.0037"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15.0037 17.0022H6"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15.0037 17.0022H6"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                          stroke="#F27317"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                          stroke="#F45F0B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="font-medium">
+                      Подпишитесь на новостную рассылку от Hatamatata.ru!
+                    </h4>
+                  </div>
+                  <form action="#" class="flex items-start gap-4">
+                    <label for="">
+                      <input
+                        type="email"
+                        class="w-full py-3 px-4 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                        placeholder="E-mail"
+                      />
+                    </label>
+                    <button class="block btn-primary h-auto px-5">
+                      Подписаться
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div>
+                <!-- Button & Link -->
+                <div class="flex items-center justify-between gap-5">
+                  <!-- Button -->
+                  <div class="flex items-center gap-5">
+                    <button class="font-bold text-xl md:text-2xl">
+                      Статьи
+                    </button>
+                  </div>
+                  <!-- Link -->
+                  <a
+                    href="#"
+                    class="text-brand-blue font-medium flex items-center gap-1.5 hover:underline"
+                  >
+                    <span>Все статьи</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#10C4D2"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#196CCD"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#1059E7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="divide-y">
+                  <!-- News Articles -->
+                  <div class="relative rounded-lg overflow-hidden">
+                    <div
+                      class="space-y-4 mt-5 relative after:absolute after:inset-0 after:bg-design-linear-bg"
+                    >
+                      <div class="rounded-lg overflow-hidden h-64">
+                        <img
+                          src="./assets/images/linear-bg-design.png"
+                          alt=""
+                          class="absolute w-full bottom-0"
+                        />
+                        <img
+                          src="./assets/images/immigration.png"
+                          alt="VNJ in Turkey"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="absolute bottom-0 p-5 text-white">
+                        <h4 class="font-medium text-xl lg:leading-7">
+                          Иммиграция в Турции
+                        </h4>
+                        <div class="flex items-center gap-4 text-sm mt-1.5">
+                          <span>26 июля</span>
+                          <div class="flex items-center gap-1.5">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span>2537</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Банк хотел забрать квартиру у жены умершего заемщика,
+                      несмотря на наличие страховки
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>26 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Назван самый популярный тип индивидуального дома
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Топ квартир, поступивших в продажу только вчера
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <!-- Button & Link -->
+                <div class="flex items-center justify-between gap-5">
+                  <!-- Button -->
+                  <div class="flex items-center gap-5">
+                    <button class="font-bold text-xl md:text-2xl">
+                      Статьи
+                    </button>
+                  </div>
+                  <!-- Link -->
+                  <a
+                    href="#"
+                    class="text-brand-blue font-medium flex items-center gap-1.5 hover:underline"
+                  >
+                    <span>Все статьи</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#10C4D2"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#196CCD"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#1059E7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="divide-y">
+                  <!-- News Articles -->
+                  <div class="relative rounded-lg overflow-hidden">
+                    <div
+                      class="space-y-4 mt-5 relative after:absolute after:inset-0 after:bg-design-linear-bg"
+                    >
+                      <div class="rounded-lg overflow-hidden h-64">
+                        <img
+                          src="./assets/images/linear-bg-design.png"
+                          alt=""
+                          class="absolute w-full bottom-0"
+                        />
+                        <img
+                          src="./assets/images/immigration-2.png"
+                          alt="VNJ in Turkey"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="absolute bottom-0 p-5 text-white">
+                        <h4 class="font-medium text-xl lg:leading-7">
+                          Иммиграция в Турции
+                        </h4>
+                        <div class="flex items-center gap-4 text-sm mt-1.5">
+                          <span>26 июля</span>
+                          <div class="flex items-center gap-1.5">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                                stroke="#DADBDF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span>2537</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Банк хотел забрать квартиру у жены умершего заемщика,
+                      несмотря на наличие страховки
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>26 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Назван самый популярный тип индивидуального дома
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <a
+                      href="#"
+                      class="text-brand-primary-normal hover:underline"
+                    >
+                      Топ квартир, поступивших в продажу только вчера
+                    </a>
+                    <!-- News Info -->
+                    <div
+                      class="flex items-center gap-4 text-brand-gray-3 mt-1.5"
+                    >
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>25 июля</p>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                            stroke="#747887"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>2537</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email Form -->
+              <div
+                class="md:col-span-2 lg:hidden p-5 border border-brand-gray-7 bg-white space-y-4 rounded-10"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-orange/5 grid place-content-center"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 9.99826H15.0013"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 9.99826H15.0013"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 6.9963H15.0013"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 6.9963H15.0013"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="6"
+                        y="6.99609"
+                        width="3.00125"
+                        height="3.00125"
+                        rx="0.5"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="6"
+                        y="6.99609"
+                        width="3.00125"
+                        height="3.00125"
+                        rx="0.5"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6 13.5002H15.0037"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6 13.5002H15.0037"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.0037 17.0022H6"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.0037 17.0022H6"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                        stroke="#F27317"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.0023 7.99818H19.0028C20.1078 7.99818 21.0036 8.89398 21.0036 9.99901V19.0028C21.0036 20.1078 20.1078 21.0036 19.0028 21.0036H4.99693C3.8919 21.0036 2.99609 20.1078 2.99609 19.0028V4.99693C2.99609 3.8919 3.8919 2.99609 4.99693 2.99609H16.0015C17.1065 2.99609 18.0023 3.8919 18.0023 4.99693V21.0036"
+                        stroke="#F45F0B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h4 class="font-medium">
+                    Подпишитесь на новостную рассылку от Hatamatata.ru!
+                  </h4>
+                </div>
+                <form action="#" class="flex flex-col items-center gap-4">
+                  <input
+                    type="text"
+                    class="input-error w-full py-3 px-4 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                    placeholder="E-mail"
+                  />
+                  <button class="btn-primary w-full px-5">Подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
 
       <!-- FAQ & Real Estate -->
-      <section class="px-4 -mt-10 sm:mt-0">
+      <section class="px-4 -mt-10">
         <!-- Accordion Container -->
         <div class="max-w-4xl mx-auto m-8 overflow-hidden md:px-6 space-y-2.5">
           <!-- Tab 1 -->
