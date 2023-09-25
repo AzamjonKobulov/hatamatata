@@ -2073,6 +2073,30 @@
                   </svg>
                 </button>
               </div>
+              <!-- Forms -->
+              <div class="lg:hidden lg:w-80 space-y-2.5">
+                <div
+                  class="border border-brand-gray-7 bg-brand-gray-9 rounded-10 p-5 space-y-5"
+                >
+                  <h4 class="text-lg font-medium text-center">
+                    Подписка на уведомления
+                  </h4>
+                  <form action="#" class="space-y-4">
+                    <input
+                      type="email"
+                      class="w-full border border-brand-6 rounded-lg outline-none py-3 px-4"
+                      placeholder="E-mail"
+                    />
+                    <button class="btn-primary w-full py-3">Подписаться</button>
+                    <p
+                      class="md:text-center text-xs lg:text-[0.625rem] leading-4 text-brand-gray-3"
+                    >
+                      Я согласен с правилами обработки персональных данных и
+                      политикой конфиденциальности
+                    </p>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -3860,10 +3884,9 @@
                     </button>
                   </div>
                 </div>
-
                 <!-- Pagination -->
                 <div
-                  class="hidden lg:flex max-w-xl mx-auto items-center gap-2.5 sm:gap-0 justify-between sm:px-1.5 mt-10"
+                  class="hidden lg:flex max-w-xl mx-auto items-center gap-2.5 sm:gap-0 justify-between sm:px-1.5 mt-30 md:mt-10"
                 >
                   <!-- Prev Button -->
                   <button
@@ -3951,7 +3974,257 @@
                 </div>
               </div>
               <!-- Forms -->
-              <div class="lg:w-80 space-y-2.5"></div>
+              <div class="lg:w-80 space-y-5">
+                <!-- Email Form -->
+                <div
+                  class="border border-brand-gray-7 bg-brand-gray-9 rounded-10 p-5 space-y-5"
+                >
+                  <h4 class="text-lg font-medium text-center">
+                    Подписка на уведомления
+                  </h4>
+                  <form action="#" class="space-y-4">
+                    <input
+                      type="email"
+                      class="w-full border border-brand-6 rounded-lg outline-none py-3 px-4"
+                      placeholder="E-mail"
+                    />
+                    <button class="btn-primary w-full py-3">Подписаться</button>
+                    <p
+                      class="md:text-center text-xs lg:text-[0.625rem] leading-4 text-brand-gray-3"
+                    >
+                      Я согласен с правилами обработки персональных данных и
+                      политикой конфиденциальности
+                    </p>
+                  </form>
+                </div>
+                <!-- Need Consultant Form  -->
+                <div
+                  class="p-5 space-y-3.5 relative z-20 bg-brand-gray-9 border border-brand-gray-7 rounded-10"
+                >
+                  <h3 class="text-lg font-bold text-center leading-7">
+                    Наши менеджеры помогут с выбором объекта
+                  </h3>
+                  <div class="flex items-center gap-2.5">
+                    <div
+                      class="w-[3.75rem] h-[3.75rem] shrink-0 rounded-full overflow-hidden"
+                    >
+                      <img
+                        src="./assets/images/avatar.png"
+                        alt="Avatar"
+                        class="w-full h-full"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Полина Ряшницева</h4>
+                      <p class="text-xs text-brand-gray-3">
+                        Менеджер по продаже недвижимости в Аликанте
+                      </p>
+                    </div>
+                  </div>
+                  <form
+                    action="#"
+                    class="grid sm:grid-cols-2 lg:grid-cols-1 gap-2.5"
+                  >
+                    <input
+                      type="text"
+                      id="name"
+                      class="input-hover input-focus w-full py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                      placeholder="Имя"
+                    />
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      class="input-hover input-focus w-full py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                      placeholder="+7"
+                    />
+                    <input
+                      type="email"
+                      id="email"
+                      class="input-hover sm:col-span-2 lg:col-span-1 input-focus w-full py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                      placeholder="E-mail"
+                    />
+                    <textarea
+                      id="interest"
+                      class="sm:col-span-2 lg:col-span-1 w-full h-32 py-3 px-5 text-brand-gray-4 resize-none rounded-lg outline-none border border-brand-gray-6"
+                      placeholder="Что вас интересует"
+                    ></textarea>
+                    <button
+                      class="sm:col-span-2 lg:col-span-1 btn-orange w-full"
+                    >
+                      Оставить заявку
+                    </button>
+                  </form>
+                </div>
+                <!-- Passports -->
+                <div
+                  class="grid sm:grid-cols-3 lg:block gap-2.5 sm:gap-5 lg:gap-2.5 border border-brand-gray-7 text-center bg-brand-gray-9 rounded-10 p-5 lg:space-y-2.5"
+                >
+                  <div class="h-52 sm:col-span-1 rounded-lg overflow-hidden">
+                    <img
+                      src="./assets/images/passports.png"
+                      alt="passports"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div
+                    class="sm:col-span-2 lg:cols-span-1 sm:py-4 lg:py-0 text-center sm:text-start lg:text-center sm:space-y-2.5 flex flex-col justify-center"
+                  >
+                    <h4 class="text-lg font-medium">
+                      Гражданство и ВНЖ за инвестиции в недвижимость
+                    </h4>
+                    <p class="text-brand-gray-2 text-sm">
+                      ВНЖ выдается на один год с возможностью продления, пока
+                      инвестор остается собственником жилья. ВНЖ могут получить
+                      все члены семьи инвестора.
+                    </p>
+                  </div>
+                  <button
+                    class="sm:col-span-3 lg:cols-span-1 btn-primary w-full py-3"
+                  >
+                    Подписаться
+                  </button>
+                </div>
+                <!-- Articles -->
+                <div
+                  class="grid sm:grid-cols-2 lg:block sm:gap-x-2.5 lg:gap-x-0 divide-y divide-brand-gray-7"
+                >
+                  <h1 class="sm:col-span-2 text-lg font-bold pb-5">
+                    Полезные статьи о <br class="sm:hidden" />
+                    недвижимости Турции
+                  </h1>
+                  <!-- Article Items -->
+                  <div class="col-span-1 flex items-center gap-4 py-5">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden">
+                      <img
+                        src="./assets/images/meals.png"
+                        alt="Meals"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="flex-1 space-y-1">
+                      <h4 class="font-bold">Кухня в Турции</h4>
+                      <p class="text-sm text-brand-gray-2">
+                        Необходимо обратить внимание на Турцию и ее недвижимость
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Article Items -->
+                  <div class="col-span-1 flex items-center gap-4 py-5">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden">
+                      <img
+                        src="./assets/images/work.png"
+                        alt="Meals"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="flex-1 space-y-1">
+                      <h4 class="font-bold">Работа + Профессии</h4>
+                      <p class="text-sm text-brand-gray-2">
+                        Необходимо обратить внимание на Турцию и ее недвижимость
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Article Items -->
+                  <div class="col-span-1 flex items-center gap-4 py-5">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden">
+                      <img
+                        src="./assets/images/docs.png"
+                        alt="Meals"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="flex-1 space-y-1">
+                      <h4 class="font-bold">Документы Посольства</h4>
+                      <p class="text-sm text-brand-gray-2">
+                        Необходимо обратить внимание на Турцию и ее недвижимость
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Article Items -->
+                  <div class="col-span-1 flex items-center gap-4 py-5">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden">
+                      <img
+                        src="./assets/images/business.png"
+                        alt="Meals"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="flex-1 space-y-1">
+                      <h4 class="font-bold">Бизнес Инвестиции</h4>
+                      <p class="text-sm text-brand-gray-2">
+                        Необходимо обратить внимание на Турцию и ее недвижимость
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Article Items -->
+                  <div class="col-span-1 flex items-center gap-4 py-5">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden">
+                      <img
+                        src="./assets/images/medicine.png"
+                        alt="Meals"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="flex-1 space-y-1">
+                      <h4 class="font-bold">Медицина</h4>
+                      <p class="text-sm text-brand-gray-2">
+                        Необходимо обратить внимание на Турцию и ее недвижимость
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Article Items -->
+                  <div class="col-span-1 flex items-center gap-4 py-5">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden">
+                      <img
+                        src="./assets/images/education.png"
+                        alt="Meals"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="flex-1 space-y-1">
+                      <h4 class="font-bold">Образование</h4>
+                      <p class="text-sm text-brand-gray-2">
+                        Необходимо обратить внимание на Турцию и ее недвижимость
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-brand-blue font-medium flex items-center gap-1.5 hover:underline py-5"
+                  >
+                    <span>Посмотреть все</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#10C4D2"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#196CCD"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                        stroke="#1059E7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
