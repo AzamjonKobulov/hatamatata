@@ -62,7 +62,7 @@
 
 /* Buttons Styles */
 .btn-primary {
-  @apply flex items-center justify-center gap-2.5 font-medium bg-brand-blue hover:bg-brand-primary-hover hover:rounded-xl transition-all duration-200 text-sm text-white rounded-lg py-3;
+  @apply flex items-center justify-center gap-2.5 font-medium bg-brand-blue hover:bg-brand-primary-hover hover:rounded-xl transition-all duration-200 text-white rounded-lg py-3;
 }
 
 .btn-secondary {
