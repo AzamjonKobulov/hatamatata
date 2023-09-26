@@ -2935,6 +2935,10 @@ video {
     gap: 1.25rem;
   }
 
+  .lg\:gap-\[0\.9375rem\] {
+    gap: 0.9375rem;
+  }
+
   .lg\:gap-x-0 {
     -moz-column-gap: 0px;
          column-gap: 0px;
@@ -3140,6 +3144,10 @@ video {
 
   .lg\:leading-7 {
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-\[38px\] {
+    line-height: 38px;
   }
 }
 
