@@ -82,7 +82,7 @@
 
 /* Input Focus */
 .input-focus {
-  @apply focus:rounded-full focus:border-brand-primary-normal focus:font-medium focus:placeholder:font-normal focus:border-[0.0938rem] focus:transition-all focus:duration-300;
+  @apply focus:font-medium focus:placeholder:font-normal focus:border-[0.0938rem] focus:border-brand-primary-normal focus:transition-all focus:duration-300;
 }
 
 /* Input Error */
