@@ -967,6 +967,9 @@ video {
 .max-w-xl {
   max-width: 36rem;
 }
+.max-w-md {
+  max-width: 28rem;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1501,6 +1504,9 @@ video {
 }
 .pb-9 {
   padding-bottom: 2.25rem;
+}
+.pr-7 {
+  padding-right: 1.75rem;
 }
 .text-center {
   text-align: center;
@@ -2360,6 +2366,10 @@ video {
     max-width: 36rem;
   }
 
+  .md\:max-w-sm {
+    max-width: 24rem;
+  }
+
   .md\:flex-1 {
     flex: 1 1 0%;
   }
@@ -2797,6 +2807,10 @@ video {
     max-width: 56rem;
   }
 
+  .lg\:max-w-md {
+    max-width: 28rem;
+  }
+
   .lg\:flex-1 {
     flex: 1 1 0%;
   }
@@ -3111,6 +3125,14 @@ video {
     display: flex;
   }
 
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -3134,5 +3156,9 @@ video {
 
   .xl\:pr-\[6\.625rem\] {
     padding-right: 6.625rem;
+  }
+
+  .xl\:pr-16 {
+    padding-right: 4rem;
   }
 }
