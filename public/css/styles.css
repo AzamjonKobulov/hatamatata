@@ -858,11 +858,11 @@ video {
 .h-screen {
   height: 100vh;
 }
-.h-\[1\.3125rem\] {
-  height: 1.3125rem;
-}
 .max-h-0 {
   max-height: 0px;
+}
+.max-h-\[20\.75rem\] {
+  max-height: 20.75rem;
 }
 .max-h-\[24\.75rem\] {
   max-height: 24.75rem;
@@ -906,6 +906,9 @@ video {
 .w-60 {
   width: 3.75rem;
 }
+.w-7 {
+  width: 1.75rem;
+}
 .w-8 {
   width: 2rem;
 }
@@ -918,11 +921,11 @@ video {
 .w-\[1\.125rem\] {
   width: 1.125rem;
 }
-.w-\[1\.6875rem\] {
-  width: 1.6875rem;
-}
 .w-\[15\.625rem\] {
   width: 15.625rem;
+}
+.w-\[18\.875rem\] {
+  width: 18.875rem;
 }
 .w-\[3\.75rem\] {
   width: 3.75rem;
@@ -941,9 +944,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-7 {
-  width: 1.75rem;
 }
 .min-w-\[5\.5rem\] {
   min-width: 5.5rem;
@@ -1688,8 +1688,6 @@ video {
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(16 89 231 / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2160,11 +2158,6 @@ video {
     padding-right: 4rem;
   }
 
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .sm\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -2338,14 +2331,6 @@ video {
     height: auto;
   }
 
-  .md\:h-\[1\.9375rem\] {
-    height: 1.9375rem;
-  }
-
-  .md\:h-\[31px\] {
-    height: 31px;
-  }
-
   .md\:w-10 {
     width: 2.5rem;
   }
@@ -2376,14 +2361,6 @@ video {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-\[2\.5625rem\] {
-    width: 2.5625rem;
-  }
-
-  .md\:w-\[41px\] {
-    width: 41px;
   }
 
   .md\:max-w-md {
@@ -2803,14 +2780,6 @@ video {
     height: auto;
   }
 
-  .lg\:h-\[2\.875rem\] {
-    height: 2.875rem;
-  }
-
-  .lg\:h-\[46px\] {
-    height: 46px;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2827,16 +2796,12 @@ video {
     width: 20rem;
   }
 
+  .lg\:w-\[18\.875rem\] {
+    width: 18.875rem;
+  }
+
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[3\.8125rem\] {
-    width: 3.8125rem;
-  }
-
-  .lg\:w-\[61px\] {
-    width: 61px;
   }
 
   .lg\:max-w-2xl {
@@ -2925,10 +2890,6 @@ video {
 
   .lg\:gap-24 {
     gap: 6rem;
-  }
-
-  .lg\:gap-4 {
-    gap: 1rem;
   }
 
   .lg\:gap-5 {
