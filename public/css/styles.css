@@ -658,9 +658,6 @@ video {
 .z-50 {
   z-index: 50;
 }
-.z-\[60\] {
-  z-index: 60;
-}
 .\!col-span-3 {
   grid-column: span 3 / span 3 !important;
 }
@@ -698,6 +695,9 @@ video {
 }
 .-mt-10 {
   margin-top: -2.5rem;
+}
+.-mt-30 {
+  margin-top: -1.875rem;
 }
 .-mt-50 {
   margin-top: -3.125rem;
@@ -894,6 +894,9 @@ video {
 .h-\[6\.25rem\] {
   height: 6.25rem;
 }
+.h-\[8\.75rem\] {
+  height: 8.75rem;
+}
 .h-\[9\.375rem\] {
   height: 9.375rem;
 }
@@ -905,6 +908,9 @@ video {
 }
 .h-screen {
   height: 100vh;
+}
+.h-40 {
+  height: 10rem;
 }
 .max-h-0 {
   max-height: 0px;
@@ -968,6 +974,9 @@ video {
 }
 .w-\[1\.125rem\] {
   width: 1.125rem;
+}
+.w-\[11\.25rem\] {
+  width: 11.25rem;
 }
 .w-\[15\.625rem\] {
   width: 15.625rem;
@@ -1063,6 +1072,12 @@ video {
 }
 .resize-none {
   resize: none;
+}
+.scroll-m-0 {
+  scroll-margin: 0px;
+}
+.scroll-m-3 {
+  scroll-margin: 0.75rem;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1242,6 +1257,9 @@ video {
   --tw-divide-opacity: 1;
   border-color: rgb(234 235 239 / var(--tw-divide-opacity));
 }
+.place-self-center {
+  place-self: center;
+}
 .overflow-auto {
   overflow: auto;
 }
@@ -1379,6 +1397,18 @@ video {
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
+.bg-\[\#58CE66\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 206 102 / var(--tw-bg-opacity));
+}
+.bg-\[\#4195C3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 149 195 / var(--tw-bg-opacity));
+}
+.bg-\[\#645EA7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 94 167 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -1510,6 +1540,10 @@ video {
   padding-top: 0.6875rem;
   padding-bottom: 0.6875rem;
 }
+.py-\[3\.4375rem\] {
+  padding-top: 3.4375rem;
+  padding-bottom: 3.4375rem;
+}
 .\!pt-0 {
   padding-top: 0px !important;
 }
@@ -1530,6 +1564,9 @@ video {
 }
 .pb-20 {
   padding-bottom: 5rem;
+}
+.pb-28 {
+  padding-bottom: 7rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
@@ -1596,15 +1633,6 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pb-\[5\.625rem\] {
-  padding-bottom: 5.625rem;
-}
-.pb-24 {
-  padding-bottom: 6rem;
-}
-.pb-28 {
-  padding-bottom: 7rem;
 }
 .text-center {
   text-align: center;
@@ -1714,6 +1742,9 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
 }
 .opacity-10 {
   opacity: 0.1;
@@ -2426,6 +2457,10 @@ input[type='checkbox']:checked {
     margin-top: 3.75rem;
   }
 
+  .md\:mt-50 {
+    margin-top: 3.125rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2470,12 +2505,20 @@ input[type='checkbox']:checked {
     height: 1.875rem;
   }
 
+  .md\:h-40 {
+    height: 10rem;
+  }
+
   .md\:h-8 {
     height: 2rem;
   }
 
   .md\:h-\[3\.375rem\] {
     height: 3.375rem;
+  }
+
+  .md\:h-\[7\.5rem\] {
+    height: 7.5rem;
   }
 
   .md\:h-auto {
@@ -2510,12 +2553,20 @@ input[type='checkbox']:checked {
     width: 2rem;
   }
 
+  .md\:w-\[12\.5rem\] {
+    width: 12.5rem;
+  }
+
   .md\:w-\[4\.125rem\] {
     width: 4.125rem;
   }
 
   .md\:w-\[43\.75rem\] {
     width: 43.75rem;
+  }
+
+  .md\:w-\[7\.5rem\] {
+    width: 7.5rem;
   }
 
   .md\:w-auto {
@@ -2745,6 +2796,11 @@ input[type='checkbox']:checked {
     padding-bottom: 1.25rem;
   }
 
+  .md\:py-50 {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+
   .md\:py-60 {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
@@ -2843,6 +2899,10 @@ input[type='checkbox']:checked {
     line-height: 1.75rem;
   }
 
+  .md\:text-28 {
+    font-size: 1.75rem;
+  }
+
   .md\:leading-10 {
     line-height: 2.5rem;
   }
@@ -2897,6 +2957,14 @@ input[type='checkbox']:checked {
 
   .lg\:row-span-3 {
     grid-row: span 3 / span 3;
+  }
+
+  .lg\:-mt-2 {
+    margin-top: -0.5rem;
+  }
+
+  .lg\:-mt-2\.5 {
+    margin-top: -0.625rem;
   }
 
   .lg\:ml-0 {
@@ -3144,6 +3212,10 @@ input[type='checkbox']:checked {
     padding: 1.875rem;
   }
 
+  .lg\:p-60 {
+    padding: 3.75rem;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -3247,10 +3319,6 @@ input[type='checkbox']:checked {
 
   .lg\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .lg\:pb-9 {
-    padding-bottom: 2.25rem;
   }
 
   .lg\:text-center {
