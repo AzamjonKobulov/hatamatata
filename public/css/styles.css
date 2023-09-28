@@ -1597,6 +1597,15 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
+.pb-\[5\.625rem\] {
+  padding-bottom: 5.625rem;
+}
+.pb-24 {
+  padding-bottom: 6rem;
+}
+.pb-28 {
+  padding-bottom: 7rem;
+}
 .text-center {
   text-align: center;
 }
@@ -3238,6 +3247,10 @@ input[type='checkbox']:checked {
 
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pb-9 {
+    padding-bottom: 2.25rem;
   }
 
   .lg\:text-center {
