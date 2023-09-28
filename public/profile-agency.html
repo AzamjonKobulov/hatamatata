@@ -863,13 +863,68 @@
 
     <!-- Main -->
     <main class="mt-20 lg:mt-[8.75rem]">
+      <!-- Path -->
+      <div
+        class="max-w-base mx-auto flex flex-wrap items-center gap-1.5 text-sm text-brand-gray-3 px-4"
+      >
+        <p>Главная</p>
+        <span
+          ><svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.66602 3.33398L10.3327 8.00065L5.66602 12.6673"
+              stroke="#9EA5B3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+        <p>Агентство</p>
+        <span
+          ><svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.66602 3.33398L10.3327 8.00065L5.66602 12.6673"
+              stroke="#9EA5B3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+        <p>Renaissance Estate</p>
+      </div>
       <!-- Hero Section -->
-      <div class="max-w-base mx-auto px-4">
+      <div class="max-w-base mx-auto px-4 mt-5">
+        <!-- Titles & Cost -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2.5"
+        >
+          <div class="space-y-1">
+            <h3
+              class="max-w-sm md:max-w-md lg:w-auto text-xl md:text-2xl lg:text-28 font-bold lg:leading-[2.375rem]"
+            >
+              Renaissance Estate
+            </h3>
+            <p class="text-sm text-brand-gray-2">Турция, Antalya Alanya</p>
+          </div>
+        </div>
         <div
           style="
             background-image: url('./assets/images/main-banners/main-banner-1.png');
           "
-          class="relative bg-no-repeat bg-cover flex flex-col lg:flex-row gap-5 rounded-10 before:absolute before:inset-0 before:bg-[#1D232F]/60 before:rounded-10 px-5 py-[3.4375rem] md:py-50 md:px-10 lg:p-60"
+          class="relative bg-no-repeat bg-cover flex flex-col lg:flex-row gap-5 rounded-10 before:absolute before:inset-0 before:bg-[#1D232F]/60 before:rounded-10 px-5 py-[3.4375rem] md:py-50 md:px-10 lg:p-60 mt-5"
         >
           <div
             class="dropdown-list-shadow relative z-30 w-[11.25rem] h-[8.75rem] md:w-[12.5rem] md:h-40 grid place-content-center p-2.5 rounded-xl bg-white"
@@ -1148,6 +1203,275 @@
               </div>
             </div>
             <button class="btn-orange py-3 px-30">Cвязаться с компанией</button>
+          </div>
+          <!-- Fixed Contact When Scrolling -->
+          <div
+            class="hidden nav-shadow fixed top-0 z-50 inset-x-0 bg-white py-4"
+          >
+            <div
+              class="max-w-base mx-auto px-4 lg:flex items-center justify-between space-y-30 lg:space-y-0"
+            >
+              <div
+                class="max-w-3xl w-full md:flex items-center justify-between space-y-5 md:space-y-0"
+              >
+                <!-- Phone -->
+                <div class="flex items-center gap-4">
+                  <div>
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.7606 17.7067C18.1525 20.6059 20.0501 23.3232 22.4533 25.7264C24.8564 28.1295 27.5737 30.0271 30.473 31.4191C30.7223 31.5388 30.847 31.5987 31.0048 31.6447C31.5655 31.8082 32.254 31.6908 32.7289 31.3507C32.8625 31.255 32.9768 31.1407 33.2055 30.9121C33.9047 30.2129 34.2543 29.8633 34.6058 29.6347C35.9316 28.7727 37.6408 28.7727 38.9666 29.6347C39.3181 29.8633 39.6677 30.2129 40.3669 30.9121L40.7567 31.3018C41.8196 32.3647 42.351 32.8962 42.6397 33.4669C43.2138 34.6021 43.2138 35.9426 42.6397 37.0777C42.351 37.6485 41.8196 38.1799 40.7567 39.2428L40.4414 39.5581C39.3822 40.6173 38.8525 41.1469 38.1325 41.5514C37.3335 42.0003 36.0925 42.323 35.176 42.3203C34.3501 42.3178 33.7857 42.1576 32.6568 41.8372C26.59 40.1153 20.8653 36.8663 16.0893 32.0903C11.3134 27.3144 8.06441 21.5897 6.34247 15.5229C6.02206 14.394 5.86185 13.8295 5.85939 13.0036C5.85666 12.0872 6.17939 10.8462 6.62823 10.0472C7.03273 9.32714 7.56235 8.79751 8.62159 7.73827L8.93686 7.423C9.99975 6.36011 10.5312 5.82867 11.102 5.53998C12.2371 4.96584 13.5776 4.96584 14.7127 5.53998C15.2835 5.82867 15.8149 6.36011 16.8778 7.423L17.2676 7.81273C17.9668 8.51195 18.3164 8.86155 18.5449 9.21311C19.4069 10.5389 19.4069 12.2481 18.5449 13.5738C18.3164 13.9254 17.9668 14.275 17.2676 14.9742C17.0389 15.2028 16.9246 15.3171 16.8289 15.4508C16.4889 15.9256 16.3715 16.6141 16.535 17.1749C16.581 17.3326 16.6408 17.4573 16.7606 17.7067Z"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.7606 17.7067C18.1525 20.6059 20.0501 23.3232 22.4533 25.7264C24.8564 28.1295 27.5737 30.0271 30.473 31.4191C30.7223 31.5388 30.847 31.5987 31.0048 31.6447C31.5655 31.8082 32.254 31.6908 32.7289 31.3507C32.8625 31.255 32.9768 31.1407 33.2055 30.9121C33.9047 30.2129 34.2543 29.8633 34.6058 29.6347C35.9316 28.7727 37.6408 28.7727 38.9666 29.6347C39.3181 29.8633 39.6677 30.2129 40.3669 30.9121L40.7567 31.3018C41.8196 32.3647 42.351 32.8962 42.6397 33.4669C43.2138 34.6021 43.2138 35.9426 42.6397 37.0777C42.351 37.6485 41.8196 38.1799 40.7567 39.2428L40.4414 39.5581C39.3822 40.6173 38.8525 41.1469 38.1325 41.5514C37.3335 42.0003 36.0925 42.323 35.176 42.3203C34.3501 42.3178 33.7857 42.1576 32.6568 41.8372C26.59 40.1153 20.8653 36.8663 16.0893 32.0903C11.3134 27.3144 8.06441 21.5897 6.34247 15.5229C6.02206 14.394 5.86185 13.8295 5.85939 13.0036C5.85666 12.0872 6.17939 10.8462 6.62823 10.0472C7.03273 9.32714 7.56235 8.79751 8.62159 7.73827L8.93686 7.423C9.99975 6.36011 10.5312 5.82867 11.102 5.53998C12.2371 4.96584 13.5776 4.96584 14.7127 5.53998C15.2835 5.82867 15.8149 6.36011 16.8778 7.423L17.2676 7.81273C17.9668 8.51195 18.3164 8.86155 18.5449 9.21311C19.4069 10.5389 19.4069 12.2481 18.5449 13.5738C18.3164 13.9254 17.9668 14.275 17.2676 14.9742C17.0389 15.2028 16.9246 15.3171 16.8289 15.4508C16.4889 15.9256 16.3715 16.6141 16.535 17.1749C16.581 17.3326 16.6408 17.4573 16.7606 17.7067Z"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-brand-gray-3">Телефон</p>
+                    <a href="#" class="font-medium">+90 501 008 02 79</a>
+                  </div>
+                </div>
+                <!-- Website -->
+                <div class="flex items-center gap-4">
+                  <div>
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="24"
+                        cy="24"
+                        rx="8"
+                        ry="18"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <ellipse
+                        cx="24"
+                        cy="24"
+                        rx="8"
+                        ry="18"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M41 18H7"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M41 18H7"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="36"
+                        height="36"
+                        rx="18"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="36"
+                        height="36"
+                        rx="18"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M41 30H7"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M41 30H7"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-brand-gray-3">Веб-сайт</p>
+                    <a href="#" class="font-medium text-brand-blue underline"
+                      >renaissance-estate.com</a
+                    >
+                  </div>
+                </div>
+                <!-- Language -->
+                <div class="flex items-center gap-4">
+                  <div>
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.998 6.98953C19.998 5.33199 21.3418 3.98828 22.9993 3.98828H41.0068C42.6643 3.98828 44.008 5.33199 44.008 6.98953V18.9945C44.008 20.6521 42.6643 21.9958 41.0068 21.9958H39.0764V25.9954C39.0764 26.4001 38.8327 26.7649 38.4589 26.9197C38.085 27.0745 37.6547 26.989 37.3686 26.7028L32.6616 21.9958H22.9993C21.3418 21.9958 19.998 20.6521 19.998 18.9945V6.98953Z"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.998 6.98953C19.998 5.33199 21.3418 3.98828 22.9993 3.98828H41.0068C42.6643 3.98828 44.008 5.33199 44.008 6.98953V18.9945C44.008 20.6521 42.6643 21.9958 41.0068 21.9958H39.0764V25.9954C39.0764 26.4001 38.8327 26.7649 38.4589 26.9197C38.085 27.0745 37.6547 26.989 37.3686 26.7028L32.6616 21.9958H22.9993C21.3418 21.9958 19.998 20.6521 19.998 18.9945V6.98953Z"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M26.0014 27.999V36.1308C26.0014 37.7883 24.6576 39.132 23.0001 39.132H15.2736L10.695 43.7107C10.4089 43.9968 9.97858 44.0823 9.60476 43.9275C9.23094 43.7726 8.9872 43.4079 8.98719 43.0033V39.132H6.99344C5.33589 39.132 3.99219 37.7883 3.99219 36.1308V23.9973C3.99219 22.3398 5.33589 20.9961 6.99344 20.9961H13.9964"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M26.0014 27.999V36.1308C26.0014 37.7883 24.6576 39.132 23.0001 39.132H15.2736L10.695 43.7107C10.4089 43.9968 9.97858 44.0823 9.60476 43.9275C9.23094 43.7726 8.9872 43.4079 8.98719 43.0033V39.132H6.99344C5.33589 39.132 3.99219 37.7883 3.99219 36.1308V23.9973C3.99219 22.3398 5.33589 20.9961 6.99344 20.9961H13.9964"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.5664 15.352H35.4182"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.5664 15.352H35.4182"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M36.0053 16.9526L33.1241 8.94922H30.8832L28.002 16.9526"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M36.0053 16.9526L33.1241 8.94922H30.8832L28.002 16.9526"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.9965 28.6095V26.0625"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.9965 28.6095V26.0625"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.9966 28.6094C14.9944 30.8111 13.8814 32.8631 12.0371 34.0656"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.9966 28.6094C14.9944 30.8111 13.8814 32.8631 12.0371 34.0656"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.9556 34.0657C16.1113 32.8631 14.9983 30.8111 14.9961 28.6094"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.9556 34.0657C16.1113 32.8631 14.9983 30.8111 14.9961 28.6094"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.4971 28.6098H11.4941"
+                        stroke="#F27317"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.4971 28.6098H11.4941"
+                        stroke="#F45F0B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-brand-gray-3">Язык общения</p>
+                    <a href="#" class="font-medium">Русский, английский</a>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-orange py-3 px-30">
+                Cвязаться с компанией
+              </button>
+            </div>
           </div>
           <!-- Texts -->
           <div class="space-y-5 mt-10 md:mt-50 px-4">
