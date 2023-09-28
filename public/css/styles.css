@@ -1002,6 +1002,9 @@ video {
 .w-\[15\.9375rem\] {
   width: 15.9375rem;
 }
+.w-\[19\.0625rem\] {
+  width: 19.0625rem;
+}
 .min-w-\[5\.5rem\] {
   min-width: 5.5rem;
 }
@@ -3232,6 +3235,11 @@ input[type='checkbox']:checked {
   .lg\:py-\[1\.0625rem\] {
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+  }
+
+  .lg\:px-\[0\.6875rem\] {
+    padding-left: 0.6875rem;
+    padding-right: 0.6875rem;
   }
 
   .lg\:pb-30 {
