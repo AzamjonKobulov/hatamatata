@@ -2233,6 +2233,14 @@ input[type='checkbox']:checked {
     gap: 2rem;
   }
 
+  .sm\:gap-12 {
+    gap: 3rem;
+  }
+
+  .sm\:gap-16 {
+    gap: 4rem;
+  }
+
   .sm\:gap-x-10 {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
@@ -3098,6 +3106,10 @@ input[type='checkbox']:checked {
 
   .lg\:gap-\[3\.4375rem\] {
     gap: 3.4375rem;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:gap-x-0 {
