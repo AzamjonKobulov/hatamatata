@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Login & Registration Poppup -->
+    <!-- Poppup Overlay -->
+    <div
+      class="fixed z-50 inset-0 grid place-content-center bg-brand-black/30 px-4"
+    >
+      <!-- Poppup -->
+      <div
+        class="relative w-[21.5625rem] sm:w-auto sm:max-w-lg bg-white rounded-2xl mx-4 pb-30"
+      >
+        <!-- Poppus X button -->
+        <button class="absolute top-3 sm:top-4 right-4 ml-auto">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17 7L7 17M7 7L17 17"
+              stroke="#505462"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <!-- Header -->
+        <div
+          class="items flex items-center gap-5 text-lg font-medium text-brand-gray-3 border-b border-b-brand-gray-7 px-6 pt-30 md:pl-30 pr-[4.25rem] overflow-auto"
+        >
+          <!-- Tabs -->
+          <button
+            class="text-brand-blue pb-4 border-b-2 border-b-brand-blue whitespace-nowrap"
+          >
+            Вход
+          </button>
+          <button class="pb-4 whitespace-nowrap">Регистрация</button>
+          <button class="pb-4 whitespace-nowrap">Регистрация компании</button>
+        </div>
+        <!-- Body -->
+        <form class="p-30 space-y-5">
+          <!-- Inputs -->
+          <label for="email" class="flex flex-col space-y-1.5">
+            <span class="text-sm">E-mail*</span>
+            <input
+              id="email"
+              type="email"
+              class="input-hover input-focus border border-brand-gray-6 rounded-lg outline-none py-3 px-5"
+              placeholder="Введите ваш e-mail"
+            />
+          </label>
+          <label for="password" class="relative flex flex-col space-y-1.5">
+            <span class="text-sm">Пароль*</span>
+            <div class="relative">
+              <input
+                id="password"
+                type="password"
+                class="input-hover input-focus w-full border border-brand-gray-6 rounded-lg outline-none py-3 pl-5 pr-50"
+                placeholder="Пароль"
+              />
+              <span class="absolute right-5 top-3.5">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0007 15.8339C9.29906 15.8339 8.59656 15.6855 7.91406 15.4214"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.4017 10.3906C15.825 13.3065 12.9125 15.834 10 15.834"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.8984 7.43359C16.4743 8.10776 16.9859 8.84276 17.4009 9.61026C17.5318 9.85276 17.5318 10.1469 17.4009 10.3894"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4.16602 15.8346L15.8327 4.16797"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.14375 11.8562C7.11875 10.8312 7.11875 9.16875 8.14375 8.14375C9.16875 7.11875 10.8312 7.11875 11.8562 8.14375"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.2031 5.79797C12.914 4.80047 11.4565 4.16797 9.99979 4.16797C7.08729 4.16797 4.17479 6.69547 2.59813 9.61214C2.46729 9.85464 2.46729 10.1488 2.59813 10.3913C3.38646 11.8488 4.50813 13.2088 5.79646 14.2055"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </label>
+          <!-- Save & Password Setting -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <!-- Checkbox -->
+              <label for="remember" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="remember" />
+                  <span class="absolute top-[0.2188rem] left-[0.2188rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span class="text-base">Запомнить меня</span>
+              </label>
+            </div>
+            <a href="#" class="text-brand-orange">Забыли пароль?</a>
+          </div>
+          <!-- Button -->
+          <button class="btn-primary py-3 w-full">Войти</button>
+        </form>
+        <!-- Socials -->
+        <div class="px-6 md:px-30">
+          <div class="flex items-center gap-5">
+            <div class="h-px w-full bg-brand-gray-7"></div>
+            <p class="text-brand-gray-3 whitespace-nowrap">
+              или через социальные сети
+            </p>
+            <div class="h-px w-full bg-brand-gray-7"></div>
+          </div>
+          <div class="flex items-center justify-center gap-4 mt-5">
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full grid place-content-center bg-[#5181B8]"
+            >
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="34" height="34" rx="17" fill="#5181B8" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M27.8126 11.7123C27.9703 11.1869 27.8126 10.8008 27.0627 10.8008H24.5829C23.9524 10.8008 23.6619 11.1343 23.5042 11.5022C23.5042 11.5022 22.2431 14.5758 20.4566 16.5724C19.8787 17.1503 19.616 17.334 19.3007 17.334C19.1431 17.334 18.9149 17.1503 18.9149 16.625V11.7123C18.9149 11.0817 18.732 10.8008 18.2064 10.8008H14.3097C13.9158 10.8008 13.6788 11.0934 13.6788 11.3708C13.6788 11.9686 14.5718 12.1064 14.664 13.7876V17.4394C14.664 18.24 14.5194 18.3853 14.2041 18.3853C13.3635 18.3853 11.3188 15.2976 10.1058 11.7649C9.86812 11.0782 9.62971 10.8008 8.99596 10.8008H6.51621C5.80772 10.8008 5.66602 11.1343 5.66602 11.5022C5.66602 12.159 6.50683 15.4167 9.58047 19.725C11.6298 22.6671 14.5166 24.2623 17.1437 24.2623C18.7201 24.2623 18.9149 23.908 18.9149 23.2978V21.074C18.9149 20.3655 19.0643 20.2242 19.5632 20.2242C19.9313 20.2242 20.5617 20.408 22.033 21.8266C23.7143 23.5077 23.9913 24.2623 24.9372 24.2623H27.4169C28.1254 24.2623 28.4797 23.908 28.2753 23.2089C28.0517 22.5121 27.249 21.5014 26.1838 20.303C25.6058 19.6198 24.7388 18.8842 24.4763 18.5165C24.1084 18.0436 24.2135 17.8335 24.4763 17.4134C24.4763 17.4134 27.4973 13.1574 27.8126 11.7124V11.7123Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full grid place-content-center bg-[#4267B2]"
+            >
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="34" height="34" rx="17" fill="#4267B2" />
+                <path
+                  d="M18.1346 28.3345V17.9952H21.6051L22.1247 13.9657H18.1346V11.3931C18.1346 10.2265 18.4586 9.43141 20.1316 9.43141L22.2654 9.43042V5.82657C21.8962 5.77764 20.6297 5.66797 19.1562 5.66797C16.0798 5.66797 13.9736 7.54569 13.9736 10.9942V13.9659H10.4941V17.9953H13.9735V28.3346L18.1346 28.3345Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full grid place-content-center">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="34" height="34" rx="17" fill="#EE8208" />
+                <path
+                  d="M16.9998 9.09642C18.3354 9.09642 19.4219 10.1829 19.4219 11.5185C19.4219 12.853 18.3351 13.9395 16.9998 13.9395C15.665 13.9395 14.5782 12.853 14.5782 11.5185C14.578 10.1826 15.6652 9.09642 16.9998 9.09642ZM16.9998 17.3663C20.2261 17.3663 22.8498 14.7434 22.8498 11.5185C22.8498 8.29195 20.2263 5.66797 16.9998 5.66797C13.7738 5.66797 11.1498 8.29223 11.1498 11.5185C11.1498 14.7434 13.7738 17.3663 16.9998 17.3663ZM19.3664 22.1379C20.5699 21.8638 21.7183 21.3883 22.7632 20.7314C23.1479 20.4894 23.4207 20.1045 23.5216 19.6613C23.6224 19.2182 23.5431 18.7531 23.3011 18.3684C23.1814 18.1777 23.0253 18.0125 22.8417 17.8823C22.6581 17.752 22.4507 17.6592 22.2312 17.6091C22.0117 17.5591 21.7845 17.5528 21.5625 17.5907C21.3406 17.6285 21.1283 17.7097 20.9378 17.8297C18.5412 19.3364 15.4566 19.3353 13.062 17.8297C12.8715 17.7097 12.6592 17.6284 12.4373 17.5906C12.2154 17.5527 11.9882 17.559 11.7688 17.609C11.5493 17.6591 11.3418 17.7519 11.1583 17.8822C10.9747 18.0125 10.8186 18.1777 10.699 18.3684C10.4569 18.753 10.3775 19.218 10.4782 19.6611C10.5789 20.1043 10.8515 20.4893 11.236 20.7314C12.2809 21.3881 13.4291 21.8636 14.6323 22.1379L11.362 25.4087C11.0407 25.7302 10.8602 26.1662 10.8602 26.6208C10.8603 27.0753 11.041 27.5113 11.3625 27.8326C11.6839 28.154 12.1199 28.3345 12.5745 28.3344C13.0291 28.3344 13.465 28.1537 13.7864 27.8322L16.9992 24.6188L20.214 27.8325C20.373 27.9917 20.5617 28.118 20.7695 28.2041C20.9773 28.2903 21.2001 28.3346 21.4251 28.3346C21.65 28.3346 21.8728 28.2903 22.0806 28.2041C22.2884 28.118 22.4772 27.9917 22.6361 27.8325C22.7955 27.6736 22.922 27.4847 23.0083 27.2768C23.0946 27.0689 23.139 26.846 23.139 26.6209C23.139 26.3958 23.0946 26.1729 23.0083 25.965C22.922 25.757 22.7955 25.5682 22.6361 25.4093L19.3664 22.1379Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
