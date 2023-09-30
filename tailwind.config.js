@@ -51,6 +51,9 @@ module.exports = {
         'design-linear-bg':
           'linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%)',
       },
+      zIndex: {
+        60: 60,
+      },
     },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],

@@ -66,7 +66,7 @@
 }
 
 .btn-secondary {
-  @apply flex items-center justify-center text-brand-black bg-brand-gray-8 rounded-lg hover:rounded-full hover:bg-brand-gray-7 hover:transition-all hover:duration-300;
+  @apply flex items-center justify-center text-brand-black bg-brand-gray-8 rounded-lg hover:rounded-xl hover:bg-brand-gray-7 hover:transition-all hover:duration-300;
 }
 
 .btn-orange {
@@ -87,7 +87,7 @@
 
 /* Input Error */
 .input-error {
-  @apply border-[0.0938rem] border-brand-red rounded-full font-medium text-brand-black;
+  @apply border-brand-red font-medium text-brand-black;
 }
 
 /* Navbar Shadow */
@@ -136,6 +136,10 @@
 /* width */
 .items::-webkit-scrollbar {
   height: 0;
+}
+
+.scrollbar::-webkit-scrollbar {
+  height: 100;
 }
 
 .design-linear-bg {
