@@ -10,7 +10,7 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="lg:shadow-nav-shadow fixed top-0 lg:z-auto inset-x-0 z-50 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4"
+      class="lg:shadow-nav-shadow fixed top-0 lg:z-auto inset-x-0 z-50 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4 xl:pr-20"
     >
       <!-- Mobile Menu Button & Mobile Logo -->
       <div class="flex lg:hidden items-center gap-5">
@@ -647,16 +647,17 @@
             </div>
           </div>
 
-          <!-- Company Information -->
+          <!-- Company Socials -->
           <div
-            class="grid md:grid-cols-2 md:gap-2.5 xl:gap-5 border-b border-brand-gray-7 pb-30 md:pb-10"
+            class="space-y-5 py-30 px-5 md:p-10 border-b border-brand-gray-7"
           >
-            <div class="py-30 px-5 md:p-10">
-              <p class="text-brand-black font-bold text-lg md:text-2xl">
-                Данные компании
-              </p>
-
-              <form action="#" class="mt-5 flex flex-col space-y-4">
+            <p class="text-brand-black font-bold text-lg md:text-2xl">
+              Данные компании
+            </p>
+            <div
+              class="grid md:grid-cols-2 gap-5 md:gap-50 xl:gap-24 gap-y-5 xl:gap-y-30"
+            >
+              <form action="#" class="flex flex-col space-y-4">
                 <label for="" class="space-y-1">
                   <span class="text-brand-black text-sm"
                     >Название компании*</span
@@ -703,10 +704,8 @@
                   </button>
                 </label>
               </form>
-            </div>
-            <div class="py-30 px-5 md:p-10">
-              <form action="#" class="flex flex-col space-y-4 mt-12">
-                <label for="" class="space-y-1 -mt-24 md:mt-0">
+              <form action="#" class="flex flex-col space-y-4">
+                <label for="" class="space-y-1">
                   <span class="text-brand-black text-sm"
                     >Название компании*</span
                   >
@@ -805,9 +804,7 @@
                   />
                 </label>
               </form>
-            </div>
-            <div class="md:col-span-2 px-5 md:px-10 md:-mt-5">
-              <form action="#">
+              <form action="#" class="md:col-span-2">
                 <label for="" class="space-y-1">
                   <span>Описание*</span>
                   <textarea
@@ -820,102 +817,98 @@
           </div>
 
           <!-- Company Socials -->
-          <div class="space-y-5">
+          <div class="space-y-5 py-30 px-5 md:p-10">
             <p class="text-brand-black font-bold text-lg md:text-2xl">
               Социальные сети
             </p>
             <div
-              class="grid md:grid-cols-2 md:gap-2.5 xl:gap-5 border-b border-brand-gray-7 pb-30 md:pb-10"
+              class="grid md:grid-cols-2 gap-5 md:gap-50 xl:gap-24 pb-30 md:pb-10"
             >
-              <div class="py-30 px-5 md:p-10">
-                <form action="#" class="flex flex-col space-y-4">
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Whatsapp</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите номер тел"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">OK</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Instagram</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Twitter</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Skype</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="+7 (___) ___-__-__"
-                    />
-                  </label>
-                </form>
-              </div>
-              <div class="py-30 px-5 md:p-10">
-                <form action="#" class="mt-5 flex flex-col space-y-4">
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Telegram</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">VK</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Viber</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Facebook</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <label for="" class="space-y-1">
-                    <span class="text-brand-black text-sm">Youtube</span>
-                    <input
-                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                      type="text"
-                      placeholder="Введите профиль"
-                    />
-                  </label>
-                  <button class="btn-primary py-3 px-5">Сохранить</button>
-                </form>
-              </div>
+              <form action="#" class="flex flex-col space-y-4">
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Whatsapp</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите номер тел"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">OK</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Instagram</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Twitter</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Skype</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </label>
+              </form>
+              <form action="#" class="flex flex-col space-y-4">
+                <label for="" class="space-y-1 w-full">
+                  <span class="text-brand-black text-sm">Telegram</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">VK</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Viber</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Facebook</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Youtube</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Введите профиль"
+                  />
+                </label>
+                <button class="btn-primary py-3 px-5">Сохранить</button>
+              </form>
             </div>
           </div>
         </div>
