@@ -613,301 +613,310 @@
 
     <!-- Main -->
     <main
-      class="min-h-screen bg-brand-gray-9 py-30 px-4 md:py-10 md:px-5 lg:py-8 lg:pl-10 xl:pr-20 mt-[4.75rem] lg:ml-280"
+      class="min-h-screen bg-brand-gray-9 py-30 px-4 md:py-10 md:px-5 lg:py-8 lg:pl-10 xl:pr-20 mt-[4.5rem] lg:ml-280"
     >
       <div class="min-h-screen rounded-10 bg-white">
-        <!-- Company Profile -->
-        <div class="py-30 px-5 md:p-10 border-b border-brand-gray-7">
-          <div class="flex flex-col sm:flex-row gap-5 gap-y-4">
-            <!-- Company Photo -->
-            <div
-              href="#"
-              class="w-[6.25rem] h-[6.25rem] bg-brand-gray-8 rounded-full overflow-hidden"
-            >
-              <img
-                src="./assets/dashboard/header/user.svg"
-                alt="user banner"
-                class="w-full h-full object-cover"
-              />
-            </div>
-
-            <!-- Company Info -->
-            <div>
-              <p class="text-2xl font-bold text-brand-black">Фото</p>
-              <p class="text-sm md:text-base text-brand-gray-2 mt-2.5">
-                Ваша фотография, на которой четко видно лицо.
-              </p>
-              <button
-                class="rounded-lg border border-brand-blue hover:bg-brand-blue text-brand-blue hover:text-white hover:rounded-10 font-medium px-5 py-3 mt-2.5"
-              >
-                Загрузить логотип компании
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Company Information -->
-        <div
-          class="grid md:grid-cols-2 md:gap-2.5 xl:gap-5 border-b border-brand-gray-7 pb-30 md:pb-10"
-        >
-          <div class="py-30 px-5 md:p-10">
-            <p class="text-brand-black font-bold text-lg md:text-2xl">
-              Данные компании
-            </p>
-
-            <form action="#" class="mt-5 flex flex-col space-y-4">
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Название компании*</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Название компании"
-                />
-              </label>
-
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Телефон*</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="+7 (___) ___-__-__"
-                />
-              </label>
-
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Тип компании*</span>
-                <button
-                  class="w-full flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
-                >
-                  <span> Агентство </span>
-                  <span>
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.8333 7.5L9.99992 13.3333L4.16659 7.5"
-                        stroke="#747887"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </label>
-            </form>
-          </div>
-          <div class="py-30 px-5 md:p-10">
-            <form action="#" class="flex flex-col space-y-4 mt-12">
-              <label for="" class="space-y-1 -mt-24 md:mt-0">
-                <span class="text-brand-black text-sm">Название компании*</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="http://...."
-                />
-              </label>
-
-              <!-- Checkboxes -->
+        <div class="max-w-4xl">
+          <!-- Company Profile -->
+          <div class="py-30 px-5 md:p-10 border-b border-brand-gray-7">
+            <div class="flex flex-col sm:flex-row gap-5 gap-y-4">
+              <!-- Company Photo -->
               <div
-                class="flex items-center justify-between text-sm font-medium pt-3 md:py-7"
+                href="#"
+                class="w-[6.25rem] h-[6.25rem] bg-brand-gray-8 rounded-full overflow-hidden"
               >
-                <!-- Checkbox -->
-                <label for="whatsapp" class="flex cursor-pointer gap-2.5">
-                  <div class="relative">
-                    <input type="checkbox" id="whatsapp" />
-                    <span class="absolute z-0 top-[0.2188rem] left-[0.2188rem]">
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <span> Whatsapp </span>
-                </label>
-                <!-- Checkbox -->
-                <label for="viber" class="flex cursor-pointer gap-2.5">
-                  <div class="relative">
-                    <input type="checkbox" id="viber" />
-                    <span class="absolute top-[0.2188rem] left-[0.2188rem]">
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <span> Viber </span>
-                </label>
-                <!-- Checkbox -->
-                <label for="telegram" class="flex cursor-pointer gap-2.5">
-                  <div class="relative">
-                    <input type="checkbox" id="telegram" />
-                    <span class="absolute top-[0.2188rem] left-[0.2188rem]">
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <span> Telegram </span>
-                </label>
+                <img
+                  src="./assets/dashboard/header/user.svg"
+                  alt="user banner"
+                  class="w-full h-full object-cover"
+                />
               </div>
 
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Адрес компании</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                />
-              </label>
-            </form>
+              <!-- Company Info -->
+              <div>
+                <p class="text-2xl font-bold text-brand-black">Фото</p>
+                <p class="text-sm md:text-base text-brand-gray-2 mt-2.5">
+                  Ваша фотография, на которой четко видно лицо.
+                </p>
+                <button
+                  class="rounded-lg border border-brand-blue hover:bg-brand-blue text-brand-blue hover:text-white hover:rounded-10 font-medium px-5 py-3 mt-2.5"
+                >
+                  Загрузить логотип компании
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="md:col-span-2 px-5 md:px-10 md:-mt-5">
-            <form action="#">
-              <label for="" class="space-y-1">
-                <span>Описание*</span>
-                <textarea
-                  class="input-hover input-focus w-full resize-none h-48 border border-brand-gray-6 rounded-lg outline-none py-3 px-5"
-                  placeholder="Описание"
-                ></textarea>
-              </label>
-            </form>
-          </div>
-        </div>
 
-        <!-- Company Socials -->
-        <div
-          class="grid md:grid-cols-2 md:gap-2.5 xl:gap-5 border-b border-brand-gray-7 pb-30 md:pb-10"
-        >
-          <div class="py-30 px-5 md:p-10">
+          <!-- Company Information -->
+          <div
+            class="grid md:grid-cols-2 md:gap-2.5 xl:gap-5 border-b border-brand-gray-7 pb-30 md:pb-10"
+          >
+            <div class="py-30 px-5 md:p-10">
+              <p class="text-brand-black font-bold text-lg md:text-2xl">
+                Данные компании
+              </p>
+
+              <form action="#" class="mt-5 flex flex-col space-y-4">
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm"
+                    >Название компании*</span
+                  >
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="Название компании"
+                  />
+                </label>
+
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Телефон*</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </label>
+
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Тип компании*</span>
+                  <button
+                    class="w-full flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+                  >
+                    <span> Агентство </span>
+                    <span>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.8333 7.5L9.99992 13.3333L4.16659 7.5"
+                          stroke="#747887"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </label>
+              </form>
+            </div>
+            <div class="py-30 px-5 md:p-10">
+              <form action="#" class="flex flex-col space-y-4 mt-12">
+                <label for="" class="space-y-1 -mt-24 md:mt-0">
+                  <span class="text-brand-black text-sm"
+                    >Название компании*</span
+                  >
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                    placeholder="http://...."
+                  />
+                </label>
+
+                <!-- Checkboxes -->
+                <div
+                  class="relative z-0 flex items-center justify-between text-sm font-medium pt-3 md:py-7"
+                >
+                  <!-- Checkbox -->
+                  <label for="whatsapp" class="flex cursor-pointer gap-2.5">
+                    <div class="relative">
+                      <input type="checkbox" id="whatsapp" />
+                      <span
+                        class="absolute z-0 top-[0.2188rem] left-[0.2188rem]"
+                      >
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <span> Whatsapp </span>
+                  </label>
+                  <!-- Checkbox -->
+                  <label for="viber" class="flex cursor-pointer gap-2.5">
+                    <div class="relative">
+                      <input type="checkbox" id="viber" />
+                      <span class="absolute top-[0.2188rem] left-[0.2188rem]">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <span> Viber </span>
+                  </label>
+                  <!-- Checkbox -->
+                  <label for="telegram" class="flex cursor-pointer gap-2.5">
+                    <div class="relative">
+                      <input type="checkbox" id="telegram" />
+                      <span class="absolute top-[0.2188rem] left-[0.2188rem]">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <span> Telegram </span>
+                  </label>
+                </div>
+
+                <label for="" class="space-y-1">
+                  <span class="text-brand-black text-sm">Адрес компании</span>
+                  <input
+                    class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                    type="text"
+                  />
+                </label>
+              </form>
+            </div>
+            <div class="md:col-span-2 px-5 md:px-10 md:-mt-5">
+              <form action="#">
+                <label for="" class="space-y-1">
+                  <span>Описание*</span>
+                  <textarea
+                    class="input-hover input-focus w-full resize-none h-48 border border-brand-gray-6 rounded-lg outline-none py-3 px-5"
+                    placeholder="Описание"
+                  ></textarea>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <!-- Company Socials -->
+          <div class="space-y-5">
             <p class="text-brand-black font-bold text-lg md:text-2xl">
               Социальные сети
             </p>
-
-            <form action="#" class="mt-5 flex flex-col space-y-4">
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Telegram</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">VK</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Viber</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Facebook</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Youtube</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <button class="btn-primary py-3 px-5">Сохранить</button>
-            </form>
-          </div>
-          <div class="py-30 px-5 md:p-10">
-            <form action="#" class="flex flex-col space-y-4 mt-12">
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Whatsapp</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите номер тел"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">OK</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Instagram</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Twitter</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="Введите профиль"
-                />
-              </label>
-              <label for="" class="space-y-1">
-                <span class="text-brand-black text-sm">Skype</span>
-                <input
-                  class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
-                  type="text"
-                  placeholder="+7 (___) ___-__-__"
-                />
-              </label>
-            </form>
+            <div
+              class="grid md:grid-cols-2 md:gap-2.5 xl:gap-5 border-b border-brand-gray-7 pb-30 md:pb-10"
+            >
+              <div class="py-30 px-5 md:p-10">
+                <form action="#" class="flex flex-col space-y-4">
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Whatsapp</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите номер тел"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">OK</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Instagram</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Twitter</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Skype</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="+7 (___) ___-__-__"
+                    />
+                  </label>
+                </form>
+              </div>
+              <div class="py-30 px-5 md:p-10">
+                <form action="#" class="mt-5 flex flex-col space-y-4">
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Telegram</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">VK</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Viber</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Facebook</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <label for="" class="space-y-1">
+                    <span class="text-brand-black text-sm">Youtube</span>
+                    <input
+                      class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                      type="text"
+                      placeholder="Введите профиль"
+                    />
+                  </label>
+                  <button class="btn-primary py-3 px-5">Сохранить</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
