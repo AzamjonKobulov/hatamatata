@@ -652,6 +652,9 @@ video {
 .top-full {
   top: 100%;
 }
+.top-20 {
+  top: 5rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -669,6 +672,9 @@ video {
 }
 .z-50 {
   z-index: 50;
+}
+.\!z-40 {
+  z-index: 40 !important;
 }
 .\!col-span-3 {
   grid-column: span 3 / span 3 !important;
@@ -819,6 +825,33 @@ video {
 }
 .mt-\[4\.75rem\] {
   margin-top: 4.75rem;
+}
+.mt-\[77px\] {
+  margin-top: 77px;
+}
+.mt-\[75px\] {
+  margin-top: 75px;
+}
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+.mt-\[76px\] {
+  margin-top: 76px;
+}
+.mt-\[80px\] {
+  margin-top: 80px;
+}
+.mt-\[74px\] {
+  margin-top: 74px;
+}
+.mt-\[73px\] {
+  margin-top: 73px;
+}
+.mt-\[72px\] {
+  margin-top: 72px;
+}
+.mt-\[4\.5rem\] {
+  margin-top: 4.5rem;
 }
 .block {
   display: block;
@@ -3275,6 +3308,10 @@ input[type='checkbox']:checked {
 
   .lg\:top-\[7rem\] {
     top: 7rem;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
   }
 
   .lg\:z-auto {
