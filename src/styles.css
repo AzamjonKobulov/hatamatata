@@ -77,12 +77,12 @@
 
 /* Input Hover */
 .input-hover {
-  @apply hover:border-brand-gray-6 hover:text-brand-gray-3 hover:shadow hover:transition-all hover:duration-300;
+  @apply hover:border-brand-gray-6 hover:shadow hover:transition-all hover:duration-300;
 }
 
 /* Input Focus */
 .input-focus {
-  @apply focus:font-medium focus:placeholder:font-normal focus:border focus:border-brand-primary-normal focus:transition-all focus:duration-300;
+  @apply focus:font-medium focus:placeholder:font-normal focus:border focus:border-brand-blue focus:transition-all focus:duration-300;
 }
 
 /* Input Error */
@@ -134,8 +134,9 @@
 }
 
 /* width */
-.items::-webkit-scrollbar {
+.no-scroll::-webkit-scrollbar {
   height: 0;
+  width: 0;
 }
 
 .scrollbar::-webkit-scrollbar {

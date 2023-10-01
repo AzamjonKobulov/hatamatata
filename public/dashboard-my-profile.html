@@ -10,7 +10,7 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="nav-shadow fixed top-0 inset-x-0 flex items-center justify-between bg-white py-3.5 px-4"
+      class="lg:nav-shadow fixed top-0 z-20 lg:z-auto inset-x-0 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4"
     >
       <!-- Mobile Menu Button & Mobile Logo -->
       <div class="flex lg:hidden items-center gap-5">
@@ -119,13 +119,14 @@
 
     <!-- Sidebar -->
     <aside
-      class="sidebar hidden lg:block w-280 h-screen fixed left-0 top-0 border-r border-brand-gray-7 bg-white space-y-8 px-5 pt-2.5"
+      class="sidebar w-full sm:w-280 hidden lg:block h-screen fixed left-0 top-0 lg:border-r border-brand-gray-7 bg-white space-y-8 px-5 pt-2.5"
     >
       <!-- Logo -->
       <a href="#">
         <img src="./assets/images/logo-dashboard.svg" alt="Logo" />
       </a>
-      <div class="h-screen overflow-auto">
+      <!-- Links -->
+      <div class="no-scroll h-screen overflow-auto">
         <ul class="space-y-2.5">
           <li>
             <a
@@ -182,9 +183,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <p class="font-medium text-sm text-brand-primary-normal">
-                Мой профиль
-              </p>
+              <p class="font-medium text-sm text-brand-blue">Мой профиль</p>
             </a>
           </li>
           <li>
@@ -197,7 +196,7 @@
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                class="stroke-brand-gray-3 group-hover:stroke-brand-primary-normal"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -233,7 +232,7 @@
               </svg>
 
               <p
-                class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
               >
                 Моя недвижимость
               </p>
@@ -250,7 +249,7 @@
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  class="stroke-brand-gray-3 group-hover:stroke-brand-primary-normal"
+                  class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -262,7 +261,7 @@
                 </svg>
 
                 <p
-                  class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+                  class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
                 >
                   Реф статистика
                 </p>
@@ -285,7 +284,7 @@
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                class="stroke-brand-gray-3 group-hover:stroke-brand-primary-normal"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -311,7 +310,7 @@
               </svg>
 
               <p
-                class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
               >
                 Реф программа
               </p>
@@ -330,7 +329,7 @@
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                class="stroke-brand-gray-3 group-hover:stroke-brand-primary-normal"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -342,7 +341,7 @@
               </svg>
 
               <p
-                class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
               >
                 Выйти
               </p>
@@ -354,7 +353,7 @@
 
     <!-- Main -->
     <main
-      class="min-h-screen bg-brand-gray-9 py-30 px-4 md:py-10 md:px-5 lg:py-8 lg:pl-10 lg:pr-20 mt-[4.75rem] lg:ml-280"
+      class="min-h-screen bg-brand-gray-9 py-30 px-4 md:py-10 md:px-5 lg:py-8 lg:pl-10 xl:pr-20 mt-[4.75rem] lg:ml-280"
     >
       <div class="min-h-screen rounded-10 bg-white">
         <!-- User Profile -->
@@ -393,41 +392,37 @@
             Личные данные
           </p>
 
-          <form action="#" class="max-w-lg mt-5">
-            <div>
-              <p class="text-brand-black text-sm">
+          <form action="#" class="max-w-lg mt-5 flex flex-col space-y-4">
+            <label for="" class="space-y-1">
+              <span class="text-brand-black text-sm">
                 Имя и фамилия представителя*
-              </p>
+              </span>
               <input
-                class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
                 type="text"
-                name="name"
-                id="name"
                 placeholder="ФИО"
               />
-            </div>
+            </label>
 
-            <div class="mt-4">
-              <p class="text-brand-black text-sm">E-mail представителя*</p>
+            <label for="" class="space-y-1">
+              <span class="text-brand-black text-sm"
+                >E-mail представителя*</span
+              >
               <input
-                class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
                 type="email"
-                name="name"
-                id="name"
                 placeholder="E-mail"
               />
-            </div>
+            </label>
 
-            <div class="mt-4">
-              <p class="text-brand-black text-sm">Телефон*</p>
+            <label for="" class="space-y-1">
+              <span class="text-brand-black text-sm">Телефон*</span>
               <input
-                class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
                 type="tel"
-                name="name"
-                id="name"
                 placeholder="+7 (___) ___-__-__"
               />
-            </div>
+            </label>
           </form>
         </div>
 
@@ -435,41 +430,35 @@
         <div class="py-30 px-5 md:p-10">
           <p class="text-brand-black font-bold text-lg md:text-2xl">Пароль</p>
 
-          <form action="#" class="max-w-lg mt-5">
-            <div>
-              <p class="text-brand-black text-sm">
+          <form action="#" class="max-w-lg mt-5 flex flex-col space-y-4">
+            <label for="" class="space-y-1">
+              <span class="text-brand-black text-sm">
                 Имя и фамилия представителя*
-              </p>
+              </span>
               <input
-                class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 outline-none py-3 px-5 input-focus input-eror input-hover mt-1"
+                class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
                 type="password"
-                name="name"
-                id="name"
                 placeholder="*********"
               />
-            </div>
+            </label>
 
-            <div class="mt-4">
-              <p class="text-brand-black text-sm">Новый пароль*</p>
+            <label for="" class="space-y-1">
+              <span class="text-brand-black text-sm">Новый пароль*</span>
               <input
-                class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                class="input-focus input-hover w-full border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
                 type="password"
-                name="name"
-                id="name"
                 placeholder="*********"
               />
-            </div>
+            </label>
 
-            <div class="mt-4">
-              <p class="text-brand-black text-sm">Подтвердите пароль*</p>
+            <label for="" class="space-y-1">
+              <span class="text-brand-black text-sm">Подтвердите пароль*</span>
               <input
-                class="w-full outline-none border rounded-lg border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                class="input-focus input-hover w-full outline-none border rounded-lg border-brand-gray-6 py-3 px-5"
                 type="password"
-                name="name"
-                id="name"
                 placeholder="*********"
               />
-            </div>
+            </label>
 
             <button type="submit" class="w-full flex py-3 btn-primary mt-4">
               Сохранить
@@ -479,6 +468,6 @@
       </div>
     </main>
 
-    <script src="../../public/js/main.js"></script>
+    <script src="./js/dashboard.js"></script>
   </body>
 </html>
