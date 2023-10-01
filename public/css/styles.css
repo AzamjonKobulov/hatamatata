@@ -652,6 +652,21 @@ video {
 .top-full {
   top: 100%;
 }
+.left-\[3\.2008px\] {
+  left: 3.2008px;
+}
+.left-\[3\.5008px\] {
+  left: 3.5008px;
+}
+.left-\[0\.1875rem\] {
+  left: 0.1875rem;
+}
+.left-0\.5 {
+  left: 0.125rem;
+}
+.top-\[0\.1875rem\] {
+  top: 0.1875rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -712,9 +727,6 @@ video {
 .-mt-10 {
   margin-top: -2.5rem;
 }
-.-mt-24 {
-  margin-top: -6rem;
-}
 .-mt-30 {
   margin-top: -1.875rem;
 }
@@ -768,9 +780,6 @@ video {
 }
 .mt-10 {
   margin-top: 2.5rem;
-}
-.mt-12 {
-  margin-top: 3rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -1317,11 +1326,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-.space-x-24 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(6rem * var(--tw-space-x-reverse));
-  margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
@@ -2665,10 +2669,6 @@ input[type='checkbox']:checked {
     margin-top: -4rem;
   }
 
-  .md\:-mt-5 {
-    margin-top: -1.25rem;
-  }
-
   .md\:-mt-60 {
     margin-top: -3.75rem;
   }
@@ -2963,11 +2963,6 @@ input[type='checkbox']:checked {
     row-gap: 1.25rem;
   }
 
-  .md\:gap-x-50 {
-    -moz-column-gap: 3.125rem;
-         column-gap: 3.125rem;
-  }
-
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -3141,6 +3136,10 @@ input[type='checkbox']:checked {
     padding-bottom: 3.75rem;
   }
 
+  .md\:pb-9 {
+    padding-bottom: 2.25rem;
+  }
+
   .md\:pl-10 {
     padding-left: 2.5rem;
   }
@@ -3187,6 +3186,10 @@ input[type='checkbox']:checked {
 
   .md\:pr-6 {
     padding-right: 1.5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .md\:pt-30 {
@@ -3276,6 +3279,10 @@ input[type='checkbox']:checked {
 
   .lg\:top-\[7rem\] {
     top: 7rem;
+  }
+
+  .lg\:z-30 {
+    z-index: 30;
   }
 
   .lg\:z-auto {
@@ -3708,6 +3715,10 @@ input[type='checkbox']:checked {
     padding-bottom: 1.0625rem;
   }
 
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
   .lg\:pb-30 {
     padding-bottom: 1.875rem;
   }
@@ -3758,6 +3769,10 @@ input[type='checkbox']:checked {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:pt-20 {
@@ -3878,18 +3893,9 @@ input[type='checkbox']:checked {
     gap: 8rem;
   }
 
-  .xl\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .xl\:gap-x-40 {
     -moz-column-gap: 10rem;
          column-gap: 10rem;
-  }
-
-  .xl\:gap-x-24 {
-    -moz-column-gap: 6rem;
-         column-gap: 6rem;
   }
 
   .xl\:gap-y-30 {
