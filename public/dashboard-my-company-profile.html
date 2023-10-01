@@ -10,7 +10,7 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="lg:nav-shadow fixed top-0 z-50 lg:z-auto inset-x-0 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4"
+      class="lg:shadow-shadow-nav-shadow fixed top-0 z-40 lg:z-auto inset-x-0 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4"
     >
       <!-- Mobile Menu Button & Mobile Logo -->
       <div class="flex lg:hidden items-center gap-5">
@@ -119,14 +119,14 @@
 
     <!-- Sidebar -->
     <aside
-      class="sidebar w-full sm:w-280 hidden lg:block h-screen fixed left-0 top-0 lg:border-r border-brand-gray-7 bg-white space-y-8 px-5 pt-2.5"
+      class="sidebar w-full sm:w-280 hidden lg:block h-screen fixed z-50 left-0 top-0 lg:border-r border-brand-gray-7 bg-white space-y-8 px-5 pt-2.5"
     >
       <!-- Logo -->
       <a href="#">
         <img src="./assets/images/logo-dashboard.svg" alt="Logo" />
       </a>
       <!-- Links -->
-      <div class="no-scroll h-screen overflow-auto pb-28">
+      <div class="no-scroll h-screen overflow-auto pb-40">
         <!-- Immovable -->
         <div class="space-y-5 border-b border-brand-gray-7 pb-5">
           <p class="text-brand-gray-3 font-medium">Недвижимость</p>
@@ -736,7 +736,7 @@
                 />
               </label>
 
-              <!-- Checboxes -->
+              <!-- Checkboxes -->
               <div
                 class="flex items-center justify-between text-sm font-medium pt-3 md:py-7"
               >
@@ -744,7 +744,7 @@
                 <label for="whatsapp" class="flex cursor-pointer gap-2.5">
                   <div class="relative">
                     <input type="checkbox" id="whatsapp" />
-                    <span class="absolute top-[0.2188rem] left-[0.2188rem]">
+                    <span class="absolute z-0 top-[0.2188rem] left-[0.2188rem]">
                       <svg
                         width="14"
                         height="14"

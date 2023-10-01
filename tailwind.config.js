@@ -48,6 +48,9 @@ module.exports = {
       borderRadius: {
         10: '0.625rem',
       },
+      boxShadow: {
+        'nav-shadow': '0px 10px 40px 0px rgba(24, 26, 32, 0.12)',
+      },
     },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
