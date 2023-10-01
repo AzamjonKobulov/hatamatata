@@ -35,6 +35,7 @@ module.exports = {
           'gray-9': '#F6F7FB',
         },
       },
+
       gap: {
         30: '1.875rem',
       },
@@ -42,6 +43,7 @@ module.exports = {
         50: '3.125rem',
         30: '1.875rem',
         60: '3.75rem',
+        280: '17.5rem',
       },
       borderRadius: {
         10: '0.625rem',
