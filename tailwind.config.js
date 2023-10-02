@@ -6,6 +6,9 @@ module.exports = {
       maxWidth: {
         base: '82.5rem',
       },
+      screens: {
+        xxl: '90rem',
+      },
       fontFamily: {
         onest: ['Onest', 'sans-serif'],
       },

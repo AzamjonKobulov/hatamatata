@@ -170,3 +170,12 @@ input[type='checkbox']:checked {
   background-color: #1059e7;
   border-color: #1059e7;
 }
+
+/* When the radio button is checked, add a blue background */
+.radio-wrapper input:checked ~ .checkmark {
+  border-color: #1059e7;
+}
+
+.radio-wrapper input:checked ~ .checkmark::after {
+  background-color: #1059e7;
+}

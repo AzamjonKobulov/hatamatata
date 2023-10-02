@@ -10,7 +10,7 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="lg:shadow-nav-shadow fixed top-0 lg:z-auto inset-x-0 z-50 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4 xl:pr-20"
+      class="lg:shadow-nav-shadow fixed top-0 inset-x-0 z-50 lg:z-40 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4 xl:pr-20"
     >
       <!-- Mobile Menu Button & Mobile Logo -->
       <div class="flex lg:hidden items-center gap-5">
@@ -353,11 +353,2189 @@
 
     <!-- Main -->
     <main
-      class="min-h-screen bg-brand-gray-9 py-30 px-4 md:pt-10 md:pb-24 md:px-5 lg:pt-10 lg:pb-20 lg:pl-10 xl:pr-20 mt-[4.5rem] lg:ml-280"
+      class="min-h-screen bg-brand-gray-9 space-y-5 py-30 px-4 md:pt-10 md:pb-24 md:px-5 lg:pt-10 lg:pb-20 lg:pl-10 xl:pr-20 mt-[4.5rem] lg:ml-280"
     >
+      <!-- Choosing Location -->
       <div class="rounded-10 bg-white px-6 py-30 md:pt-10 md:pb-9 md:pl-10">
-        <form action="#" class=""></form>
+        <form action="#" class="max-w-lg lg:pr-3 space-y-5">
+          <label
+            for=""
+            class="flex flex-col md:flex-row md:items-center justify-between gap-2.5"
+          >
+            <span class="text-sm"> Название объявления: </span>
+            <input
+              class="input-focus input-hover md:w-[18.75rem] border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+              type="text"
+              placeholder="http://...."
+            />
+          </label>
+          <label
+            for=""
+            class="flex flex-col md:flex-row md:items-center justify-between gap-2.5"
+          >
+            <span class="text-sm"> Страна: </span>
+            <button
+              class="md:w-[18.75rem] flex items-center justify-between border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              <span> Италия </span>
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.8335 7.5L10.0002 13.3333L4.16683 7.5"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </label>
+          <label
+            for=""
+            class="flex flex-col md:flex-row md:items-center justify-between gap-2.5"
+          >
+            <span class="text-sm"> Район: </span>
+            <button
+              class="md:w-[18.75rem] flex items-center justify-between border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              <span class="text-brand-gray-3"> Выберите район: </span>
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.8335 7.5L10.0002 13.3333L4.16683 7.5"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </label>
+          <label
+            for=""
+            class="flex flex-col md:flex-row md:items-center justify-between gap-2.5"
+          >
+            <span class="text-sm"> Город: </span>
+            <button
+              class="md:w-[18.75rem] flex items-center justify-between border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              <span class="text-brand-gray-3"> Выберите город </span>
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.8335 7.5L10.0002 13.3333L4.16683 7.5"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </label>
+        </form>
       </div>
+
+      <!-- Choosing Location -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <!-- Ad type -->
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Тип объявления</h3>
+          <div class="flex items-center gap-4">
+            <button
+              class="w-36 md:w-44 flex flex-col items-center border border-brand-gray-6 rounded-10 space-y-4 font-bold text-brand-blue py-5 md:py-6"
+            >
+              <span
+                ><svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.4453 14.7267L22.3117 13.8603C24.6567 11.5153 28.4562 11.5153 30.8012 13.8603L39.831 22.8901C42.7342 25.7933 42.7342 30.4992 39.831 33.4024L39.3888 33.8446C36.4856 36.7478 31.7796 36.7478 28.8764 33.8446L21.8475 26.8157"
+                    stroke="#10C4D2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.4453 14.7267L22.3117 13.8603C24.6567 11.5153 28.4562 11.5153 30.8012 13.8603L39.831 22.8901C42.7342 25.7933 42.7342 30.4992 39.831 33.4024L39.3888 33.8446C36.4856 36.7478 31.7796 36.7478 28.8764 33.8446L21.8475 26.8157"
+                    stroke="#196CCD"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.4453 14.7267L22.3117 13.8603C24.6567 11.5153 28.4562 11.5153 30.8012 13.8603L39.831 22.8901C42.7342 25.7933 42.7342 30.4992 39.831 33.4024L39.3888 33.8446C36.4856 36.7478 31.7796 36.7478 28.8764 33.8446L21.8475 26.8157"
+                    stroke="#1059E7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.9988 29.0292C8.04353 27.5526 5.99268 24.5293 5.99268 20.9998C5.99268 16.0278 10.0244 11.9961 14.9964 11.9961C19.9685 11.9961 24.0002 16.0278 24.0002 20.9998C24.0002 24.5273 21.9513 27.5506 18.9981 29.0272V29.0232L18.9961 38.0149C18.9941 38.5432 18.784 39.0494 18.4098 39.4215L16.405 41.4264C15.6247 42.2047 14.3642 42.2027 13.5858 41.4244L11.579 39.4135C11.2048 39.0394 10.9948 38.5311 10.9948 38.0029L10.9988 29.0252"
+                    stroke="#10C4D2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.9988 29.0292C8.04353 27.5526 5.99268 24.5293 5.99268 20.9998C5.99268 16.0278 10.0244 11.9961 14.9964 11.9961C19.9685 11.9961 24.0002 16.0278 24.0002 20.9998C24.0002 24.5273 21.9513 27.5506 18.9981 29.0272V29.0232L18.9961 38.0149C18.9941 38.5432 18.784 39.0494 18.4098 39.4215L16.405 41.4264C15.6247 42.2047 14.3642 42.2027 13.5858 41.4244L11.579 39.4135C11.2048 39.0394 10.9948 38.5311 10.9948 38.0029L10.9988 29.0252"
+                    stroke="#196CCD"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.9988 29.0292C8.04353 27.5526 5.99268 24.5293 5.99268 20.9998C5.99268 16.0278 10.0244 11.9961 14.9964 11.9961C19.9685 11.9961 24.0002 16.0278 24.0002 20.9998C24.0002 24.5273 21.9513 27.5506 18.9981 29.0272V29.0232L18.9961 38.0149C18.9941 38.5432 18.784 39.0494 18.4098 39.4215L16.405 41.4264C15.6247 42.2047 14.3642 42.2027 13.5858 41.4244L11.579 39.4135C11.2048 39.0394 10.9948 38.5311 10.9948 38.0029L10.9988 29.0252"
+                    stroke="#1059E7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.9966 20.4982V11.4945C14.9966 8.45521 17.4596 5.99219 20.4989 5.99219V5.99219C23.5381 5.99219 26.0012 8.45521 26.0012 11.4945V12.1287"
+                    stroke="#10C4D2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.9966 20.4982V11.4945C14.9966 8.45521 17.4596 5.99219 20.4989 5.99219V5.99219C23.5381 5.99219 26.0012 8.45521 26.0012 11.4945V12.1287"
+                    stroke="#196CCD"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.9966 20.4982V11.4945C14.9966 8.45521 17.4596 5.99219 20.4989 5.99219V5.99219C23.5381 5.99219 26.0012 8.45521 26.0012 11.4945V12.1287"
+                    stroke="#1059E7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.9945 20.4963C14.7184 20.4963 14.4943 20.7204 14.4983 20.9965C14.4983 21.2726 14.7224 21.4967 14.9985 21.4967C15.2746 21.4967 15.4987 21.2726 15.4987 20.9965C15.4967 20.7204 15.2726 20.4963 14.9945 20.4963"
+                    stroke="#10C4D2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.9945 20.4963C14.7184 20.4963 14.4943 20.7204 14.4983 20.9965C14.4983 21.2726 14.7224 21.4967 14.9985 21.4967C15.2746 21.4967 15.4987 21.2726 15.4987 20.9965C15.4967 20.7204 15.2726 20.4963 14.9945 20.4963"
+                    stroke="#196CCD"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.9945 20.4963C14.7184 20.4963 14.4943 20.7204 14.4983 20.9965C14.4983 21.2726 14.7224 21.4967 14.9985 21.4967C15.2746 21.4967 15.4987 21.2726 15.4987 20.9965C15.4967 20.7204 15.2726 20.4963 14.9945 20.4963"
+                    stroke="#1059E7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Продажа</span>
+            </button>
+            <button
+              class="w-36 md:w-44 flex flex-col items-center border border-brand-gray-6 rounded-10 space-y-4 font-bold text-brand-gray-2 py-5 md:py-6"
+            >
+              <span
+                ><svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 22H24"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 6V12"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M33 6V12"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18 42H12C8.68629 42 6 39.3137 6 36V15C6 11.6863 8.68629 9 12 9H36C39.3137 9 42 11.6863 42 15V22"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 30H18"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M27.126 30.6572L32.126 26.6573C33.2216 25.7809 34.7784 25.7809 35.874 26.6573L40.874 30.6572C41.5857 31.2265 42 32.0884 42 32.9998V39.9999C42 41.1045 41.1046 41.9999 40 41.9999H28C26.8954 41.9999 26 41.1045 26 39.9999V32.9998C26 32.0884 26.4143 31.2265 27.126 30.6572V30.6572Z"
+                    stroke="#747887"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Аренда</span>
+            </button>
+          </div>
+        </div>
+        <!-- Property type -->
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Тип недвижимости</h3>
+          <div class="max-w-[48.4375rem] flex flex-wrap items-center gap-2.5">
+            <button
+              class="btn-primary !font-normal border rounded-lg outline-none border-brand-blue py-3 px-5"
+              type="text"
+            >
+              Все типы
+            </button>
+            <button
+              class="btn-secondary !bg-white border border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              Жилые объекты
+            </button>
+            <button
+              class="btn-secondary !bg-white border border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              Земельные участки
+            </button>
+            <button
+              class="btn-secondary !bg-white border border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              Элитная
+            </button>
+            <button
+              class="btn-secondary !bg-white border border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              Инвестиционная
+            </button>
+            <button
+              class="btn-secondary !bg-white border border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              Коммерческая
+            </button>
+            <button
+              class="btn-secondary !bg-white border border-brand-gray-6 py-3 px-5"
+              type="text"
+            >
+              Новостройки
+            </button>
+          </div>
+        </div>
+        <!-- Type objects -->
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Тип недвижимости</h3>
+          <div
+            class="max-w-5xl grid md:grid-cols-3 xl:grid-cols-5 gap-x-50 gap-y-5"
+          >
+            <div class="space-y-5">
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Квартира</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Пентхаус</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Дуплекс</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Дом</span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Коттедж</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Дача</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Таунхаус</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Лофт</span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Вилла</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Шале/коттедж</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Кафе/ресторан</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Отель, гостиница</span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Магазин</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Офис</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Производственный</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Склад</span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Здание</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Гараж</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Земельный участок</span>
+              </label>
+              <label
+                class="radio-wrapper flex items-center gap-2.5 cursor-pointer"
+              >
+                <input type="radio" name="radio" class="hidden" />
+                <span
+                  class="checkmark relative top-0 left-0 w-[1.375rem] h-[1.375rem] shrink-0 border border-brand-gray-6 rounded-full after:block after:w-3 after:h-3 after:absolute after:top-1 after:left-1 after:rounded-full"
+                ></span>
+                <span>Другие объекты</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- General Information -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Общая информация</h3>
+          <form
+            action="#"
+            class="max-w-4xl grid md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5 xl:pr-9"
+          >
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Год постройки </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder="Год"
+              />
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Этаж </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder="Этаж"
+              />
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Статус </span>
+              <button
+                class="flex items-center justify-between border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+              >
+                <span> Строящееся </span>
+                <span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.8335 7.5L10.0002 13.3333L4.16683 7.5"
+                      stroke="#747887"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Состояние </span>
+              <button
+                class="flex items-center justify-between border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+              >
+                <span> Новостройка </span>
+                <span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.8335 7.5L10.0002 13.3333L4.16683 7.5"
+                      stroke="#747887"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Расположение </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder="Расположение"
+              />
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Вид </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder="Вид"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <!-- Location -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Местоположение</h3>
+          <form action="#" class="max-w-2xl md:pr-[4.5rem]">
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Адрес </span>
+              <button
+                class="flex items-center justify-between border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+              >
+                <span class="text-brand-gray-3"> Укажите адрес: </span>
+                <span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.8335 7.5L10.0002 13.3333L4.16683 7.5"
+                      stroke="#747887"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
+      <!-- Square -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Площадь</h3>
+          <form
+            action="#"
+            class="max-w-4xl grid md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5 xl:pr-9"
+          >
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Площадь, кв.м. </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder=""
+              />
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Площадь участка, кв.м </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder=""
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <!-- Other Informations -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Другая информация</h3>
+          <form
+            action="#"
+            class="max-w-4xl grid md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5 xl:pr-9"
+          >
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Количество комнат </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder=""
+              />
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Количество спален </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder=""
+              />
+            </label>
+            <label for="" class="flex flex-col gap-1">
+              <span class="text-sm"> Санузлы </span>
+              <input
+                class="input-focus input-hover border rounded-lg outline-none border-brand-gray-6 py-3 px-5"
+                type="text"
+                placeholder=""
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <!-- Cost -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Цена</h3>
+          <form action="#" class="">
+            <label
+              for=""
+              class="w-full md:max-w-[18.75rem] flex flex-col gap-1"
+            >
+              <span class="text-sm"> Укажите цену </span>
+
+              <div
+                class="grid grid-cols-4 border border-brand-gray-6 rounded-lg overflow-hidden"
+              >
+                <input
+                  class="col-span-3 input-hover outline-none py-3 px-5"
+                  type="text"
+                  placeholder="Цена"
+                />
+                <button
+                  class="flex items-center justify-center gap-1 border-l border-brand-gray-6 outline-none"
+                  type="text"
+                >
+                  <span> EUR </span>
+                  <span class="mb-0.5">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.6665 6L7.99984 10.6667L3.33317 6"
+                        stroke="#747887"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+      <!-- Features -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Характеристики</h3>
+          <div
+            class="max-w-5xl grid md:grid-cols-3 xl:grid-cols-4 justify-between gap-y-5"
+          >
+            <div class="space-y-5">
+              <label for="1" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="1" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Кондиционер </span>
+              </label>
+              <label for="2" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="2" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Сад </span>
+              </label>
+              <label for="3" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="3" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Система отопления </span>
+              </label>
+              <label for="4" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="4" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Мебель </span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label for="5" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="5" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Лифт </span>
+              </label>
+              <label for="6" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="6" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Бассейн </span>
+              </label>
+              <label for="7" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="7" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Система безопасности </span>
+              </label>
+              <label for="8" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="8" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Бытовая техника </span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label for="9" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="9" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> С окнами на улицу </span>
+              </label>
+              <label for="10" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="10" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Балкон или терасса </span>
+              </label>
+              <label for="11" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="11" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Собственный пляж </span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label for="12" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="12" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Кладовка </span>
+              </label>
+              <label for="13" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="13" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Гараж/паркинг </span>
+              </label>
+              <label for="14" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="14" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> Интернет </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Infrastructure -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Инфраструктура</h3>
+          <div class="max-w-5xl grid xl:grid-cols-2 gap-y-5">
+            <div class="grid md:grid-cols-2 gap-y-5">
+              <div class="space-y-5">
+                <label for="15" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="15" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Открытый бассейн </span>
+                </label>
+                <label for="16" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="16" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Детская площадка </span>
+                </label>
+                <label for="17" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="17" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Зона отдыха </span>
+                </label>
+                <label for="18" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="18" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Массажный кабинет </span>
+                </label>
+                <label for="19" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="19" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Кинотеатр </span>
+                </label>
+                <label for="20" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="20" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Настольный теннис </span>
+                </label>
+                <label for="21" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="21" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Видеонаблюдение </span>
+                </label>
+                <label for="22" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="22" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Трансфер до пляжа </span>
+                </label>
+              </div>
+              <div class="space-y-5">
+                <label for="23" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="23" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Крытый бассейн </span>
+                </label>
+                <label for="24" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="24" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Детская игровая комната </span>
+                </label>
+                <label for="25" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="25" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Сауна </span>
+                </label>
+                <label for="25" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="25" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Барбекю </span>
+                </label>
+                <label for="26" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="26" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Бильярд </span>
+                </label>
+                <label for="27" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="27" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Баскетбольная площадка </span>
+                </label>
+                <label for="28" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="28" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Консьерж </span>
+                </label>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-y-5">
+              <div class="space-y-5">
+                <label for="29" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="29" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Детский бассейн </span>
+                </label>
+                <label for="30" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="30" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Фитнес </span>
+                </label>
+                <label for="31" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="31" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Хамам </span>
+                </label>
+                <label for="32" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="32" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Кафетерий </span>
+                </label>
+                <label for="33" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="33" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Боулинг </span>
+                </label>
+                <label for="34" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="34" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Волейбольная площадка </span>
+                </label>
+                <label for="35" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="35" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Охрана 24/7 </span>
+                </label>
+              </div>
+              <div class="space-y-5">
+                <label for="36" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="36" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Аквагорки </span>
+                </label>
+                <label for="37" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="37" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Спа-зона </span>
+                </label>
+                <label for="38" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="38" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Финская парная </span>
+                </label>
+                <label for="39" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="39" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Конференц-зал </span>
+                </label>
+                <label for="40" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="40" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Конференц-зал </span>
+                </label>
+                <label for="41" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="41" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Wi-Fi </span>
+                </label>
+                <label for="42" class="flex cursor-pointer gap-2.5">
+                  <div class="relative">
+                    <input type="checkbox" id="42" />
+                    <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <span> Электрогенератор </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Distance to key points -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Расстояние до ключевых пунктов</h3>
+          <div
+            class="max-w-4xl grid md:grid-cols-2 xl:grid-cols-4 gap-y-5 xl:pr-7"
+          >
+            <div class="space-y-5">
+              <label for="43" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="43" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> до моря </span>
+              </label>
+              <label for="44" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="44" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> до университета </span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label for="45" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="45" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> до центра </span>
+              </label>
+              <label for="46" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="46" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> до рынка </span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label for="47" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="47" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> до маркета </span>
+              </label>
+            </div>
+            <div class="space-y-5">
+              <label for="48" class="flex cursor-pointer gap-2.5">
+                <div class="relative">
+                  <input type="checkbox" id="48" />
+                  <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <span> до школы </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Purchase method -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Способ покупки</h3>
+          <div
+            class="max-w-4xl grid md:grid-cols-2 xl:grid-cols-4 gap-y-5 xl:pr-7"
+          >
+            <label for="49" class="flex cursor-pointer gap-2.5">
+              <div class="relative">
+                <input type="checkbox" id="49" />
+                <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <span> кредит </span>
+            </label>
+            <label for="50" class="flex cursor-pointer gap-2.5">
+              <div class="relative">
+                <input type="checkbox" id="50" />
+                <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <span> рассрочка </span>
+            </label>
+            <label for="51" class="flex cursor-pointer gap-2.5">
+              <div class="relative">
+                <input type="checkbox" id="51" />
+                <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <span> наличные </span>
+            </label>
+            <label for="52" class="flex cursor-pointer gap-2.5">
+              <div class="relative">
+                <input type="checkbox" id="52" />
+                <span class="absolute top-[0.2188rem] left-[0.1875rem]">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6654 3.5L5.2487 9.91667L2.33203 7"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <span> криптовалюта </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Description -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Описание</h3>
+          <form action="#">
+            <textarea
+              class="input-hover input-focus w-full resize-none h-64 md:h-48 border border-brand-gray-6 rounded-lg outline-none py-3 px-5"
+              placeholder="Опишите вашу недвижимость"
+            ></textarea>
+          </form>
+        </div>
+      </div>
+      <!-- Upload Image -->
+      <div
+        class="rounded-10 bg-white space-y-30 px-6 py-30 md:pt-10 md:pb-9 md:pl-10 lg:pr-50"
+      >
+        <div class="space-y-5">
+          <h3 class="text-lg font-bold">Загрузить фото</h3>
+          <form action="#" class="space-y-4">
+            <div
+              class="w-full h-56 md:h-[13.5rem] grid place-content-center border border-dashed border-brand-gray-6 rounded-lg outline-none py-3 px-5"
+              placeholder="Опишите вашу недвижимость"
+            >
+              <div class="flex flex-col items-center space-y-3">
+                <span>
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 34V22L14 26"
+                      stroke="#F27317"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18 34V22L14 26"
+                      stroke="#F45F0B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18 22L22 26"
+                      stroke="#F27317"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18 22L22 26"
+                      stroke="#F45F0B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M44 20V30C44 40 40 44 30 44H18C8 44 4 40 4 30V18C4 8 8 4 18 4H28"
+                      stroke="#F27317"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M44 20V30C44 40 40 44 30 44H18C8 44 4 40 4 30V18C4 8 8 4 18 4H28"
+                      stroke="#F45F0B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M44 20H36C30 20 28 18 28 12V4L44 20Z"
+                      stroke="#F27317"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M44 20H36C30 20 28 18 28 12V4L44 20Z"
+                      stroke="#F45F0B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <p class="font-medium">
+                  Загрузите фото или перетащите сюда файл
+                </p>
+                <button
+                  class="rounded-lg border border-brand-blue hover:bg-brand-blue text-brand-blue hover:text-white hover:rounded-10 font-medium px-5 py-3 mt-2.5"
+                >
+                  Загрузить фото
+                </button>
+              </div>
+            </div>
+            <div
+              class="text-xs space-y-1 md:space-y-0 md:text-sm text-brand-gray-2"
+            >
+              <p>
+                - Фото должно быть не меньше 400x400 и не больше 4000x4000
+                пикселей
+              </p>
+              <p>
+                - Можно загрузить до 20 фотографий одновременно общим весом до
+                20 Мб
+              </p>
+              <p>- Поддерживаемые форматы: .jpg, .webp, .png</p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <button class="btn-primary w-full md:w-auto py-3 px-10">
+        Добавить недвижимость
+      </button>
     </main>
 
     <script src="./js/dashboard.js"></script>
