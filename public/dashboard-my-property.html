@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="lg:shadow-nav-shadow fixed top-0 inset-x-0 z-50 lg:z-40 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4 xl:pr-20"
+    >
+      <!-- Mobile Menu Button & Mobile Logo -->
+      <div class="flex lg:hidden items-center gap-5">
+        <button class="sidebar-menu-button">
+          <span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.3335 16.999H27.6668"
+                stroke="#343843"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.3335 23.663H27.6668"
+                stroke="#343843"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.3335 10.331H27.6668"
+                stroke="#343843"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
+        <a href="#" class="w-[3.375rem] h-11">
+          <img src="./assets/dashboard/header/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <!-- Add Button & Profile -->
+      <div class="ml-auto flex items-center gap-7 md:gap-10">
+        <!-- Button -->
+        <button class="btn-primary p-3 md:px-5">
+          <span
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_3996_10560)">
+                <path
+                  d="M10 3.33203V16.6654"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.33325 10H16.6666"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_3996_10560">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <span class="hidden md:block">Добавить объявление</span>
+        </button>
+        <!-- User -->
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 overflow-hidden">
+            <img src="./assets/dashboard/header/user.svg" alt="User" />
+          </div>
+          <button class="flex items-center gap-2.5">
+            <span class="font-medium hidden sm:block">Алексей</span>
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6667 6L8.00008 10.6667L3.33341 6"
+                  stroke="#747887"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside
+      class="sidebar w-full sm:w-280 hidden lg:block h-screen fixed left-0 top-0 z-40 lg:border-r border-brand-gray-7 bg-white space-y-8 px-5 pt-2.5"
+    >
+      <!-- Logo -->
+      <a href="#">
+        <img src="./assets/images/logo-dashboard.svg" alt="Logo" />
+      </a>
+      <!-- Links -->
+      <div class="no-scroll h-screen overflow-auto pb-40">
+        <ul class="space-y-2.5">
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.8284 4.67157C16.3905 6.23367 16.3905 8.76633 14.8284 10.3284C13.2663 11.8905 10.7337 11.8905 9.17157 10.3284C7.60948 8.76633 7.60948 6.23367 9.17157 4.67157C10.7337 3.10948 13.2663 3.10948 14.8284 4.67157"
+                  stroke="#10C4D2"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.8284 4.67157C16.3905 6.23367 16.3905 8.76633 14.8284 10.3284C13.2663 11.8905 10.7337 11.8905 9.17157 10.3284C7.60948 8.76633 7.60948 6.23367 9.17157 4.67157C10.7337 3.10948 13.2663 3.10948 14.8284 4.67157"
+                  stroke="#196CCD"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.8284 4.67157C16.3905 6.23367 16.3905 8.76633 14.8284 10.3284C13.2663 11.8905 10.7337 11.8905 9.17157 10.3284C7.60948 8.76633 7.60948 6.23367 9.17157 4.67157C10.7337 3.10948 13.2663 3.10948 14.8284 4.67157"
+                  stroke="#1059E7"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 15.0078C16.048 15.0078 20 16.6957 20 19.2916V20.1497C20 20.6234 19.6018 21.0078 19.1111 21.0078H4.88889C4.39822 21.0078 4 20.6234 4 20.1497V19.2916C4 16.6949 7.952 15.0078 12 15.0078"
+                  stroke="#10C4D2"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 15.0078C16.048 15.0078 20 16.6957 20 19.2916V20.1497C20 20.6234 19.6018 21.0078 19.1111 21.0078H4.88889C4.39822 21.0078 4 20.6234 4 20.1497V19.2916C4 16.6949 7.952 15.0078 12 15.0078"
+                  stroke="#196CCD"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 15.0078C16.048 15.0078 20 16.6957 20 19.2916V20.1497C20 20.6234 19.6018 21.0078 19.1111 21.0078H4.88889C4.39822 21.0078 4 20.6234 4 20.1497V19.2916C4 16.6949 7.952 15.0078 12 15.0078"
+                  stroke="#1059E7"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p class="font-medium text-sm text-brand-blue">Мой профиль</p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.99622 11.6947L10.9346 4.89022C11.5476 4.36472 12.4523 4.36472 13.0654 4.89022L21.0037 11.6947"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.0034 21.0032V4.4963C20.0034 4.22004 19.7794 3.99609 19.5032 3.99609H16.5019C16.2257 3.99609 16.0017 4.22004 16.0017 4.4963V7.10339"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.54443 21.0066V15.5043C9.54443 14.9518 9.99234 14.5039 10.5449 14.5039H13.4552C14.0077 14.5039 14.4556 14.9518 14.4556 15.5043V21.0066"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.28231 10.5938V21.0044"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.0037 21.0041H2.99622"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+              >
+                Моя недвижимость
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-between px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <div class="flex gap-2.5 items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 8V16M12 11V16M8 14V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+                >
+                  Реф статистика
+                </p>
+              </div>
+
+              <div
+                class="flex items-center justify-center bg-brand-red rounded-full w-5 h-5 text-xs font-medium text-white"
+              >
+                9
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.0326 6.59615L15.1573 3.56462C15.6663 3.07081 16.3987 2.88345 17.0822 3.07216C17.7658 3.26088 18.2983 3.79746 18.4818 4.48245L20.9297 13.618C21.1133 14.3029 20.9204 15.0339 20.4227 15.5391C19.9251 16.0443 19.1971 16.2483 18.5094 16.0751L14.2876 15.012"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.59497 8.3207L12.0326 6.59573L14.2877 15.0115L7.84999 16.7365C5.98286 17.2368 4.06368 16.1288 3.56338 14.2616L3.12011 12.6073C2.87985 11.7107 3.00561 10.7554 3.46974 9.95145C3.93387 9.14755 4.69834 8.56095 5.59497 8.3207Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.407 15.5156L13.1775 18.3913C13.3148 18.9037 13.2429 19.4496 12.9777 19.9089C12.7124 20.3683 12.2756 20.7035 11.7632 20.8408L11.431 20.9298C10.9186 21.0671 10.3727 20.9952 9.91332 20.73C9.45394 20.4648 9.11874 20.028 8.98145 19.5156L8.21094 16.64"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+              >
+                Реф программа
+              </p>
+            </a>
+          </li>
+          <li>
+            <hr class="my-5 bg-bg-brand-gray-7" />
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 16L21 12M21 12L17 8M21 12L7 12M13 16V17C13 18.6569 11.6569 20 10 20H6C4.34315 20 3 18.6569 3 17V7C3 5.34315 4.34315 4 6 4H10C11.6569 4 13 5.34315 13 7V8"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+              >
+                Выйти
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main
+      class="min-h-screen bg-brand-gray-9 space-y-5 py-30 px-4 md:pt-10 md:pb-24 md:px-5 lg:pt-10 lg:pb-20 lg:pl-10 xl:pr-20 mt-[4.5rem] lg:ml-280"
+    >
+      <h3 class="text-2xl md:text-28 font-bold md:mb-30">Моя недвижимость</h3>
+      <!-- Table Info -->
+      <div class="max-w-6xl xl:pr-28">
+        <div class="rounded-10 bg-white overflow-auto">
+          <!-- Header -->
+          <div
+            class="lg:w-[65rem] hidden md:flex justify-between lg:justify-start items-center text-sm md:gap-30 xl:gap-50 lg:text-base text-brand-gray-3 border-b border-brand-gray-6 py-4 pl-4 pr-12 lg:py-[1.125rem] lg:pl-30 lg:pr-60"
+          >
+            <div class="w-[9.5625rem] lg:w-[325px] shrink-0">
+              <p>Название</p>
+            </div>
+            <div class="w-[8.25rem] shrink-0">
+              <p class="">Дата публикации</p>
+            </div>
+            <div class="w-[8rem] shrink-0">
+              <p>Статус</p>
+            </div>
+            <div class="w-24 shrink-0">
+              <p>Просмотров</p>
+            </div>
+            <div class="w-[4.625rem] shrink-0">
+              <p>Действия</p>
+            </div>
+          </div>
+          <!-- Body -->
+          <div class="divide-y divide-brand-gray-6">
+            <!-- Item -->
+            <div
+              class="flex flex-col md:flex-row lg:items-center justify-between gap-4 md:gap-30 xl:gap-50 py-5 pl-5 pr-3 md:px-4 lg:px-8"
+            >
+              <div
+                class="w-[20.3125rem] md:w-[9.5625rem] lg:w-[20.3125rem] shrink-0 flex flex-row md:flex-col lg:flex-row gap-2.5 md:gap-5"
+              >
+                <!-- Image -->
+                <div class="w-[9.375rem] relative rounded-10 overflow-hidden">
+                  <div
+                    class="absolute bg-brand-green py-[0.3125rem] rounded-br-[0.3125rem] text-sm font-medium text-white px-2.5"
+                  >
+                    Продажа
+                  </div>
+                  <img
+                    src="./assets/images/flats/flat-1.png"
+                    alt="Flat Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Location & Cost -->
+                <div class="flex-1 space-y-4">
+                  <div class="space-y-1.5">
+                    <!-- Name -->
+                    <h4 class="font-medium">Квартира в Турции</h4>
+                    <!-- Location -->
+                    <div class="flex items-center gap-1.5">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.00033 8.66536C9.10489 8.66536 10.0003 7.76993 10.0003 6.66536C10.0003 5.5608 9.10489 4.66536 8.00033 4.66536C6.89576 4.66536 6.00033 5.5608 6.00033 6.66536C6.00033 7.76993 6.89576 8.66536 8.00033 8.66536Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.00033 14.6654C10.667 11.9987 13.3337 9.61088 13.3337 6.66536C13.3337 3.71985 10.9458 1.33203 8.00033 1.33203C5.05481 1.33203 2.66699 3.71985 2.66699 6.66536C2.66699 9.61088 5.33366 11.9987 8.00033 14.6654Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-brand-gray-3 text-sm"
+                        >Турция, Махмутлар</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Cost -->
+                  <h3 class="font-bold text-xl text-brand-blue">275 000 €</h3>
+                </div>
+              </div>
+              <div
+                class="md:w-[8.25rem] shrink-0 flex items-center justify-between gap-30 lg:gap-50"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">
+                  Дата публикации
+                </p>
+                <p class="text-sm md:text-base mb-auto">23.09.2023</p>
+              </div>
+              <div
+                class="md:w-[8rem] flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Статус</p>
+                <span
+                  class="py-2 px-4 rounded-[0.3125rem] shrink-0 bg-brand-orange/5 text-[#EAAC0E]"
+                >
+                  В ожидании
+                </span>
+              </div>
+              <div
+                class="md:w-24 flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <p class="text-sm md:text-base">48</p>
+              </div>
+              <div
+                class="flex items-center md:items-start lg:items-center justify-between"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <div class="md:w-[6.5rem] shrink-0 flex items-center gap-4">
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.293 15.6185L15.619 5.2925C16.009 4.9025 16.642 4.9025 17.032 5.2925L18.708 6.9685C19.098 7.3585 19.098 7.9915 18.708 8.3815L8.381 18.7065C8.194 18.8945 7.94 18.9995 7.675 18.9995H5V16.3245C5 16.0595 5.105 15.8055 5.293 15.6185Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.75 7.16016L16.84 10.2502"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div
+              class="flex flex-col md:flex-row lg:items-center justify-between gap-4 md:gap-30 xl:gap-50 py-5 pl-5 pr-3 md:px-4 lg:px-8"
+            >
+              <div
+                class="w-[20.3125rem] md:w-[9.5625rem] lg:w-[20.3125rem] shrink-0 flex flex-row md:flex-col lg:flex-row gap-2.5 md:gap-5"
+              >
+                <!-- Image -->
+                <div class="w-[9.375rem] relative rounded-10 overflow-hidden">
+                  <div
+                    class="absolute bg-brand-orange py-[0.3125rem] rounded-br-[0.3125rem] text-sm font-medium text-white px-2.5"
+                  >
+                    Аренда
+                  </div>
+                  <img
+                    src="./assets/images/flats/flat-1.png"
+                    alt="Flat Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Location & Cost -->
+                <div class="flex-1 space-y-4">
+                  <div class="space-y-1.5">
+                    <!-- Name -->
+                    <h4 class="font-medium">Квартира в Турции</h4>
+                    <!-- Location -->
+                    <div class="flex items-center gap-1.5">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.00033 8.66536C9.10489 8.66536 10.0003 7.76993 10.0003 6.66536C10.0003 5.5608 9.10489 4.66536 8.00033 4.66536C6.89576 4.66536 6.00033 5.5608 6.00033 6.66536C6.00033 7.76993 6.89576 8.66536 8.00033 8.66536Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.00033 14.6654C10.667 11.9987 13.3337 9.61088 13.3337 6.66536C13.3337 3.71985 10.9458 1.33203 8.00033 1.33203C5.05481 1.33203 2.66699 3.71985 2.66699 6.66536C2.66699 9.61088 5.33366 11.9987 8.00033 14.6654Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-brand-gray-3 text-sm"
+                        >Турция, Махмутлар</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Cost -->
+                  <h3 class="font-bold text-xl text-brand-blue">275 000 €</h3>
+                </div>
+              </div>
+              <div
+                class="md:w-[8.25rem] shrink-0 flex items-center justify-between gap-30 lg:gap-50"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">
+                  Дата публикации
+                </p>
+                <p class="text-sm md:text-base mb-auto">23.09.2023</p>
+              </div>
+              <div
+                class="md:w-[8rem] flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Статус</p>
+                <span
+                  class="py-2 px-4 rounded-[0.3125rem] shrink-0 bg-brand-green/5 text-brand-green"
+                >
+                  Принят
+                </span>
+              </div>
+              <div
+                class="md:w-24 flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <p class="text-sm md:text-base">48</p>
+              </div>
+              <div
+                class="flex items-center md:items-start lg:items-center justify-between"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <div class="md:w-[6.5rem] shrink-0 flex items-center gap-4">
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.293 15.6185L15.619 5.2925C16.009 4.9025 16.642 4.9025 17.032 5.2925L18.708 6.9685C19.098 7.3585 19.098 7.9915 18.708 8.3815L8.381 18.7065C8.194 18.8945 7.94 18.9995 7.675 18.9995H5V16.3245C5 16.0595 5.105 15.8055 5.293 15.6185Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.75 7.16016L16.84 10.2502"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div
+              class="flex flex-col md:flex-row lg:items-center justify-between gap-4 md:gap-30 xl:gap-50 py-5 pl-5 pr-3 md:px-4 lg:px-8"
+            >
+              <div
+                class="w-[20.3125rem] md:w-[9.5625rem] lg:w-[20.3125rem] shrink-0 flex flex-row md:flex-col lg:flex-row gap-2.5 md:gap-5"
+              >
+                <!-- Image -->
+                <div class="w-[9.375rem] relative rounded-10 overflow-hidden">
+                  <div
+                    class="absolute bg-brand-green py-[0.3125rem] rounded-br-[0.3125rem] text-sm font-medium text-white px-2.5"
+                  >
+                    Продажа
+                  </div>
+                  <img
+                    src="./assets/images/flats/flat-1.png"
+                    alt="Flat Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Location & Cost -->
+                <div class="flex-1 space-y-4">
+                  <div class="space-y-1.5">
+                    <!-- Name -->
+                    <h4 class="font-medium">Квартира в Турции</h4>
+                    <!-- Location -->
+                    <div class="flex items-center gap-1.5">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.00033 8.66536C9.10489 8.66536 10.0003 7.76993 10.0003 6.66536C10.0003 5.5608 9.10489 4.66536 8.00033 4.66536C6.89576 4.66536 6.00033 5.5608 6.00033 6.66536C6.00033 7.76993 6.89576 8.66536 8.00033 8.66536Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.00033 14.6654C10.667 11.9987 13.3337 9.61088 13.3337 6.66536C13.3337 3.71985 10.9458 1.33203 8.00033 1.33203C5.05481 1.33203 2.66699 3.71985 2.66699 6.66536C2.66699 9.61088 5.33366 11.9987 8.00033 14.6654Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-brand-gray-3 text-sm"
+                        >Турция, Махмутлар</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Cost -->
+                  <h3 class="font-bold text-xl text-brand-blue">275 000 €</h3>
+                </div>
+              </div>
+              <div
+                class="md:w-[8.25rem] shrink-0 flex items-center justify-between gap-30 lg:gap-50"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">
+                  Дата публикации
+                </p>
+                <p class="text-sm md:text-base mb-auto">23.09.2023</p>
+              </div>
+              <div
+                class="md:w-[8rem] flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Статус</p>
+                <span
+                  class="py-2 px-4 rounded-[0.3125rem] shrink-0 bg-brand-red/5 text-brand-red"
+                >
+                  Отменен
+                </span>
+              </div>
+              <div
+                class="md:w-24 flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <p class="text-sm md:text-base">48</p>
+              </div>
+              <div
+                class="flex items-center md:items-start lg:items-center justify-between"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <div class="md:w-[6.5rem] shrink-0 flex items-center gap-4">
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.293 15.6185L15.619 5.2925C16.009 4.9025 16.642 4.9025 17.032 5.2925L18.708 6.9685C19.098 7.3585 19.098 7.9915 18.708 8.3815L8.381 18.7065C8.194 18.8945 7.94 18.9995 7.675 18.9995H5V16.3245C5 16.0595 5.105 15.8055 5.293 15.6185Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.75 7.16016L16.84 10.2502"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div
+              class="flex flex-col md:flex-row lg:items-center justify-between gap-4 md:gap-30 xl:gap-50 py-5 pl-5 pr-3 md:px-4 lg:px-8"
+            >
+              <div
+                class="w-[20.3125rem] md:w-[9.5625rem] lg:w-[20.3125rem] shrink-0 flex flex-row md:flex-col lg:flex-row gap-2.5 md:gap-5"
+              >
+                <!-- Image -->
+                <div class="w-[9.375rem] relative rounded-10 overflow-hidden">
+                  <div
+                    class="absolute bg-brand-green py-[0.3125rem] rounded-br-[0.3125rem] text-sm font-medium text-white px-2.5"
+                  >
+                    Продажа
+                  </div>
+                  <img
+                    src="./assets/images/flats/flat-1.png"
+                    alt="Flat Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Location & Cost -->
+                <div class="flex-1 space-y-4">
+                  <div class="space-y-1.5">
+                    <!-- Name -->
+                    <h4 class="font-medium">Квартира в Турции</h4>
+                    <!-- Location -->
+                    <div class="flex items-center gap-1.5">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.00033 8.66536C9.10489 8.66536 10.0003 7.76993 10.0003 6.66536C10.0003 5.5608 9.10489 4.66536 8.00033 4.66536C6.89576 4.66536 6.00033 5.5608 6.00033 6.66536C6.00033 7.76993 6.89576 8.66536 8.00033 8.66536Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.00033 14.6654C10.667 11.9987 13.3337 9.61088 13.3337 6.66536C13.3337 3.71985 10.9458 1.33203 8.00033 1.33203C5.05481 1.33203 2.66699 3.71985 2.66699 6.66536C2.66699 9.61088 5.33366 11.9987 8.00033 14.6654Z"
+                            stroke="#9EA5B3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-brand-gray-3 text-sm"
+                        >Турция, Махмутлар</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Cost -->
+                  <h3 class="font-bold text-xl text-brand-blue">275 000 €</h3>
+                </div>
+              </div>
+              <div
+                class="md:w-[8.25rem] shrink-0 flex items-center justify-between gap-30 lg:gap-50"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">
+                  Дата публикации
+                </p>
+                <p class="text-sm md:text-base mb-auto">23.09.2023</p>
+              </div>
+              <div
+                class="md:w-[8rem] flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Статус</p>
+                <span
+                  class="py-2 px-4 rounded-[0.3125rem] shrink-0 bg-brand-orange/5 text-[#EAAC0E]"
+                >
+                  В ожидании
+                </span>
+              </div>
+              <div
+                class="md:w-24 flex items-center md:items-start lg:items-center justify-between shrink-0"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <p class="text-sm md:text-base">48</p>
+              </div>
+              <div
+                class="flex items-center md:items-start lg:items-center justify-between"
+              >
+                <p class="md:hidden text-sm text-brand-gray-3">Просмотров</p>
+                <div class="md:w-[6.5rem] shrink-0 flex items-center gap-4">
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.293 15.6185L15.619 5.2925C16.009 4.9025 16.642 4.9025 17.032 5.2925L18.708 6.9685C19.098 7.3585 19.098 7.9915 18.708 8.3815L8.381 18.7065C8.194 18.8945 7.94 18.9995 7.675 18.9995H5V16.3245C5 16.0595 5.105 15.8055 5.293 15.6185Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.75 7.16016L16.84 10.2502"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <button
+                    class="w-11 h-11 shrink-0 grid place-content-center bg-brand-gray-8 rounded-full"
+                  >
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>
