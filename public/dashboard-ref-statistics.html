@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="lg:shadow-nav-shadow fixed top-0 inset-x-0 z-50 lg:z-40 flex items-center justify-between border-b border-brand-gray-7 lg:border-0 bg-white py-3.5 px-4 xl:pr-20"
+    >
+      <!-- Mobile Menu Button & Mobile Logo -->
+      <div class="flex lg:hidden items-center gap-5">
+        <button class="sidebar-menu-button">
+          <span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.3335 16.999H27.6668"
+                stroke="#343843"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.3335 23.663H27.6668"
+                stroke="#343843"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.3335 10.331H27.6668"
+                stroke="#343843"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
+        <a href="#" class="w-[3.375rem] h-11">
+          <img src="./assets/dashboard/header/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <!-- Add Button & Profile -->
+      <div class="ml-auto flex items-center gap-7 md:gap-10">
+        <!-- Button -->
+        <button class="btn-primary p-3 md:px-5">
+          <span
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_3996_10560)">
+                <path
+                  d="M10 3.33203V16.6654"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.33325 10H16.6666"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_3996_10560">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <span class="hidden md:block">Добавить объявление</span>
+        </button>
+        <!-- User -->
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 overflow-hidden">
+            <img src="./assets/dashboard/header/user.svg" alt="User" />
+          </div>
+          <button class="flex items-center gap-2.5">
+            <span class="font-medium hidden sm:block">Алексей</span>
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6667 6L8.00008 10.6667L3.33341 6"
+                  stroke="#747887"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside
+      class="sidebar w-full sm:w-280 hidden lg:block h-screen fixed left-0 top-0 z-40 lg:border-r border-brand-gray-7 bg-white space-y-8 px-5 pt-2.5"
+    >
+      <!-- Logo -->
+      <a href="#">
+        <img src="./assets/images/logo-dashboard.svg" alt="Logo" />
+      </a>
+      <!-- Links -->
+      <div class="no-scroll h-screen overflow-auto pb-40">
+        <ul class="space-y-2.5">
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.8284 4.67157C16.3905 6.23367 16.3905 8.76633 14.8284 10.3284C13.2663 11.8905 10.7337 11.8905 9.17157 10.3284C7.60948 8.76633 7.60948 6.23367 9.17157 4.67157C10.7337 3.10948 13.2663 3.10948 14.8284 4.67157"
+                  stroke="#10C4D2"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.8284 4.67157C16.3905 6.23367 16.3905 8.76633 14.8284 10.3284C13.2663 11.8905 10.7337 11.8905 9.17157 10.3284C7.60948 8.76633 7.60948 6.23367 9.17157 4.67157C10.7337 3.10948 13.2663 3.10948 14.8284 4.67157"
+                  stroke="#196CCD"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.8284 4.67157C16.3905 6.23367 16.3905 8.76633 14.8284 10.3284C13.2663 11.8905 10.7337 11.8905 9.17157 10.3284C7.60948 8.76633 7.60948 6.23367 9.17157 4.67157C10.7337 3.10948 13.2663 3.10948 14.8284 4.67157"
+                  stroke="#1059E7"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 15.0078C16.048 15.0078 20 16.6957 20 19.2916V20.1497C20 20.6234 19.6018 21.0078 19.1111 21.0078H4.88889C4.39822 21.0078 4 20.6234 4 20.1497V19.2916C4 16.6949 7.952 15.0078 12 15.0078"
+                  stroke="#10C4D2"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 15.0078C16.048 15.0078 20 16.6957 20 19.2916V20.1497C20 20.6234 19.6018 21.0078 19.1111 21.0078H4.88889C4.39822 21.0078 4 20.6234 4 20.1497V19.2916C4 16.6949 7.952 15.0078 12 15.0078"
+                  stroke="#196CCD"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 15.0078C16.048 15.0078 20 16.6957 20 19.2916V20.1497C20 20.6234 19.6018 21.0078 19.1111 21.0078H4.88889C4.39822 21.0078 4 20.6234 4 20.1497V19.2916C4 16.6949 7.952 15.0078 12 15.0078"
+                  stroke="#1059E7"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p class="font-medium text-sm text-brand-blue">Мой профиль</p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.99622 11.6947L10.9346 4.89022C11.5476 4.36472 12.4523 4.36472 13.0654 4.89022L21.0037 11.6947"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.0034 21.0032V4.4963C20.0034 4.22004 19.7794 3.99609 19.5032 3.99609H16.5019C16.2257 3.99609 16.0017 4.22004 16.0017 4.4963V7.10339"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.54443 21.0066V15.5043C9.54443 14.9518 9.99234 14.5039 10.5449 14.5039H13.4552C14.0077 14.5039 14.4556 14.9518 14.4556 15.5043V21.0066"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.28231 10.5938V21.0044"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.0037 21.0041H2.99622"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+              >
+                Моя недвижимость
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-between px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <div class="flex gap-2.5 items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 8V16M12 11V16M8 14V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+                >
+                  Реф статистика
+                </p>
+              </div>
+
+              <div
+                class="flex items-center justify-center bg-brand-red rounded-full w-5 h-5 text-xs font-medium text-white"
+              >
+                9
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.0326 6.59615L15.1573 3.56462C15.6663 3.07081 16.3987 2.88345 17.0822 3.07216C17.7658 3.26088 18.2983 3.79746 18.4818 4.48245L20.9297 13.618C21.1133 14.3029 20.9204 15.0339 20.4227 15.5391C19.9251 16.0443 19.1971 16.2483 18.5094 16.0751L14.2876 15.012"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.59497 8.3207L12.0326 6.59573L14.2877 15.0115L7.84999 16.7365C5.98286 17.2368 4.06368 16.1288 3.56338 14.2616L3.12011 12.6073C2.87985 11.7107 3.00561 10.7554 3.46974 9.95145C3.93387 9.14755 4.69834 8.56095 5.59497 8.3207Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.407 15.5156L13.1775 18.3913C13.3148 18.9037 13.2429 19.4496 12.9777 19.9089C12.7124 20.3683 12.2756 20.7035 11.7632 20.8408L11.431 20.9298C10.9186 21.0671 10.3727 20.9952 9.91332 20.73C9.45394 20.4648 9.11874 20.028 8.98145 19.5156L8.21094 16.64"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+              >
+                Реф программа
+              </p>
+            </a>
+          </li>
+          <li>
+            <hr class="my-5 bg-bg-brand-gray-7" />
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="stroke-brand-gray-3 group-hover:stroke-brand-blue"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 16L21 12M21 12L17 8M21 12L7 12M13 16V17C13 18.6569 11.6569 20 10 20H6C4.34315 20 3 18.6569 3 17V7C3 5.34315 4.34315 4 6 4H10C11.6569 4 13 5.34315 13 7V8"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-sm text-brand-black group-hover:text-brand-blue"
+              >
+                Выйти
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main
+      class="min-h-screen bg-brand-gray-9 py-30 px-4 md:py-10 md:px-5 lg:py-8 lg:pl-10 xl:pr-20 mt-[4.5rem] lg:ml-280"
+    >
+      <h3 class="text-2xl md:text-28 font-bold md:mb-30">
+        Статистика реферальной программы
+      </h3>
+      <div
+        class="rounded-10 bg-white space-y-5 md:space-y-30 px-6 py-30 md:px-30 md:py-10 lg:px-10"
+      >
+        <h4 class="text-lg md:text-xl font-bold">
+          Количество приглашенных пользователей - 2
+        </h4>
+        <div class="max-w-5xl xl:pr-16 space-y-30 md:space-y-10">
+          <!-- Items -->
+          <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+            <div
+              class="h-[8.125rem] flex flex-col justify-between border border-brand-gray-6 rounded-lg px-5 py-4"
+            >
+              <p class="text-brand-gray-2">Страница</p>
+              <a href="#" class="text-brand-blue font-medium"
+                >https://hatamatata.ru/?ref=1LWuHl</a
+              >
+            </div>
+            <div
+              class="h-[8.125rem] flex flex-col justify-between border border-brand-gray-6 rounded-lg px-5 py-4"
+            >
+              <p class="text-brand-gray-2">
+                Количество уникальных <br />
+                переходов
+              </p>
+              <h4 class="text-brand-orange text-2xl font-bold">267</h4>
+            </div>
+            <div
+              class="h-[8.125rem] flex flex-col justify-between border border-brand-gray-6 rounded-lg px-5 py-4"
+            >
+              <p class="text-brand-gray-2">
+                Количество повторных <br />
+                переходов
+              </p>
+              <h4 class="text-brand-orange text-2xl font-bold">178</h4>
+            </div>
+          </div>
+          <!-- Table -->
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full md:table-fixed">
+              <thead class="text-xs text-brand-gray-3 bg-[#F9FAFD]">
+                <tr>
+                  <td scope="col" class="px-30 py-5">Название</td>
+                  <td scope="col" class="px-30 py-5">Количество</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td class="px-30 py-6 font-medium">Заявки</td>
+                  <td class="px-30 py-6 font-bold text-center md:text-start">
+                    2
+                  </td>
+                </tr>
+                <tr class="bg-white border-b">
+                  <td class="px-30 py-6 font-medium">Добавление в избранное</td>
+                  <td class="px-30 py-6 font-bold text-center md:text-start">
+                    3
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>
