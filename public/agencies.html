@@ -835,14 +835,37 @@
       <div>
         <!-- Options Items -->
         <div
-          class="hidden mobile-menu-shadow lg:max-w-4xl relative z-20 lg:pr-10 xl:pr-[6.625rem]"
+          class="shadow-nav-shadow fixed bg-white inset-x-0 z-50 top-16 lg:top-[6.9375rem] border-t border-brand-gray-6"
         >
           <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-2.5 bg-white text-brand-gray-3 rounded-b-10 sm:rounded-tr-10 px-15 py-5 md:p-5"
+            class="max-w-base mx-auto grid grid-cols-6 md:grid-cols-9 lg:grid-cols-8 gap-2.5 bg-white text-brand-gray-3 py-5 px-15"
           >
+            <!-- By Sale -->
+            <button
+              class="hidden relative lg:flex items-center justify-around border border-brand-gray-6 rounded-lg"
+            >
+              <span>Продажа</span>
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
             <!-- By Country -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="hidden relative lg:flex items-center justify-around border border-brand-gray-6 rounded-lg"
             >
               <span>Страна</span>
               <span>
@@ -865,7 +888,7 @@
             </button>
             <!-- By Region -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="hidden relative lg:flex items-center justify-around border border-brand-gray-6 rounded-lg"
             >
               <span>Регион</span>
               <span>
@@ -888,7 +911,7 @@
             </button>
             <!-- By City -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="hidden relative lg:flex items-center justify-around border border-brand-gray-6 rounded-lg"
             >
               <span>Город</span>
               <span>
@@ -911,7 +934,7 @@
             </button>
             <!-- By Type -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="hidden relative lg:flex items-center justify-around border border-brand-gray-6 rounded-lg"
             >
               <span>Тип</span>
               <span>
@@ -931,12 +954,92 @@
                   />
                 </svg>
               </span>
+              <!-- Dropdown -->
+              <div
+                class="hidden cost-dropdown-shadow max-w-[23.75rem] space-y-5 absolute z-10 left-0 top-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-5"
+              >
+                <div class="flex flex-wrap sm:flex-nowrap items-center gap-2.5">
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                    placeholder="От"
+                  />
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                    placeholder="До"
+                  />
+                  <div
+                    class="w-full sm:w-20 relative flex items-center justify-center gap-3 sm:gap-five border border-brand-gray-6 rounded-lg py-3 pl-2"
+                  >
+                    <span class="text-sm text-brand-black">EUR</span>
+                    <span>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <!-- Dropdown -->
+                    <div
+                      class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
+                    >
+                      <!-- Options -->
+                      <ul class="text-brand-black text-start">
+                        <li
+                          class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                        >
+                          EUR
+                        </li>
+                        <li
+                          class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                        >
+                          USD
+                        </li>
+                        <li
+                          class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                        >
+                          RUB
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[15.625rem]">
+                  <div
+                    class="flex items-center justify-center h-1 w-full bg-brand-gray-7"
+                  >
+                    <div
+                      class="h-full relative flex items-center justify-between bg-brand-blue w-4/5"
+                    >
+                      <div
+                        class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
+                      ></div>
+                      <div
+                        class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </button>
             <!-- By Cost -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="hidden relative lg:flex items-center justify-around border border-brand-gray-6 rounded-lg"
             >
-              <span>Цена</span>
+              <span>Цены</span>
               <span>
                 <svg
                   width="20"
@@ -954,15 +1057,131 @@
                   />
                 </svg>
               </span>
+              <!-- Dropdown -->
+              <div
+                class="hidden cost-dropdown-shadow max-w-[23.75rem] space-y-5 absolute z-10 left-0 top-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-5"
+              >
+                <div class="flex flex-wrap sm:flex-nowrap items-center gap-2.5">
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                    placeholder="От"
+                  />
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
+                    placeholder="До"
+                  />
+                  <div
+                    class="w-full sm:w-20 relative flex items-center justify-center gap-3 sm:gap-five border border-brand-gray-6 rounded-lg py-3 pl-2"
+                  >
+                    <span class="text-sm text-brand-black">EUR</span>
+                    <span>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <!-- Dropdown -->
+                    <div
+                      class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
+                    >
+                      <!-- Options -->
+                      <ul class="text-brand-black text-start">
+                        <li
+                          class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                        >
+                          EUR
+                        </li>
+                        <li
+                          class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                        >
+                          USD
+                        </li>
+                        <li
+                          class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
+                        >
+                          RUB
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[15.625rem]">
+                  <div
+                    class="flex items-center justify-center h-1 w-full bg-brand-gray-7"
+                  >
+                    <div
+                      class="h-full relative flex items-center justify-between bg-brand-blue w-4/5"
+                    >
+                      <div
+                        class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
+                      ></div>
+                      <div
+                        class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </button>
-            <!-- Filters & Search -->
-            <div
-              class="col-span-2 md:col-span-3 sm:flex items-center justify-between space-y-2.5 sm:space-y-0"
+            <!-- Search Bar -->
+            <label
+              for="search"
+              class="!col-span-3 md:!col-span-5 h-12 flex lg:hidden items-center justify-between border text-brand-black bg-white border-brand-gray-6 rounded-lg px-5"
             >
-              <div>
+              <input
+                type="text"
+                id="search"
+                class="w-full outline-none"
+                placeholder="Поиск"
+              />
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.0142 19C15.4381 19 19.0244 15.4183 19.0244 11C19.0244 6.58172 15.4381 3 11.0142 3C6.59023 3 3.00391 6.58172 3.00391 11C3.00391 15.4183 6.59023 19 11.0142 19Z"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M21.0275 21.0004L16.6719 16.6504"
+                    stroke="#747887"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </label>
+            <!-- Filter & Map -->
+            <div
+              class="col-span-3 md:col-span-4 lg:col-span-1 flex flex-row-reverse md:flex-row justify-end gap-2.5 sm:ml-2.5 md:ml-0 items-center"
+            >
+              <!-- Filter -->
+              <div class="relative w-12 sm:w-1/2 lg:w-full">
                 <!-- Filter Button -->
                 <button
-                  class="relative w-full sm:w-auto flex justify-center items-center gap-4 border border-brand-gray-6 text-brand-black rounded-lg py-3 px-5"
+                  class="h-12 w-full flex items-center justify-center lg:justify-around gap-4 border border-brand-gray-6 text-brand-black rounded-lg px-3 py-2.5 md:py-[0.6875rem] md:px-5"
                 >
                   <span>
                     <svg
@@ -1018,95 +1237,95 @@
                       />
                     </svg>
                   </span>
-                  <span>Фильтры</span>
+                  <span class="hidden sm:block">Фильтры</span>
                 </button>
               </div>
-              <div class="flex items-center gap-2.5">
-                <!-- On Map -->
-                <button
-                  class="btn-secondary w-1/2 sm:w-auto gap-2.5 border bg-brand-gray-8 border-brand-gray-8 py-3 px-3"
+              <!-- On Map -->
+              <button
+                class="btn-secondary flex-1 sm:w-[9.3125rem] lg:hidden flex items-center justify-between gap-2.5 !bg-white border border-brand-gray-6 py-2.5"
+              >
+                <span>
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.0002 4.00586V10.9988"
+                      stroke="#343843"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.0002 5.77734V20.0033"
+                      stroke="#343843"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.0036 11.9993V6.61006C22.0036 6.17888 21.7285 5.79672 21.3193 5.66066L16.6334 4.09901C16.2232 3.96195 15.779 3.96195 15.3678 4.09801L10.6309 5.67667C10.2197 5.81373 9.7765 5.81373 9.36533 5.67667L5.31264 4.32611C4.66537 4.11002 3.99609 4.59222 3.99609 5.2755V16.6192C3.99609 16.9984 4.21018 17.3445 4.54932 17.5146L9.10422 19.7915C9.66746 20.0737 10.3307 20.0737 10.894 19.7915L12.9998 18.7381"
+                      stroke="#343843"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M23.0044 21.0024L21.1406 19.1387"
+                      stroke="#343843"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M19.0013 14C20.6589 14 22.0025 15.3436 22.0025 17.0013C22.0025 18.6589 20.6589 20.0025 19.0013 20.0025C17.3436 20.0025 16 18.6589 16 17.0013C16 15.3436 17.3436 14 19.0013 14"
+                      stroke="#343843"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span
+                  ><span class="hidden sm:inline-block">На</span> карте</span
                 >
-                  <span>
-                    <svg
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16.0002 4.00586V10.9988"
-                        stroke="#343843"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M10.0002 5.77734V20.0033"
-                        stroke="#343843"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M22.0036 11.9993V6.61006C22.0036 6.17888 21.7285 5.79672 21.3193 5.66066L16.6334 4.09901C16.2232 3.96195 15.779 3.96195 15.3678 4.09801L10.6309 5.67667C10.2197 5.81373 9.7765 5.81373 9.36533 5.67667L5.31264 4.32611C4.66537 4.11002 3.99609 4.59222 3.99609 5.2755V16.6192C3.99609 16.9984 4.21018 17.3445 4.54932 17.5146L9.10422 19.7915C9.66746 20.0737 10.3307 20.0737 10.894 19.7915L12.9998 18.7381"
-                        stroke="#343843"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M23.0044 21.0024L21.1406 19.1387"
-                        stroke="#343843"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M19.0013 14C20.6589 14 22.0025 15.3436 22.0025 17.0013C22.0025 18.6589 20.6589 20.0025 19.0013 20.0025C17.3436 20.0025 16 18.6589 16 17.0013C16 15.3436 17.3436 14 19.0013 14"
-                        stroke="#343843"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span>На карте</span>
-                </button>
-                <!-- Search Button -->
-                <button
-                  class="btn-primary w-1/2 sm:w-auto flex sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-3 px-5"
-                >
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M18.934 11.467V11.467C18.934 15.591 15.591 18.934 11.467 18.934V18.934C7.343 18.934 4 15.591 4 11.467V11.467C4 7.343 7.343 4 11.467 4V4C15.591 4 18.934 7.343 18.934 11.467Z"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M20 20L16.75 16.75"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span>Найти</span>
-                </button>
-              </div>
+              </button>
             </div>
+            <!-- Search Button -->
+            <button
+              class="md:col-span-2 lg:col-span-1 !hidden lg:!flex btn-primary sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-3 px-7"
+            >
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.934 11.467V11.467C18.934 15.591 15.591 18.934 11.467 18.934V18.934C7.343 18.934 4 15.591 4 11.467V11.467C4 7.343 7.343 4 11.467 4V4C15.591 4 18.934 7.343 18.934 11.467Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 20L16.75 16.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Найти</span>
+            </button>
           </div>
         </div>
       </div>
