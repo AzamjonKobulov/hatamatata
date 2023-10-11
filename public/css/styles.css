@@ -1437,6 +1437,9 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-md {
+  border-radius: 0.375rem;
+}
 .rounded-b-10 {
   border-bottom-right-radius: 0.625rem;
   border-bottom-left-radius: 0.625rem;
@@ -3903,6 +3906,10 @@ input[type='checkbox']:checked {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .lg\:border-0 {
