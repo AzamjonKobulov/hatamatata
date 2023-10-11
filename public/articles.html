@@ -868,7 +868,8 @@
             <h3
               class="text-xl md:text-2xl lg:text-28 font-bold lg:leading-[2.375rem]"
             >
-              Статьи и новости о зарубежной недвижимости
+              Статьи <span class="hidden md:inline-block">и новости</span> о
+              зарубежной недвижимости
             </h3>
           </div>
         </div>
@@ -882,15 +883,34 @@
             class="grid grid-cols-2 md:grid-cols-4 bg-brand-gray-9 gap-2.5 p-5 rounded-10"
           >
             <form action="#" class="col-span-2 md:col-span-4">
-              <input
-                type="text"
-                placeholder="Фраза для поиска"
-                class="input-hover input-focus w-full py-3 px-5 border border-brand-gray-6 rounded-lg"
-              />
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Фраза для поиска"
+                  class="input-hover input-focus outline-none w-full py-[0.6875rem] px-5 border border-brand-gray-6 rounded-lg"
+                />
+                <span class="absolute right-5 top-4">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
+                      stroke="#747887"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
             </form>
             <!-- By Subject -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="relative flex items-center justify-between bg-white border border-brand-gray-6 rounded-lg py-[0.6875rem] px-5"
             >
               <span>Тема</span>
               <span>
@@ -993,7 +1013,7 @@
             </button>
             <!-- By Type -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="relative flex items-center justify-between bg-white border border-brand-gray-6 rounded-lg py-[0.6875rem] px-5"
             >
               <span>Тип</span>
               <span>
@@ -1096,7 +1116,7 @@
             </button>
             <!-- By Страна -->
             <button
-              class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+              class="relative flex items-center justify-between bg-white border border-brand-gray-6 rounded-lg py-[0.6875rem] px-5"
             >
               <span>Страна</span>
               <span>
@@ -1199,7 +1219,7 @@
             </button>
             <!-- Search Button -->
             <button
-              class="flex btn-primary sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-3 px-5"
+              class="flex btn-primary sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-[0.6875rem] px-5"
             >
               <span>
                 <svg
@@ -1252,182 +1272,7 @@
                 <!-- Image -->
                 <div class="h-[15.9375rem] rounded-10 overflow-hidden">
                   <img
-                    src="./assets/images/News/new-1.png"
-                    alt="New"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <!-- Texts -->
-                <div class="space-y-2.5">
-                  <!-- Tags -->
-                  <div
-                    class="flex items-center gap-2.5 text-xs text-brand-gray-4"
-                  >
-                    <p>Анализ рынков</p>
-                    <p>Жизнь за рубежом</p>
-                    <p>Инвестиции</p>
-                  </div>
-                  <!-- Title -->
-                  <a href="#" class="text-brand-blue font-bold block">
-                    “Хапун” недвижимости в Турции закончился? Количество сделок
-                    в июне снизилось на 44,4%
-                  </a>
-                  <!-- Date & Watched -->
-                  <div
-                    class="flex items-center gap-2.5 text-sm text-brand-gray-3"
-                  >
-                    <div class="flex items-center gap-1">
-                      <span
-                        ><svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9.76562 6.65625V10.5321L12.8123 12.3896"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <p><span>17.07.2023</span> <span>16:15</span></p>
-                    </div>
-                    <div class="flex items-center gap-1">
-                      <span
-                        ><svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.59813 10.3905C2.46729 10.148 2.46729 9.8538 2.59813 9.6113C4.17479 6.69547 7.08729 4.16797 9.99979 4.16797C12.9123 4.16797 15.8248 6.69547 17.4015 9.61214C17.5323 9.85464 17.5323 10.1488 17.4015 10.3913C15.8248 13.3071 12.9123 15.8346 9.99979 15.8346C7.08729 15.8346 4.17479 13.3071 2.59813 10.3905Z"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <p><span>175</span> просмотров</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item -->
-              <div class="space-y-4">
-                <!-- Image -->
-                <div class="h-[15.9375rem] rounded-10 overflow-hidden">
-                  <img
-                    src="./assets/images/News/new-2.png"
-                    alt="New"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <!-- Texts -->
-                <div class="space-y-2.5">
-                  <!-- Tags -->
-                  <div
-                    class="flex items-center gap-2.5 text-xs text-brand-gray-4"
-                  >
-                    <p>Анализ рынков</p>
-                    <p>Жизнь за рубежом</p>
-                    <p>Инвестиции</p>
-                  </div>
-                  <!-- Title -->
-                  <a href="#" class="text-brand-blue font-bold block">
-                    Что нужно знать перед покупкой квартиры в Стамбуле?
-                  </a>
-                  <!-- Date & Watched -->
-                  <div
-                    class="flex items-center gap-2.5 text-sm text-brand-gray-3"
-                  >
-                    <div class="flex items-center gap-1">
-                      <span
-                        ><svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9.76562 6.65625V10.5321L12.8123 12.3896"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <p><span>17.07.2023</span> <span>16:15</span></p>
-                    </div>
-                    <div class="flex items-center gap-1">
-                      <span
-                        ><svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.59813 10.3905C2.46729 10.148 2.46729 9.8538 2.59813 9.6113C4.17479 6.69547 7.08729 4.16797 9.99979 4.16797C12.9123 4.16797 15.8248 6.69547 17.4015 9.61214C17.5323 9.85464 17.5323 10.1488 17.4015 10.3913C15.8248 13.3071 12.9123 15.8346 9.99979 15.8346C7.08729 15.8346 4.17479 13.3071 2.59813 10.3905Z"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <p><span>175</span> просмотров</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item -->
-              <div class="space-y-4">
-                <!-- Image -->
-                <div class="h-[15.9375rem] rounded-10 overflow-hidden">
-                  <img
-                    src="./assets/images/News/new-3.png"
+                    src="./assets/images/News/new-6.png"
                     alt="New"
                     class="w-full h-full object-cover"
                   />
@@ -1515,95 +1360,7 @@
                 <!-- Image -->
                 <div class="h-[15.9375rem] rounded-10 overflow-hidden">
                   <img
-                    src="./assets/images/News/new-3.png"
-                    alt="New"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <!-- Texts -->
-                <div class="space-y-2.5">
-                  <!-- Tags -->
-                  <div
-                    class="flex items-center gap-2.5 text-xs text-brand-gray-4"
-                  >
-                    <p>Анализ рынков</p>
-                    <p>Жизнь за рубежом</p>
-                    <p>Инвестиции</p>
-                  </div>
-                  <!-- Title -->
-                  <a href="#" class="text-brand-blue font-bold block">
-                    Откроют ли закрытые районы Турции и что будет с икаметами?
-                    Прогнозы миграционной службы
-                  </a>
-                  <!-- Date & Watched -->
-                  <div
-                    class="flex items-center gap-2.5 text-sm text-brand-gray-3"
-                  >
-                    <div class="flex items-center gap-1">
-                      <span
-                        ><svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9.76562 6.65625V10.5321L12.8123 12.3896"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <p><span>17.07.2023</span> <span>16:15</span></p>
-                    </div>
-                    <div class="flex items-center gap-1">
-                      <span
-                        ><svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.59813 10.3905C2.46729 10.148 2.46729 9.8538 2.59813 9.6113C4.17479 6.69547 7.08729 4.16797 9.99979 4.16797C12.9123 4.16797 15.8248 6.69547 17.4015 9.61214C17.5323 9.85464 17.5323 10.1488 17.4015 10.3913C15.8248 13.3071 12.9123 15.8346 9.99979 15.8346C7.08729 15.8346 4.17479 13.3071 2.59813 10.3905Z"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                            stroke="#747887"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <p><span>175</span> просмотров</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item -->
-              <div class="space-y-4">
-                <!-- Image -->
-                <div class="h-[15.9375rem] rounded-10 overflow-hidden">
-                  <img
-                    src="./assets/images/News/new-1.png"
+                    src="./assets/images/News/new-7.png"
                     alt="New"
                     class="w-full h-full object-cover"
                   />
@@ -1691,7 +1448,7 @@
                 <!-- Image -->
                 <div class="h-[15.9375rem] rounded-10 overflow-hidden">
                   <img
-                    src="./assets/images/News/new-2.png"
+                    src="./assets/images/News/new-5.png"
                     alt="New"
                     class="w-full h-full object-cover"
                   />
@@ -3217,7 +2974,7 @@
             </div>
             <!-- Tags -->
             <div class="md:w-1/2 lg:w-auto space-y-5">
-              <h3 class="text-xl font-bold">Популярные статьи</h3>
+              <h3 class="text-xl font-bold">Популярные теги</h3>
               <div
                 class="flex items-center gap-2.5 flex-wrap text-brand-blue font-medium"
               >

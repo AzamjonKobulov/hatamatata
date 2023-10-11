@@ -661,9 +661,6 @@ video {
 .top-full {
   top: 100%;
 }
-.-bottom-4 {
-  bottom: -1rem;
-}
 .z-0 {
   z-index: 0;
 }
@@ -1128,12 +1125,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-2\/3 {
-  width: 66.666667%;
-}
-.w-auto {
-  width: auto;
 }
 .min-w-\[5\.5rem\] {
   min-width: 5.5rem;
@@ -3067,14 +3058,6 @@ input[type='checkbox']:checked {
     width: auto;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .md\:max-w-\[18\.75rem\] {
     max-width: 18.75rem;
   }
@@ -3150,10 +3133,6 @@ input[type='checkbox']:checked {
 
   .md\:justify-start {
     justify-content: flex-start;
-  }
-
-  .md\:justify-end {
-    justify-content: flex-end;
   }
 
   .md\:justify-center {
@@ -3295,6 +3274,11 @@ input[type='checkbox']:checked {
     padding-right: 0.9375rem;
   }
 
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .md\:px-30 {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
@@ -3338,11 +3322,6 @@ input[type='checkbox']:checked {
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .md\:py-3\.5 {
-    padding-top: 0.875rem;
-    padding-bottom: 0.875rem;
   }
 
   .md\:py-30 {
@@ -3707,6 +3686,10 @@ input[type='checkbox']:checked {
     width: 20rem;
   }
 
+  .lg\:w-\[11\.25rem\] {
+    width: 11.25rem;
+  }
+
   .lg\:w-\[18\.4375rem\] {
     width: 18.4375rem;
   }
@@ -3733,10 +3716,6 @@ input[type='checkbox']:checked {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[11\.25rem\] {
-    width: 11.25rem;
   }
 
   .lg\:max-w-2xl {
@@ -4002,11 +3981,6 @@ input[type='checkbox']:checked {
     padding-bottom: 0px;
   }
 
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -4027,14 +4001,14 @@ input[type='checkbox']:checked {
     padding-bottom: 1.25rem;
   }
 
+  .lg\:py-60 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:py-\[1\.0625rem\] {
-    padding-top: 1.0625rem;
-    padding-bottom: 1.0625rem;
   }
 
   .lg\:py-\[1\.125rem\] {
@@ -4120,10 +4094,6 @@ input[type='checkbox']:checked {
 
   .lg\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .lg\:pr-12 {
-    padding-right: 3rem;
   }
 
   .lg\:text-center {
