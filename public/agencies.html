@@ -1339,13 +1339,15 @@
           style="
             background-image: url('./assets/images/main-banners/main-banner-4.png');
           "
-          class="relative bg-no-repeat bg-right flex flex-col lg:flex-row gap-5 rounded-10 before:absolute before:inset-0 before:bg-[#1D232F]/60 before:rounded-10 px-15 p-30 lg:pl-30 lg:pr-0"
+          class="relative bg-no-repeat bg-right bg-cover lg:bg-auto flex flex-col lg:flex-row gap-5 rounded-10 before:absolute before:inset-0 before:bg-[#1D232F]/60 before:rounded-10 px-15 p-30 lg:pl-30 lg:pr-0"
         >
-          <div class="flex-1 relative z-20 md:pl-2.5 pb-1 space-y-5">
+          <div
+            class="flex-1 relative z-20 md:pl-2.5 pb-1 space-y-30 md:space-y-10 lg:space-y-60"
+          >
             <div class="flex justify-between">
               <!-- Hero Title -->
-              <div class="max-w-2xl md:pr-6 relative space-y-2.5 pt-2.5">
-                <h1 class="md:max-w-xl text-white md:leading-10 md:pr-3.5">
+              <div class="max-w-4xl lg:pr-20 relative space-y-2.5 pt-2.5">
+                <h1 class="text-white md:leading-10 md:pr-3.5">
                   Агенства зарубежной недвижимости
                 </h1>
                 <p class="text-white text-sm md:text-base md:leading-6">
@@ -1371,34 +1373,11 @@
               </div>
               <!-- Options Items -->
               <div
-                class="mobile-menu-shadow lg:max-w-4xl relative z-20 lg:pr-10 xl:pr-[6.625rem]"
+                class="mobile-menu-shadow lg:max-w-4xl relative z-20 lg:pr-16"
               >
                 <div
                   class="grid grid-cols-2 md:grid-cols-4 gap-2.5 bg-white text-brand-gray-3 rounded-b-10 sm:rounded-tr-10 px-15 py-5 md:p-5"
                 >
-                  <!-- By Country -->
-                  <button
-                    class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
-                  >
-                    <span>Страна</span>
-                    <span>
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </button>
                   <!-- By Region -->
                   <button
                     class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
@@ -1468,9 +1447,32 @@
                       </svg>
                     </span>
                   </button>
-                  <!-- By Cost -->
+                  <!-- By View -->
                   <button
                     class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+                  >
+                    <span>Вид</span>
+                    <span>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <!-- By Cost -->
+                  <button
+                    class="relative hidden md:flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
                   >
                     <span>Цена</span>
                     <span>
@@ -1490,94 +1492,12 @@
                         />
                       </svg>
                     </span>
-                    <!-- Dropdown -->
-                    <div
-                      class="hidden cost-dropdown-shadow max-w-[23.75rem] space-y-5 absolute z-10 left-0 top-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-5"
-                    >
-                      <div
-                        class="flex flex-wrap sm:flex-nowrap items-center gap-2.5"
-                      >
-                        <input
-                          type="text"
-                          id="name"
-                          class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
-                          placeholder="От"
-                        />
-                        <input
-                          type="text"
-                          id="name"
-                          class="w-[7.5rem] py-2.5 px-5 rounded-lg outline-none border border-brand-gray-6"
-                          placeholder="До"
-                        />
-                        <div
-                          class="w-full sm:w-20 relative flex items-center justify-center gap-3 sm:gap-five border border-brand-gray-6 rounded-lg py-3 pl-2"
-                        >
-                          <span class="text-sm text-brand-black">EUR</span>
-                          <span>
-                            <svg
-                              width="20"
-                              height="20"
-                              viewBox="0 0 20 20"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
-                                stroke="#747887"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </span>
-                          <!-- Dropdown -->
-                          <div
-                            class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
-                          >
-                            <!-- Options -->
-                            <ul class="text-brand-black text-start">
-                              <li
-                                class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                              >
-                                EUR
-                              </li>
-                              <li
-                                class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                              >
-                                USD
-                              </li>
-                              <li
-                                class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                              >
-                                RUB
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-[15.625rem]">
-                        <div
-                          class="flex items-center justify-center h-1 w-full bg-brand-gray-7"
-                        >
-                          <div
-                            class="h-full relative flex items-center justify-between bg-brand-blue w-4/5"
-                          >
-                            <div
-                              class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
-                            ></div>
-                            <div
-                              class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </button>
                   <!-- Filters & Search -->
                   <div
                     class="col-span-2 md:col-span-3 sm:flex items-center justify-between space-y-2.5 sm:space-y-0"
                   >
-                    <div class="relative">
+                    <div>
                       <!-- Filter Button -->
                       <button
                         class="relative w-full sm:w-auto flex justify-center items-center gap-4 border border-brand-gray-6 text-brand-black rounded-lg py-3 px-5"
@@ -1638,841 +1558,11 @@
                         </span>
                         <span>Фильтры</span>
                       </button>
-                      <!-- Filter Poppup of Sale -->
-                      <divs
-                        class="hidden shadow-nav-shadow md:w-[43.75rem] absolute left-0 top-full rounded-xl bg-white"
-                      >
-                        <!-- Filter Header -->
-                        <div
-                          class="flex items-center justify-between border-b border-brand-gray-7 py-4 px-7"
-                        >
-                          <p class="text-xl font-bold text-brand-black">
-                            Фильтры
-                          </p>
-                          <button>
-                            <svg
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17 7L7 17M7 7L17 17"
-                                stroke="#505462"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </button>
-                        </div>
-                        <!-- Filter Body -->
-                        <div class="space-y-30 p-30">
-                          <!-- Cost -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Цена:
-                            </p>
-                            <!-- Dropdown -->
-                            <div class="max-w-lg space-y-5 pr pr-12">
-                              <div class="grid grid-cols-5 gap-2.5">
-                                <input
-                                  type="text"
-                                  id="name"
-                                  class="input-filter col-span-2"
-                                  placeholder="От"
-                                />
-                                <input
-                                  type="text"
-                                  id="name"
-                                  class="input-filter col-span-2"
-                                  placeholder="До"
-                                />
-                                <!-- Currency -->
-                                <div
-                                  class="sm:w-20 relative flex items-center justify-center gap-3 sm:gap-five border border-brand-gray-6 rounded-lg p-2.5 pl-2"
-                                >
-                                  <span class="text-sm text-brand-black"
-                                    >EUR</span
-                                  >
-                                  <span>
-                                    <svg
-                                      width="20"
-                                      height="20"
-                                      viewBox="0 0 20 20"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
-                                        stroke="#747887"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <!-- Dropdown -->
-                                  <div
-                                    class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
-                                  >
-                                    <!-- Options -->
-                                    <ul class="text-brand-black text-start">
-                                      <li
-                                        class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                                      >
-                                        EUR
-                                      </li>
-                                      <li
-                                        class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                                      >
-                                        USD
-                                      </li>
-                                      <li
-                                        class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                                      >
-                                        RUB
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Range -->
-                              <div class="w-4/5">
-                                <div
-                                  class="flex items-center h-1 w-full bg-brand-gray-7"
-                                >
-                                  <div
-                                    class="h-full relative flex items-center justify-between bg-brand-blue w-10/12"
-                                  >
-                                    <div
-                                      class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
-                                    ></div>
-                                    <div
-                                      class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
-                                    ></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Buttons -->
-                              <div class="flex items-center gap-2.5">
-                                <button class="btn-secondary px-15 py-2">
-                                  Кредит
-                                </button>
-                                <button
-                                  class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                                >
-                                  Рассрочка
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Category -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Категория:
-                            </p>
-                            <div class="flex items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                Новостройка
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                Строящееся
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Вторичная недвижимость
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Seller -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Продавец:
-                            </p>
-                            <div class="flex items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                Собственник
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                Застройщик
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Агент
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Inputs -->
-                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
-                            <!-- Total Area -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Общая площадь, кв.м.:
-                              </p>
-                              <div class="grid grid-cols-2 gap-2.5">
-                                <input placeholder="От" class="input-filter" />
-                                <input placeholder="До" class="input-filter" />
-                              </div>
-                            </div>
-                            <!-- Number of Floors -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Число этажей:
-                              </p>
-                              <div class="grid grid-cols-2 gap-2.5">
-                                <input placeholder="От" class="input-filter" />
-                                <input placeholder="До" class="input-filter" />
-                              </div>
-                            </div>
-                            <!-- Number of Floors -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Площадь участка, кв.м:
-                              </p>
-                              <div class="grid grid-cols-2 gap-2.5">
-                                <input placeholder="От" class="input-filter" />
-                                <input placeholder="До" class="input-filter" />
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Numbers Of Features -->
-                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
-                            <!-- Rooms -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Комнаты:
-                              </p>
-                              <div class="flex items-center gap-2.5">
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  5+
-                                </button>
-                              </div>
-                            </div>
-                            <!-- Number of bedrooms -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Количество спален:
-                              </p>
-                              <div class="flex items-center gap-2.5">
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  5+
-                                </button>
-                              </div>
-                            </div>
-                            <!-- Number of Bathrooms -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Ванные комнаты:
-                              </p>
-                              <div class="flex items-center gap-2.5">
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  5+
-                                </button>
-                              </div>
-                            </div>
-                            <!-- Year of delivery: -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Год сдачи:
-                              </p>
-                              <div class="grid grid-cols-2 gap-2.5">
-                                <input placeholder="От" class="input-filter" />
-                                <input placeholder="До" class="input-filter" />
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Repair -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Ремонт:
-                            </p>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                Не требует ремонта
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                Нормальный
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Требуется косметический ремонт
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Плохое состояние
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Без отделки
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Вид: -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Вид:
-                            </p>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                море
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                пляж
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                озеро
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                горы
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                лес или парк
-                              </button>
-                            </div>
-                          </div>
-                          <!-- To the sea -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              До моря:
-                            </p>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                первая линия
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                до 500 м
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                до 1 км
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                до 2 км
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                до 3 км
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Facilities -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Особенности:
-                            </p>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                ТВ
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                парковка
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                мебель
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                терраса
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Интернет
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                сад
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                бассейн
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                собственный пляж
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Filter Footer -->
-                        <div
-                          class="flex items-center justify-between border-t border-brand-gray-7 py-4 px-7"
-                        >
-                          <button
-                            class="btn-secondary py-3 px-6 !bg-brand-blue !text-white"
-                          >
-                            Показать 367
-                          </button>
-                          <button class="btn-secondary py-3 px-6">
-                            Сбросить
-                          </button>
-                        </div>
-                      </divs>
-                      <!-- Filter Poppup of Rent -->
-                      <div
-                        class="hidden shadow-nav-shadow md:w-[43.75rem] absolute left-0 top-full rounded-xl bg-white"
-                      >
-                        <!-- Filter Header -->
-                        <div
-                          class="flex items-center justify-between border-b border-brand-gray-7 py-4 px-7"
-                        >
-                          <p class="text-xl font-bold text-brand-black">
-                            Фильтры
-                          </p>
-                          <button>
-                            <svg
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17 7L7 17M7 7L17 17"
-                                stroke="#505462"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </button>
-                        </div>
-                        <!-- Filter Body -->
-                        <div class="space-y-30 p-30">
-                          <!-- Cost -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Цена:
-                            </p>
-                            <!-- Dropdown -->
-                            <div class="max-w-lg space-y-5 pr pr-12">
-                              <div class="grid grid-cols-5 gap-2.5">
-                                <input
-                                  type="text"
-                                  id="name"
-                                  class="input-filter col-span-2"
-                                  placeholder="От"
-                                />
-                                <input
-                                  type="text"
-                                  id="name"
-                                  class="input-filter col-span-2"
-                                  placeholder="До"
-                                />
-                                <!-- Currency -->
-                                <div
-                                  class="sm:w-20 relative flex items-center justify-center gap-3 sm:gap-five border border-brand-gray-6 rounded-lg p-2.5 pl-2"
-                                >
-                                  <span class="text-sm text-brand-black"
-                                    >EUR</span
-                                  >
-                                  <span>
-                                    <svg
-                                      width="20"
-                                      height="20"
-                                      viewBox="0 0 20 20"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
-                                        stroke="#747887"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <!-- Dropdown -->
-                                  <div
-                                    class="hidden dropdown-list-shadow absolute z-10 left-0 top-full w-full bg-white border border-brand-gray-9 rounded-lg mt-2.5 p-2.5"
-                                  >
-                                    <!-- Options -->
-                                    <ul class="text-brand-black text-start">
-                                      <li
-                                        class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                                      >
-                                        EUR
-                                      </li>
-                                      <li
-                                        class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                                      >
-                                        USD
-                                      </li>
-                                      <li
-                                        class="px-15 py-2.5 rounded-10 hover:bg-brand-gray-9"
-                                      >
-                                        RUB
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Range -->
-                              <div class="w-4/5">
-                                <div
-                                  class="flex items-center h-1 w-full bg-brand-gray-7"
-                                >
-                                  <div
-                                    class="h-full relative flex items-center justify-between bg-brand-blue w-10/12"
-                                  >
-                                    <div
-                                      class="w-6 h-6 absolute rounded-full left-0 bg-white border-4 border-brand-blue"
-                                    ></div>
-                                    <div
-                                      class="w-6 h-6 absolute rounded-full right-0 bg-white border-4 border-brand-blue"
-                                    ></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Buttons -->
-                              <div class="flex items-center gap-2.5">
-                                <button class="btn-secondary px-15 py-2">
-                                  За сутки
-                                </button>
-                                <button
-                                  class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                                >
-                                  За неделю
-                                </button>
-                                <button class="btn-secondary px-15 py-2">
-                                  За месяц
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Rent terms -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Условия аренды:
-                            </p>
-                            <div class="flex items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                Можно с детьми
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                Можно с животными
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Без залога
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Lessor -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Арендодатель:
-                            </p>
-                            <div class="flex items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                Собственник
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                Компания
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Inputs -->
-                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
-                            <!-- Total Area -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Общая площадь, кв.м.:
-                              </p>
-                              <div class="grid grid-cols-2 gap-2.5">
-                                <input placeholder="От" class="input-filter" />
-                                <input placeholder="До" class="input-filter" />
-                              </div>
-                            </div>
-                            <!-- Number of Floors -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Число этажей:
-                              </p>
-                              <div class="grid grid-cols-2 gap-2.5">
-                                <input placeholder="От" class="input-filter" />
-                                <input placeholder="До" class="input-filter" />
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Numbers Of Features -->
-                          <div class="grid sm:grid-cols-2 gap-x-60 gap-y-30">
-                            <!-- Rooms -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Комнаты:
-                              </p>
-                              <div class="flex items-center gap-2.5">
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  5+
-                                </button>
-                              </div>
-                            </div>
-                            <!-- Number of bedrooms -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Количество спален:
-                              </p>
-                              <div class="flex items-center gap-2.5">
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  5+
-                                </button>
-                              </div>
-                            </div>
-                            <!-- Number of Bathrooms -->
-                            <div>
-                              <p class="font-medium text-brand-black mb-2.5">
-                                Ванные комнаты:
-                              </p>
-                              <div class="flex items-center gap-2.5">
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center !bg-brand-blue !text-white"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  class="btn-secondary w-10 h-10 shrink-0 grid place-content-center"
-                                >
-                                  5+
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- Вид: -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Вид:
-                            </p>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                море
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                пляж
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                озеро
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                горы
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                лес или парк
-                              </button>
-                            </div>
-                          </div>
-                          <!-- To the sea -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              До моря:
-                            </p>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                первая линия
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                до 500 м
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                до 1 км
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                до 2 км
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                до 3 км
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Facilities -->
-                          <div>
-                            <p class="font-medium text-brand-black mb-2.5">
-                              Особенности:
-                            </p>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                              <button class="btn-secondary px-15 py-2">
-                                ТВ
-                              </button>
-                              <button
-                                class="btn-secondary !bg-brand-blue !text-white px-15 py-2"
-                              >
-                                парковка
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                мебель
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                терраса
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                Интернет
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                сад
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                бассейн
-                              </button>
-                              <button class="btn-secondary px-15 py-2">
-                                собственный пляж
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Filter Footer -->
-                        <div
-                          class="flex items-center justify-between border-t border-brand-gray-7 py-4 px-7"
-                        >
-                          <button
-                            class="btn-secondary py-3 px-6 !bg-brand-blue !text-white"
-                          >
-                            Показать 367
-                          </button>
-                          <button class="btn-secondary py-3 px-6">
-                            Сбросить
-                          </button>
-                        </div>
-                      </div>
                     </div>
-                    <div class="flex items-center gap-2.5">
+                    <div class="flex-1 flex justify-end items-center gap-2.5">
                       <!-- On Map -->
                       <button
-                        class="btn-secondary w-1/2 sm:w-auto gap-2.5 border bg-brand-gray-8 border-brand-gray-8 py-3 px-3"
+                        class="btn-secondary w-1/2 md:w-auto lg:hidden sm:w-auto gap-2.5 border bg-brand-gray-8 border-brand-gray-8 py-3 md:px-3"
                       >
                         <span>
                           <svg
@@ -2523,7 +1613,7 @@
                       </button>
                       <!-- Search Button -->
                       <button
-                        class="btn-primary w-1/2 sm:w-auto flex sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-3 px-5"
+                        class="btn-primary w-1/2 lg:w-[11.25rem] flex sm:items-center gap-4 border border-brand-blue font-medium text-brand-black rounded-lg py-3 px-5"
                       >
                         <span>
                           <svg
@@ -3667,7 +2757,7 @@
           <div class="mt-50 md:mt-60">
             <h2 class="text-center">Зарубежная недвижимость</h2>
             <div
-              class="md:text-lg text-brand-gray-2 lg:space-y-5 mt-5 md:mt-30"
+              class="lg:text-lg text-brand-gray-2 lg:space-y-5 mt-5 md:mt-30"
             >
               <p>
                 Благодаря широкому спектру предложений и личному подходу опытных
@@ -3737,8 +2827,9 @@
       </section>
 
       <!-- News -->
-      <section class="-mt-50 md:mt-0">
-        <div class="bg-brand-gray-9 py-50">
+      <section class="-mt-50">
+        <!-- News -->
+        <div class="bg-brand-gray-9 pt-50 pb-14">
           <div
             class="max-w-base mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-30 px-15"
           >
@@ -3759,9 +2850,10 @@
                     class="w-full h-full"
                   />
                 </div>
-                <div class="absolute bottom-0 p-5 text-white">
+                <div class="absolute bottom-0 px-5 pb-5 text-white">
                   <h4 class="font-medium text-xl lg:leading-7">
-                    Большие идеи для дизайна маленькой квартиры
+                    Большие идеи для дизайна <br />
+                    маленькой квартиры
                   </h4>
                   <div class="flex items-center gap-4 text-sm mt-five">
                     <span>26 июля</span>
@@ -3790,7 +2882,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span>2537</span>
+                      <span class="text-sm">2537</span>
                     </div>
                   </div>
                 </div>
@@ -3904,7 +2996,7 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium">
+                  <h4 class="font-medium md:text-lg lg:text-base">
                     Подпишитесь на новостную рассылку от Hatamatata.ru!
                   </h4>
                 </div>
@@ -3912,377 +3004,14 @@
                   <label for="">
                     <input
                       type="email"
-                      class="input-error input-hover input-focus w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                      class="input-focus input-hover w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
                       placeholder="E-mail"
                     />
-                    <span class="text-brand-red text-xs font-medium ml-1"
-                      >Introduzca su nombre</span
-                    >
                   </label>
-                  <button class="block btn-primary py-3 h-auto px-5">
+                  <button class="block btn-primary h-auto !py-3 px-5">
                     Подписаться
                   </button>
                 </form>
-              </div>
-            </div>
-            <div>
-              <!-- Button & Link -->
-              <div class="flex items-center justify-between gap-5">
-                <!-- Button -->
-                <div class="flex items-center gap-5">
-                  <button class="font-bold text-xl md:text-2xl">Статьи</button>
-                </div>
-                <!-- Link -->
-                <a
-                  href="#"
-                  class="text-brand-blue font-medium flex items-center gap-five hover:underline"
-                >
-                  <span>Все статьи</span>
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
-                      stroke="#10C4D2"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
-                      stroke="#196CCD"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
-                      stroke="#1059E7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <div class="divide-y">
-                <!-- News Articles -->
-                <div class="py-5">
-                  <a href="#" class="text-brand-primary-normal hover:underline">
-                    Кому пустующие дома в живописных местах? Посмотрели, какие
-                    дешевые хаты ищут новых хозяев
-                  </a>
-                  <!-- News Info -->
-                  <div
-                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
-                  >
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>вчера <span>08:00</span></p>
-                    </div>
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>2537</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="py-5">
-                  <a href="#" class="text-brand-primary-normal hover:underline">
-                    Топ квартир, поступивших в продажу только вчера
-                  </a>
-                  <!-- News Info -->
-                  <div
-                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
-                  >
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>26 июля</p>
-                    </div>
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>2537</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="py-5">
-                  <a href="#" class="text-brand-primary-normal hover:underline">
-                    Банк хотел забрать квартиру у жены умершего заемщика,
-                    несмотря на наличие страховки
-                  </a>
-                  <!-- News Info -->
-                  <div
-                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
-                  >
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>26 июля</p>
-                    </div>
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>2537</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="py-5">
-                  <a href="#" class="text-brand-primary-normal hover:underline">
-                    Назван самый популярный тип индивидуального дома
-                  </a>
-                  <!-- News Info -->
-                  <div
-                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
-                  >
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>25 июля</p>
-                    </div>
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>2537</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="py-5">
-                  <a href="#" class="text-brand-primary-normal hover:underline">
-                    Топ квартир, поступивших в продажу только вчера
-                  </a>
-                  <!-- News Info -->
-                  <div
-                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
-                  >
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>25 июля</p>
-                    </div>
-                    <div class="flex items-center gap-five">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>2537</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div>
@@ -4363,7 +3092,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <p>вчера <span>08:00</span></p>
+                      <p class="text-sm">вчера <span>08:00</span></p>
                     </div>
                     <div class="flex items-center gap-five">
                       <svg
@@ -4390,7 +3119,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span>2537</span>
+                      <span class="text-sm">2537</span>
                     </div>
                   </div>
                 </div>
@@ -4452,7 +3181,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span>2537</span>
+                      <span class="text-sm">2537</span>
                     </div>
                   </div>
                 </div>
@@ -4515,7 +3244,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span>2537</span>
+                      <span class="text-sm">2537</span>
                     </div>
                   </div>
                 </div>
@@ -4577,7 +3306,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span>2537</span>
+                      <span class="text-sm">2537</span>
                     </div>
                   </div>
                 </div>
@@ -4639,7 +3368,367 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span>2537</span>
+                      <span class="text-sm">2537</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Button & Link -->
+              <div class="flex items-center justify-between gap-5">
+                <!-- Button -->
+                <div class="flex items-center gap-5">
+                  <button class="font-bold text-xl md:text-2xl">Статьи</button>
+                </div>
+                <!-- Link -->
+                <a
+                  href="#"
+                  class="text-brand-blue font-medium flex items-center gap-five hover:underline"
+                >
+                  <span>Все статьи</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                      stroke="#10C4D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                      stroke="#196CCD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.66797 3.33398L10.3346 8.00065L5.66797 12.6673"
+                      stroke="#1059E7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="divide-y">
+                <!-- News Articles -->
+                <div class="py-5">
+                  <a href="#" class="text-brand-primary-normal hover:underline">
+                    Кому пустующие дома в живописных местах? Посмотрели, какие
+                    дешевые хаты ищут новых хозяев
+                  </a>
+                  <!-- News Info -->
+                  <div
+                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
+                  >
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p class="text-sm">вчера <span>08:00</span></p>
+                    </div>
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-sm">2537</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <a href="#" class="text-brand-primary-normal hover:underline">
+                    Топ квартир, поступивших в продажу только вчера
+                  </a>
+                  <!-- News Info -->
+                  <div
+                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
+                  >
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>26 июля</p>
+                    </div>
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-sm">2537</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <a href="#" class="text-brand-primary-normal hover:underline">
+                    Банк хотел забрать квартиру у жены умершего заемщика,
+                    несмотря на наличие страховки
+                  </a>
+                  <!-- News Info -->
+                  <div
+                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
+                  >
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>26 июля</p>
+                    </div>
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-sm">2537</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <a href="#" class="text-brand-primary-normal hover:underline">
+                    Назван самый популярный тип индивидуального дома
+                  </a>
+                  <!-- News Info -->
+                  <div
+                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
+                  >
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>25 июля</p>
+                    </div>
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-sm">2537</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <a href="#" class="text-brand-primary-normal hover:underline">
+                    Топ квартир, поступивших в продажу только вчера
+                  </a>
+                  <!-- News Info -->
+                  <div
+                    class="flex items-center gap-4 text-brand-gray-3 mt-five"
+                  >
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.13076 3.07277C10.9566 1.48777 15.3424 3.30527 16.9274 7.13111C18.5124 10.9569 16.6949 15.3428 12.8691 16.9278C9.04326 18.5128 4.65742 16.6953 3.07242 12.8694C1.48826 9.04361 3.30492 4.65777 7.13076 3.07277"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.76562 6.6543V10.5301L12.8123 12.3876"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <p>25 июля</p>
+                    </div>
+                    <div class="flex items-center gap-five">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.59813 10.3885C2.46729 10.146 2.46729 9.85185 2.59813 9.60935C4.17479 6.69352 7.08729 4.16602 9.99979 4.16602C12.9123 4.16602 15.8248 6.69352 17.4015 9.61018C17.5323 9.85268 17.5323 10.1468 17.4015 10.3893C15.8248 13.3052 12.9123 15.8327 9.99979 15.8327C7.08729 15.8327 4.17479 13.3052 2.59813 10.3885Z"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.7678 8.23223C12.7441 9.20854 12.7441 10.7915 11.7678 11.7678C10.7915 12.7441 9.20854 12.7441 8.23223 11.7678C7.25592 10.7915 7.25592 9.20854 8.23223 8.23223C9.20854 7.25592 10.7915 7.25592 11.7678 8.23223"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-sm">2537</span>
                     </div>
                   </div>
                 </div>
@@ -4761,10 +3850,12 @@
               <form action="#" class="flex flex-col items-center gap-4">
                 <input
                   type="text"
-                  class="input-error w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                  class="w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
                   placeholder="E-mail"
                 />
-                <button class="btn-primary w-full px-5">Подписаться</button>
+                <button class="btn-primary w-full py-3 px-5">
+                  Подписаться
+                </button>
               </form>
             </div>
           </div>
@@ -4772,10 +3863,11 @@
       </section>
 
       <!-- FAQ & Real Estate -->
-      <section class="-mt-10">
+      <section class="-mt-50 px-15">
+        <h2>Ответы на часто задаваемые вопросы</h2>
         <!-- Accordion Container -->
         <div
-          class="max-w-4xl mx-auto m-8 overflow-hidden md:px-6 space-y-2.5 px-15"
+          class="max-w-4xl mx-auto overflow-hidden md:px-6 space-y-2.5 mt-5 lg:mt-30"
         >
           <!-- Tab 1 -->
           <div
@@ -5634,6 +4726,28 @@
           </div>
         </div>
       </section>
+
+      <!-- Comments -->
+      <section class="-mt-60">
+        <div class="max-w-base mx-auto space-y-5 px-4">
+          <h3 class="font-bold tex-lg md:text-2xl">Комментарий</h3>
+          <form>
+            <textarea
+              class="w-full h-[12.5rem] input-hover input-focus outline-none placeholder:text-brand-gray-4 resize-none border border-brand-gray-6 rounded-lg px-5 py-3"
+              placeholder="Ваш комментарий"
+            ></textarea>
+            <div class="flex flex-col md:flex-row md:items-center gap-4 mt-5">
+              <button class="btn-primary w-full md:w-auto py-3 px-10">
+                Отправить
+              </button>
+              <span class="text-xs text-brand-gray-3"
+                >Я согласен с правилами обработки персональных данных и
+                политикой конфиденциальности</span
+              >
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -5954,7 +5068,7 @@
             </div>
             <div class="space-y-five">
               <p class="text-sm text-brand-gray-3">Телефон:</p>
-              <p class="text-sm lg:text-base font-medium">+7(495) 133-75-73</p>
+              <p class="text-sm lg:text-base font-medium">+90(506)595-48-50</p>
             </div>
           </div>
           <!-- Email -->

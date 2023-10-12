@@ -928,29 +928,6 @@
                 <div
                   class="grid grid-cols-2 md:grid-cols-4 gap-2.5 bg-white text-brand-gray-3 rounded-b-10 sm:rounded-tr-10 px-15 py-5 md:p-5"
                 >
-                  <!-- By Country -->
-                  <button
-                    class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
-                  >
-                    <span>Страна</span>
-                    <span>
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
-                          stroke="#747887"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </button>
                   <!-- By Region -->
                   <button
                     class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
@@ -1002,6 +979,29 @@
                     class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
                   >
                     <span>Тип</span>
+                    <span>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.832 7.5L9.9987 13.3333L4.16536 7.5"
+                          stroke="#747887"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <!-- By View -->
+                  <button
+                    class="relative flex items-center justify-between border border-brand-gray-6 rounded-lg py-3 px-5"
+                  >
+                    <span>Вид</span>
                     <span>
                       <svg
                         width="20"
@@ -1902,7 +1902,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -2024,7 +2024,7 @@
                     <label for="">
                       <input
                         type="email"
-                        class="input-error input-focus input-hover w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                        class="input-focus input-hover w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
                         placeholder="E-mail"
                       />
                     </label>
@@ -2127,7 +2127,7 @@
                                 stroke-linejoin="round"
                               />
                             </svg>
-                            <span>2537</span>
+                            <span class="text-sm">2537</span>
                           </div>
                         </div>
                       </div>
@@ -2195,7 +2195,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -2260,7 +2260,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -2325,7 +2325,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -2426,7 +2426,7 @@
                                 stroke-linejoin="round"
                               />
                             </svg>
-                            <span>2537</span>
+                            <span class="text-sm">2537</span>
                           </div>
                         </div>
                       </div>
@@ -2494,7 +2494,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -2559,7 +2559,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -2624,7 +2624,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -2633,11 +2633,11 @@
 
               <!-- Email Form -->
               <div
-                class="md:col-span-2 lg:hidden p-5 border border-brand-gray-7 bg-white space-y-4 rounded-10"
+                class="hidden lg:block p-5 border border-brand-gray-7 bg-white space-y-4 rounded-10"
               >
                 <div class="flex items-center gap-4">
                   <div
-                    class="w-12 h-12 rounded-full bg-brand-orange/5 grid place-content-center"
+                    class="w-12 h-12 shrink-0 rounded-full bg-brand-orange/5 grid place-content-center"
                   >
                     <svg
                       width="24"
@@ -2740,17 +2740,19 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium">
+                  <h4 class="font-medium md:text-lg lg:text-base">
                     Подпишитесь на новостную рассылку от Hatamatata.ru!
                   </h4>
                 </div>
-                <form action="#" class="flex flex-col items-center gap-4">
-                  <input
-                    type="text"
-                    class="input-error w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
-                    placeholder="E-mail"
-                  />
-                  <button class="btn-primary w-full py-3 px-5">
+                <form action="#" class="flex items-start gap-4">
+                  <label for="">
+                    <input
+                      type="email"
+                      class="input-focus input-hover w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                      placeholder="E-mail"
+                    />
+                  </label>
+                  <button class="block btn-primary h-auto !py-3 px-5">
                     Подписаться
                   </button>
                 </form>
@@ -4107,7 +4109,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -4229,7 +4231,7 @@
                     <label for="">
                       <input
                         type="email"
-                        class="input-error input-focus input-hover w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
+                        class="input-focus input-hover w-full py-3 px-15 rounded-lg border border-brand-gray-6 outline-none text-sm"
                         placeholder="E-mail"
                       />
                     </label>
@@ -4334,7 +4336,7 @@
                                 stroke-linejoin="round"
                               />
                             </svg>
-                            <span>2537</span>
+                            <span class="text-sm">2537</span>
                           </div>
                         </div>
                       </div>
@@ -4402,7 +4404,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -4467,7 +4469,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -4532,7 +4534,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -4633,7 +4635,7 @@
                                 stroke-linejoin="round"
                               />
                             </svg>
-                            <span>2537</span>
+                            <span class="text-sm">2537</span>
                           </div>
                         </div>
                       </div>
@@ -4701,7 +4703,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -4766,7 +4768,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -4831,7 +4833,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span>2537</span>
+                        <span class="text-sm">2537</span>
                       </div>
                     </div>
                   </div>
@@ -4968,7 +4970,7 @@
       </div>
 
       <!-- FAQ & Real Estate -->
-      <section class="px-15">
+      <section class="px-15 -mt-50">
         <h2>Ответы на часто задаваемые вопросы</h2>
         <!-- Accordion Container -->
         <div class="max-w-4xl mx-auto m-8 overflow-hidden md:px-6 space-y-2.5">
@@ -6149,7 +6151,7 @@
             </div>
             <div class="space-y-five">
               <p class="text-sm text-brand-gray-3">Телефон:</p>
-              <p class="text-sm lg:text-base font-medium">+7(495) 133-75-73</p>
+              <p class="text-sm lg:text-base font-medium">+90(506)595-48-50</p>
             </div>
           </div>
           <!-- Email -->

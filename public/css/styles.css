@@ -407,7 +407,8 @@ video {
   @media (min-width: 1024px) {
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.625rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -661,6 +662,18 @@ video {
 .top-full {
   top: 100%;
 }
+.right-20 {
+  right: 5rem;
+}
+.bottom-32 {
+  bottom: 8rem;
+}
+.right-28 {
+  right: 7rem;
+}
+.bottom-24 {
+  bottom: 6rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -834,6 +847,12 @@ video {
 }
 .mt-five {
   margin-top: 5px;
+}
+.-mb-20 {
+  margin-bottom: -5rem;
+}
+.-mb-10 {
+  margin-bottom: -2.5rem;
 }
 .block {
   display: block;
@@ -1977,9 +1996,6 @@ video {
 .leading-\[18px\] {
   line-height: 18px;
 }
-.leading-\[2\.625rem\] {
-  line-height: 2.625rem;
-}
 .\!text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
@@ -2330,6 +2346,16 @@ input[type='checkbox']:checked {
 
 .radio-wrapper input:checked ~ .checkmark::after {
   background-color: #1059e7;
+}
+
+.placeholder\:text-brand-gray-4::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(158 165 178 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-brand-gray-4::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(158 165 178 / var(--tw-text-opacity));
 }
 
 .before\:absolute::before {
@@ -2814,6 +2840,14 @@ input[type='checkbox']:checked {
     top: 1.25rem;
   }
 
+  .md\:bottom-24 {
+    bottom: 6rem;
+  }
+
+  .md\:right-20 {
+    right: 5rem;
+  }
+
   .md\:\!col-span-5 {
     grid-column: span 5 / span 5 !important;
   }
@@ -2864,10 +2898,6 @@ input[type='checkbox']:checked {
 
   .md\:ml-0 {
     margin-left: 0px;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
   }
 
   .md\:mt-10 {
@@ -3549,6 +3579,10 @@ input[type='checkbox']:checked {
     top: 7rem;
   }
 
+  .lg\:bottom-20 {
+    bottom: 5rem;
+  }
+
   .lg\:z-30 {
     z-index: 30;
   }
@@ -3912,6 +3946,12 @@ input[type='checkbox']:checked {
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:space-y-60 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3.75rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:rounded-lg {
     border-radius: 0.5rem;
   }
@@ -3922,6 +3962,10 @@ input[type='checkbox']:checked {
 
   .lg\:border-r {
     border-right-width: 1px;
+  }
+
+  .lg\:bg-auto {
+    background-size: auto;
   }
 
   .lg\:p-10 {

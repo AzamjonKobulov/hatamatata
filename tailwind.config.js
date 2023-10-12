@@ -13,8 +13,9 @@ module.exports = {
         onest: ['Onest', 'sans-serif'],
       },
       fontSize: {
-        32: '2rem',
         28: '1.75rem',
+        32: '2rem',
+        42: '2.625rem',
       },
       colors: {
         brand: {
