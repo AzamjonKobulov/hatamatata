@@ -1972,6 +1972,9 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-\[0\.8125rem\] {
+  font-size: 0.8125rem;
+}
 .\!font-normal {
   font-weight: 400 !important;
 }
@@ -3139,6 +3142,10 @@ input[type='checkbox']:checked {
 
   .md\:grid-cols-9 {
     grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:flex-row {
